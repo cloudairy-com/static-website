@@ -141,7 +141,7 @@ function displayMostPopularBlogs(popularBlogs) {
       <img src="../assets/image/blog/white-logo.png" />
       <h2>${bannerBlogs[0].title}</h2>
       <button class="start-trial-button">
-        Start free Trial
+        Start free trial
       </button>
     </div>`
     : "";
