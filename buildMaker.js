@@ -10,9 +10,13 @@ const renderStaticPages = () => {
     fs.mkdirSync(distDir);
   }
 
-  // Copy HTML files
+  // Copy HTML files, excluding blog and blog-detail
   const pages = fs.readdirSync(pagesDir)
-    .filter(file => file.endsWith('.html'));
+    .filter(file => 
+      file.endsWith('.html') && 
+      !file.includes('blog-') && 
+      file !== 'blog.html'
+    );
 
   pages.forEach(page => {
     const sourcePath = path.join(pagesDir, page);
