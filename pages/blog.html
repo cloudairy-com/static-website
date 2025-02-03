@@ -1,0 +1,2864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Collaborative Visual Tools and Team Productivity | Cloudairy Blog</title>
+  <!-- Meta description -->
+  <meta name="title" content="Collaborative Visual Tools and Team Productivity | Cloudairy Blog" />
+  <meta name="description"
+    content="Cloudairy Blogs for the latest articles on diagramming, mind mapping and project management." />
+  <meta name="author" content="Cloudairy" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Collaborative Visual Tools and Team Productivity | Cloudairy Blog" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cloudairy.com/blog" />
+  <meta property="og:image" content="https://cloudairy-template-storage.s3.amazonaws.com/public/metaLogo.png" />
+  <meta property="og:description"
+    content="Cloudairy Blogs for the latest articles on diagramming, mind mapping and project management." />
+  <!-- external css file-->
+  <link rel="canonical" href="https://cloudairy.com/blog" />
+  <link rel="stylesheet" href="../assets/main.css" />
+  <link rel="stylesheet" href="../assets/media.css" />
+  <link rel="icon" href="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/favicon-icon/favicon.ico"
+    type="image/x-icon" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VXLLRV7XF4"></script>
+  <script src="../assets/feature-banner.js" defer></script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KBT98X9R");
+  </script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-VXLLRV7XF4");
+  </script>
+  <style>
+    .submenu-text,
+    .footer-text {
+      position: relative;
+    }
+
+    .coming-soon {
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      width: 105%;
+      height: 130%;
+      font-size: 14px;
+      font-weight: 500;
+      color: #18181B;
+      opacity: 0;
+      pointer-events: none;
+      background-color: #FFF;
+      backdrop-filter: blur(1px);
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .submenu-text:hover .coming-soon,
+    .footer-text:hover .coming-soon {
+      opacity: 1;
+      pointer-events: none !important;
+      cursor: not-allowed !important;
+    }
+
+    .blog-container-fluid {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .main-bg-sction {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      width: 100%;
+      height: 552px;
+    }
+
+    .left-arrow,
+    .right-arrow {
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #E1E1E1;
+      background-color: #FFFFFF;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    .left-arrow {
+      position: absolute;
+      top: 0;
+      left: -5px;
+    }
+
+    .right-arrow {
+      position: absolute;
+      right: -5px;
+      top: 0;
+    }
+
+    .banner-section {
+      position: relative;
+      height: 395px;
+    }
+
+    .banner-section-content {
+      position: absolute;
+      max-width: 1200px;
+      top: 45%;
+      left: 49%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .banner-section h1 {
+      font-size: 44px;
+      color: #070529;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .banner-section p {
+      font-size: 16px;
+      color: #070529;
+      font-weight: 400;
+      text-align: center;
+      margin-top: 20px;
+      max-width: 670px;
+    }
+
+    .banner-section-arrow {
+      position: absolute;
+      top: 42%;
+      right: 18%;
+    }
+
+    .banner-section-icon {
+      position: absolute;
+      top: 25%;
+      left: 18%;
+      width: 68px;
+      height: 68px;
+    }
+
+    .arrow-content {
+      position: relative;
+      width: 66px;
+      border-radius: 30.34px;
+      height: 35px;
+      background-color: #FF7162;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0px 1.69px 6.74px 0px #00000029;
+    }
+
+    .arrow-content .orange-arrow {
+      position: absolute;
+      top: -25px;
+      left: -18px;
+    }
+
+    .arrow-content p {
+      font-size: 16px;
+      color: #fff;
+      font-weight: 700;
+      margin-top: 0px;
+    }
+
+    .setLoder {
+      max-width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      margin: 200px 0;
+    }
+
+    .search-box {
+      /* padding: 20px; */
+      display: flex;
+      gap: 14px;
+      width: 100%;
+      background-color: #FFF;
+      box-shadow: 0px 4px 20px 0px #0A01411A;
+      border-radius: 10px;
+      margin-top: 50px;
+      max-width: 650px;
+    }
+
+    .template-list-input {
+      padding: 14px;
+      width: 100%;
+      height: fit-content;
+      border: 1px solid #d4dde1;
+      border-radius: 5px;
+      background-color: #fafafa;
+      border: 1px solid #f0f0f0;
+
+    }
+
+    .template-list-input input {
+      width: 100%;
+      font-weight: 400;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      background-color: #fafafa;
+      padding-left: 7px;
+    }
+
+    .searchButton {
+      border-radius: 8px;
+      background-color: #6762fe;
+      color: #ffffff;
+      border: none;
+      padding: 13px;
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      font-family: "DM Sans", sans-serif;
+      max-width: 180px;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .ImageFadeIn {
+      animation: fadeInAnimation ease 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+
+    .blog-selector {
+      position: relative;
+      margin-bottom: 50px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .blog-selector::-webkit-scrollbar {
+      display: none;
+    }
+
+    .blog-option {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .blog-option .category-item {
+      width: fit-content;
+      padding: 0px 17px;
+      height: 41px;
+      background-color: #FFF;
+      border: 1px solid #D8DDE8;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #070529;
+      font-size: 16px;
+      border-radius: 130px;
+      white-space: nowrap;
+    }
+
+    .blog-option .category-item.active {
+      background-color: #6762FE;
+      border: 1px solid #6762FE;
+      cursor: pointer;
+      color: #fff !important;
+    }
+
+    .most-popular-blog h3 {
+      color: #000000;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 35.28px;
+      margin-bottom: 30px;
+    }
+
+    .most-popular-blog .first-blog {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      background-color: #F7F6FD;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .most-popular-blog .blog-image {
+      background: url("../assets/image/blog/first-blog.png");
+      background-color: #8C7EE2;
+      background-position: center;
+      background-size: cover;
+      width: 50%;
+      height: 400px;
+      border-radius: 20px;
+    }
+
+
+    .most-popular-blog .blog-content {
+      width: 50%;
+    }
+
+    .most-popular-blog .blog-item-name {
+      width: fit-content;
+      padding: 0px 20px;
+      background-color: #FFF;
+      border: 1px solid #6762FE;
+      box-shadow: 0px 4px 4px 0px #AEAEAE59, 0px -1px 0px 0px #00000008;
+      height: 40px;
+      align-items: center;
+      display: flex;
+      border-radius: 47px;
+    }
+
+    .blog-item-name span {
+      color: #6762FE;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+
+    .blog-content h4 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      color: #18181B;
+      margin-top: 30px;
+    }
+
+    .blog-content p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #070529;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      max-width: 420px;
+    }
+
+    .blog-content a,
+    .blog-content-box a {
+      color: #7630FF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.16px;
+      text-decoration: underline;
+      margin-top: 30px;
+      align-items: center;
+      display: flex;
+      gap: 13px;
+    }
+
+    .blogs-section {
+      display: flex;
+      gap: 20px;
+    }
+
+    .blogs-section .blog-box {
+      width: 33%;
+      /* border: 1px solid #D9D9D9; */
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .blogs-section .blog-box-image {
+      width: 100%;
+      height: 280px;
+      max-height: 280px;
+      min-height: 280px;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .blogs-section .blog-content-box {
+      padding: 20px;
+    }
+
+    .blogs-section .blog-box-items {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .blogs-section .blog-content-type {
+      height: 34px;
+      display: flex;
+      align-items: center;
+      padding: 0px 10px;
+      border: 1px solid #6762FE;
+      border-radius: 47px;
+      color: #6762FE;
+      font-size: 10px;
+      font-weight: 600;
+      width: fit-content;
+      text-transform: uppercase;
+    }
+
+    .blogs-section .blog-content-box h3 {
+      color: #18181B;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+      margin-bottom: 14px;
+    }
+
+    .blogs-section .blog-content-box p {
+      color: #070529;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+    }
+
+    .blog-content-box a {
+      margin-top: 20px;
+    }
+
+    .blog-box.blog-blue-box {
+      background: linear-gradient(318.86deg, #7630FF 20.3%, #3EDDFA 120.23%);
+      padding: 50px;
+      position: relative;
+    }
+
+    .blog-blue-box h2 {
+      font-size: 54px;
+      font-weight: 700;
+      color: #FFF;
+      margin-top: 20px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+    }
+
+    .start-trial-button {
+      height: 50px;
+      padding: 0px 15px;
+      border-radius: 8px;
+      background-color: #FFF;
+      color: #6762FE;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-top: 20px;
+      position: absolute;
+      bottom: 50px;
+    }
+
+    .blog-container .blog-heading {
+      margin-top: 50px;
+    }
+
+    .blog-list {
+      display: grid !important;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 50px;
+      column-gap: 20px;
+      overflow-x: auto;
+    }
+
+    .blog-list::-webkit-scrollbar {
+      display: none;
+    }
+
+    .blog-box-content {
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .blog-main-box {
+      border: 1px solid #D9D9D9;
+      background-color: #FFFFFF;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-box-images {
+      overflow: hidden;
+    }
+
+    .blog-box-images img {
+      width: 100%;
+      height: 280px;
+      max-height: 280px;
+      min-height: 280px;
+      display: block;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .blog-box-images img:hover {
+      transform: scale(1.05);
+    }
+
+    .blog-badge-box {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .blog-category-badge {
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 26px;
+      height: 34px;
+      padding: 0px 10px;
+      border-radius: 47px;
+      border: 1px solid #6762FE;
+      background-color: #FFFFFF;
+      align-items: center;
+      display: flex;
+      color: #6762FE;
+      text-transform: uppercase;
+    }
+
+    .blog-box-title {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 25px;
+      color: #18181B;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .blog-box-shortDescription {
+      font-size: 14px;
+      font-weight: 400;
+      color: #070529;
+      margin-top: 14px;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .learn-more-link {
+      color: #7630FF;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.16px;
+      text-decoration: underline;
+      margin-top: 20px;
+      align-items: center;
+      display: flex;
+      gap: 13px;
+    }
+
+    .blog-heading {
+      color: #000000;
+      font-size: 28px;
+      font-weight: 600;
+      line-height: 35.28px;
+      margin-bottom: 30px;
+    }
+
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    #content {
+      display: none;
+    }
+
+    @media (max-width: 1559px) {
+
+      .main-bg-sction {
+        height: 586px;
+      }
+
+      .banner-section {
+        height: 410px;
+      }
+    }
+
+    @media (max-width: 1440px) {
+
+      .main-bg-sction {
+        height: 650px;
+      }
+
+      .banner-section {
+        height: 475px;
+      }
+    }
+
+    @media (max-width: 1319px) {
+
+      .main-bg-sction {
+        height: 572px;
+      }
+
+      .banner-section {
+        height: 400px;
+      }
+
+      .blog-blue-box h2 {
+        font-size: 50px;
+      }
+    }
+
+    @media (max-width: 1240px) {
+
+      .main-bg-sction {
+        height: 572px;
+      }
+
+      .banner-section {
+        height: 400px;
+      }
+
+      .search-box {
+        /* padding: 12px; */
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: 1139px) {
+
+      .main-bg-sction {
+        height: 545px;
+      }
+
+      .banner-section {
+        height: 380px;
+      }
+
+      .search-box {
+        margin-top: 20px;
+      }
+
+      .template-list-input {
+        height: 40px;
+      }
+
+      .searchButton {
+        height: 40px;
+        padding: 0px 13px;
+      }
+
+      .blogs-section .blog-box-image {
+        max-height: 180px;
+      }
+
+      .blogs-section .blog-box-image img {
+        max-height: 180px;
+      }
+
+      .blogs-section .blog-content-box {
+        padding: 14px;
+      }
+
+      .blogs-section .blog-box-items {
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+
+      .blogs-section .blog-content-box h3 {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 8px;
+      }
+
+      .blogs-section .blog-content-box p {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+      .blog-content-box a,
+      .blog-content a {
+        font-size: 13px;
+        margin-top: 8px;
+        gap: 6px;
+      }
+
+      .blogs-section {
+        gap: 12px;
+      }
+
+      .blog-box.blog-blue-box {
+        padding: 26px;
+      }
+
+      .blog-blue-box h2 {
+        font-size: 41px;
+        margin-top: 15px;
+      }
+
+      .start-trial-button {
+        height: 40px;
+        font-size: 14px;
+      }
+
+      .most-popular-blog .first-blog {
+        gap: 30px;
+      }
+
+      .most-popular-blog .blog-image {
+        height: 280px;
+      }
+
+      .most-popular-blog .blog-item-name {
+        height: 35px;
+        padding: 0px 12px;
+      }
+
+      .blog-item-name span {
+        font-size: 11px;
+        line-height: 25px;
+      }
+
+      .blog-content h4 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 20px;
+      }
+
+      .blog-content p {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+      }
+
+      .blog-content img,
+      .blog-content-box img {
+        width: 20px;
+      }
+
+      .blog-selector {
+        margin-bottom: 40px
+      }
+
+      .most-popular-blog h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+        line-height: 31px;
+      }
+
+      .blog-container .blog-heading {
+        font-size: 25px;
+        margin-bottom: 20px;
+        line-height: 31px;
+
+      }
+
+      .blog-box-images img {
+        height: 218px;
+      }
+
+      .blog-box-content {
+        padding: 12px;
+      }
+
+      .blog-badge-box {
+        height: 26px;
+      }
+
+      .blog-box-title {
+        margin-top: 15px;
+        font-size: 15px;
+      }
+
+      .blog-box-shortDescription {
+        font-size: 12px;
+        margin-top: 6px;
+        line-height: 18px;
+      }
+
+      .blog-box-readmore {
+        font-size: 13px;
+        margin-top: 8px;
+        gap: 6px;
+      }
+
+      .blog-box-readmore img {
+        width: 20px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .banner-section h1 {
+        font-size: 34px;
+      }
+    }
+
+    @media (max-width: 959px) {
+
+      .right-arrow,
+      .left-arrow {
+        top: -5px;
+      }
+
+      .main-bg-sction {
+        height: 465px;
+      }
+
+      .banner-section {
+        height: 300px;
+      }
+
+      .banner-section-icon {
+        display: none;
+      }
+
+      .banner-section-arrow {
+        display: none;
+      }
+
+      .banner-section-content {
+        width: 60%;
+      }
+
+      .banner-section h1 {
+        font-size: 32px;
+      }
+
+      .banner-section p {
+        font-size: 12px;
+      }
+
+      .blog-option .category-item {
+        height: 31px;
+        font-size: 12px;
+      }
+
+      .blog-selector {
+        margin-bottom: 30px;
+      }
+
+      .most-popular-blog h3 {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .blog-container .blog-heading {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 26px;
+      }
+
+      .blog-list {
+        column-gap: 12px;
+        row-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .blogs-section {
+        flex-wrap: wrap;
+      }
+
+      .blogs-section .blog-box {
+        width: 49%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .banner-section-content {
+        width: 70%;
+      }
+
+      .banner-section h1 {
+        font-size: 30px;
+      }
+
+      .main-bg-sction {
+        height: 406px;
+      }
+
+      .banner-section {
+        height: 240px;
+      }
+
+      .blog-selector {
+        margin-bottom: 25px;
+      }
+
+      .most-popular-blog .blog-image {
+        height: 190px;
+      }
+
+      .most-popular-blog .blog-item-name {
+        height: 22px;
+        padding: 0px 8px;
+        border-radius: 30px;
+      }
+
+      .blog-item-name span {
+        font-size: 10px;
+        line-height: 20px;
+      }
+
+      .blog-content h4 {
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 17px;
+      }
+
+      .blog-content p {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 6px;
+        margin-bottom: 10px;
+      }
+
+      .blog-content-box a,
+      .blog-content a {
+        font-size: 12px;
+        margin-top: 0px;
+        gap: 4px;
+        line-height: 14px;
+      }
+
+      .blog-content img,
+      .blog-content-box img {
+        width: 15px;
+      }
+
+      .blogs-section .blog-content-type {
+        height: 26px;
+      }
+
+      .blog-content-box a {
+        margin-top: 8px;
+      }
+    }
+
+    @media (max-width: 719px) {
+      .main-bg-sction {
+        height: 409px;
+      }
+
+      .banner-section {
+        height: 240px;
+      }
+
+      .searchButton {
+        width: fit-content;
+        padding: 0px 35px;
+        height: 35px;
+      }
+
+      .template-list-input {
+        /* height: 35px; */
+      }
+
+      .banner-section p {
+        margin-top: 12px;
+      }
+
+      .blog-selector {
+        margin-bottom: 20px;
+      }
+
+      .blog-option {
+        gap: 8px;
+      }
+
+      .most-popular-blog .first-blog {
+        flex-direction: column;
+        gap: 0px;
+      }
+
+      .most-popular-blog .blog-image {
+        width: 100%;
+        height: 250px;
+      }
+
+      .most-popular-blog .blog-content {
+        width: 100%;
+        padding: 20px;
+      }
+
+      .most-popular-blog .blog-item-name {
+        height: 30px;
+        padding: 0px 10px;
+      }
+
+      .blog-content h4 {
+        margin-top: 18px;
+      }
+
+      .blog-content p {
+        max-width: 520px;
+      }
+
+      .blog-box.blog-blue-box {
+        display: none;
+      }
+
+      .blog-container .blog-heading {
+        margin-top: 30px;
+      }
+
+      .blog-list {
+        row-gap: 20px;
+      }
+
+      .right-arrow,
+      .left-arrow {
+        width: 35px;
+        height: 35px;
+        top: -2px;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .main-bg-sction {
+        height: 427px;
+      }
+
+      .banner-section {
+        height: 261px;
+      }
+
+      .banner-section h1 {
+        font-size: 24px;
+      }
+
+      .banner-section-content {
+        width: 100%;
+        padding: 0 16px;
+      }
+
+      .blog-selector {
+        overflow: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      .blog-selector::-webkit-scrollbar {
+        display: none;
+      }
+
+      .blog-option {
+        flex-wrap: nowrap;
+      }
+
+      .blog-option .category-item {
+        padding: 0px 10px;
+      }
+
+      .blogs-section .blog-box {
+        width: 100%;
+      }
+
+      .blogs-section .blog-box-image,
+      .blogs-section .blog-box-image img {
+        max-height: 230px;
+      }
+
+      .blog-list {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media (max-width: 425px) {
+      .banner-section h1 {
+        font-size: 24px;
+      }
+
+      .most-popular-blog h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .blog-container .blog-heading {
+        margin-bottom: 12px;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .loader {
+        margin: 60px 0 20px;
+      }
+
+      .main-bg-sction {
+        height: 445px;
+      }
+
+      .search-box {
+        /* padding: 8px; */
+        gap: 8px;
+      }
+
+      .template-list-input {
+        /* height: 30px; */
+      }
+
+      .searchButton {
+        height: 30px;
+        font-size: 12px;
+        padding: 0px 30px;
+      }
+
+      .banner-section {
+        height: 280px;
+      }
+
+      .setLoder {
+        max-width: 70px;
+        height: 70px;
+      }
+
+      .blog-container-fluid {
+        padding: 0 16px;
+      }
+
+      .blog-container-fluid {
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 375px) {
+      .searchButton {
+        height: 30px;
+        font-size: 12px;
+        padding: 0px 20px;
+      }
+
+      .left-arrow,
+      .right-arrow {
+        width: 24px;
+        height: 32px;
+        top: -1px;
+      }
+    }
+
+    @media (max-width: 360px) {}
+  </style>
+</head>
+
+<body style="background-color: #fff; position: relative;">
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBT98X9R" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe>
+  </noscript>
+  <div class="main-bg-sction">
+    <img src="../assets/image/mind-banner-image.png" alt="mind-banner-image" style="
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+    " />
+  </div>
+  <!-- start: header -->
+  <header class="header-bg header-hidden">
+    <div class="container-fluid-header header-part">
+      <a href="./" class="header-logo">
+        <img src="../assets/image/Header/black-logo.svg" alt="logo" style="width: 100%; height: 100%" />
+      </a>
+      <div class="header-navigation">
+        <nav>
+          <ul class="navbar-main-menus">
+            <!-- <li><a class="active" href="./">Home</a></li> -->
+            <li>
+              <a class="navbar-menu header-menu-hover" onclick="toggleMenu()">
+                Product
+                <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.5 6L8.01828 8.51828C8.24537 8.74537 8.35891 8.85891 8.5 8.85891C8.64109 8.85891 8.75463 8.74537 8.98172 8.51828L11.5 6"
+                    stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </a>
+
+              <ul id="productMenu" class="dropdown-menu">
+                <div class="product-menu">
+                  <div class="product-submenu platform-menu">
+                    <h6>Platform</h6>
+                    <a href="unified-workspace" class="submenu-text hover-comingsoon">
+                      <img src="../assets/image/Header/product/icon1.svg" alt="icon1" />
+                      <p>Unified Workspace</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="real-time-collaborations" class="submenu-text">
+                      <img src="../assets/image/Header/product/icon2.svg" alt="icon2" />
+                      <p>Real Time Collaboration</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="AI-assistance" class="submenu-text">
+                      <img src="../assets/image/Header/product/icon3.svg" alt="icon3" />
+                      <p>Al Powered Assistance</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="" class="submenu-text">
+                      <img src="../assets/image/Header/product/icon4.svg" alt="icon4" />
+                      <p>Secured Data Storage</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="template" class="submenu-text">
+                      <img src="../assets/image/Header/product/icon5.svg" alt="icon5" />
+                      <p>Templates</p>
+                    </a>
+
+                  </div>
+                  <div class="capability-menu">
+                    <h6>Capabilities</h6>
+                    <div class="capability-box">
+                      <div class="product-submenu">
+                        <a href="diagram-maker" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon6.svg" alt="icon6" />
+                          <p>Diagramming Tool</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon7.svg" alt="icon7" />
+                          <p>Data Visualization</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon8.svg" alt="icon8" />
+                          <p>Retrospective Tool</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="mind-maps" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon9.svg" alt="icon9" />
+                          <p>Mindmapping Tool</p>
+                        </a>
+                        <a href="agile" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon10.svg" alt="icon10" />
+                          <p>Agile and Scrum Support</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon11.svg" alt="icon11" />
+                          <p>Animate Connectors</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon12.svg" alt="icon12" />
+                          <p>Smart Goal Setting</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                      <div class="product-submenu">
+                        <a href="strategic-planning" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon13.svg" alt="icon13" />
+                          <p>Strategic Planning Tool</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon14.svg" alt="icon14" />
+                          <p>Project and Task Management</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon15.svg" alt="icon15" />
+                          <p>Prototyping and Wireframming</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon16.svg" alt="icon16" />
+                          <p>Customizable Icons and Ilustrations</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="brainstorming" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon17.svg" alt="icon17" />
+                          <p>Brainstrom and Ideation</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="online-whiteboard" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon18.svg" alt="icon18" />
+                          <p>Online Whiteboard</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon19.svg" alt="icon19" />
+                          <p>UX Design Maker</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                      <div class="product-submenu">
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon20.svg" alt="icon20" />
+                          <p>Automated Diagram Generation</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="version-control" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon21.svg" alt="icon21" />
+                          <p>Version Control</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon22.svg" alt="icon22" />
+                          <p>Product Development Software</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon23.svg" alt="icon23" />
+                          <p>Online Sticky Notes</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon24.svg" alt="icon24" />
+                          <p>Al Powered Diagrams</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/product/icon25.svg" alt="icon25" />
+                          <p>Scrum Tool</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+            <li>
+              <a class="navbar-menu header-menu-hover" onclick="toggleMenu1()">Solutions
+                <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.5 6L8.01828 8.51828C8.24537 8.74537 8.35891 8.85891 8.5 8.85891C8.64109 8.85891 8.75463 8.74537 8.98172 8.51828L11.5 6"
+                    stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </a>
+              <ul id="productMenu1" class="dropdown-menu">
+                <div class="product-menu">
+                  <div class="product-submenu platform-menu">
+                    <h6>Teams</h6>
+                    <a href="solutions-architect" class="submenu-text">
+                      <img src="../assets/image/Header/resources/icon1.svg" alt="icon1" />
+                      <p>Solutions Architect</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="project-management" class="submenu-text">
+                      <img src="../assets/image/Header/resources/icon2.svg" alt="icon2" />
+                      <p>Product Management</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="engineering-team" class="submenu-text">
+                      <img src="../assets/image/Header/resources/icon3.svg" alt="icon3" />
+                      <p>Engineering</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="ux-designer" class="submenu-text">
+                      <img src="../assets/image/Header/resources/icon4.svg" alt="icon4" />
+                      <p>UX Design</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="sales-team" class="submenu-text">
+                      <img src="../assets/image/Header/resources/icon5.svg" alt="icon5" />
+                      <p>Sales</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="" class="submenu-text">
+                      <img src="../assets/image/Header/resources/icon6.svg" alt="icon6" />
+                      <p>Project Management</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                    <a href="" class="submenu-text">
+                      <img src="../assets/image/Header/resources/icon7.svg" alt="icon7" />
+                      <p>IT</p>
+                      <div class="coming-soon">Coming Soon</div>
+                    </a>
+                  </div>
+                  <div class="capability-menu platform-menu">
+                    <h6>Cloudairy Al</h6>
+                    <div class="capability-box">
+                      <div class="product-submenu">
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon8.svg" alt="icon8" />
+                          <p>Al Flowchart</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon9.svg" alt="icon9" />
+                          <p>Al Mind Map</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon10.svg" alt="icon10" />
+                          <p>Al Sequence Diagram</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon11.svg" alt="icon11" />
+                          <p>Al Docs</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon12.svg" alt="icon12" />
+                          <p>Al Generate Image</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon13.svg" alt="icon13" />
+                          <p>Al Sticky Notes</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="capability-menu">
+                    <h6>Use Cases</h6>
+                    <div class="capability-box">
+                      <div class="product-submenu">
+                        <a href="network-diagram" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon14.svg" alt="icon14" />
+                          <p>Network Diagram Maker</p>
+                        </a>
+                        <a href="flowchart" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon15.svg" alt="icon15" />
+                          <p>Flowchart Maker</p>
+                        </a>
+                        <a href="circuit-diagram-maker" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon16.svg" alt="icon16" />
+                          <p>Circuit Diagram Maker</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="er-diagram" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon17.svg" alt="icon17" />
+                          <p>ER Diagrams </p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="venn-diagram" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon18.svg" alt="icon18" />
+                          <p>Venn Diagram Maker</p>
+                        </a>
+                        <a href="architecture-diagram" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon19.svg" alt="icon19" />
+                          <p>Architecture Diagram Maker</p>
+                        </a>
+                        <a href="vision-boards" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon20.svg" alt="icon20" />
+                          <p>Vision Board maker</p>
+                        </a>
+                      </div>
+                      <div class="product-submenu">
+                        <a href="design-canvas" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon21.svg" alt="icon21" />
+                          <p>Design Canvas</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="uml-diagram" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon22.svg" alt="icon22" />
+                          <p>UML Diagram Maker</p>
+                        </a>
+                        <a href="pI-planning-tool" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon23.svg" alt="icon23" />
+                          <p>PI Planning Tool</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="powerful-graph-maker" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon24.svg" alt="icon24" />
+                          <p>Graphs</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="wiring-diagram-maker" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon25.svg" alt="icon25" />
+                          <p>Wiring Diagram Maker</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="storyboard-creator" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon26.svg" alt="icon26" />
+                          <p>Tree Diagram </p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="kanban-tool" class="submenu-text">
+                          <img src="../assets/image/Header/resources/icon27.svg" alt="icon27" />
+                          <p>Kanban Board</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <a class="navbar-menu header-menu-hover" onclick="toggleMenu2()">Resources
+                <svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.5 6L8.01828 8.51828C8.24537 8.74537 8.35891 8.85891 8.5 8.85891C8.64109 8.85891 8.75463 8.74537 8.98172 8.51828L11.5 6"
+                    stroke="#18181B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </a>
+              <ul id="productMenu2" class="dropdown-menu resourcesMenu" style="padding: 20px 30px;">
+                <div class="product-menu">
+                  <div class="product-submenu">
+                    <a href="blog" class="submenu-text">
+                      <p>Blog</p>
+                    </a>
+                    <a href="template" class="submenu-text">
+                      <p>Templates</p>
+                    </a>
+                    <!-- <a href="about-us" class="submenu-text">
+                        <p>About Us</p>
+                      </a> -->
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li><a class="header-menu-hover" href="pricing">Pricing</a></li>
+            <li>
+              <a class="header-menu-hover" href="about">About Us</a>
+            </li>
+            <li><a class="header-menu-hover" href="sales">Contact Sales</a></li>
+          </ul>
+        </nav>
+        <div class="navbar-buttons">
+          <a href="https://chart.cloudairy.com/login" class="btn-outline">Login</a>
+          <a href="https://chart.cloudairy.com/login" class="btn-gradient">Sign up free</a>
+        </div>
+        <div class="navbar-drawer-menu">
+          <svg width="20" height="20" class="toggle-open" viewBox="0 0 24 24" fill="white"
+            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+            <path d="M20 18H4M20 12H4M20 6H4" stroke="white" stroke-width="2" stroke-linecap="round" fill="white">
+            </path>
+          </svg>
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
+            class="text-white toggle-close" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z">
+            </path>
+          </svg>
+        </div>
+
+        <div class="navbar-drawer-sidebar">
+          <ul>
+            <li style="border-bottom: 1px solid #d4d4d4">
+              <a class="active" href="./">Home</a>
+            </li>
+            <li style="border-bottom: 1px solid #d4d4d4">
+              <div class="navbar-accordion">
+                <div class="navbar-accordion-item">
+                  <button id="navbar-accordion-button-1" aria-expanded="false">
+                    <span class="navbar-accordion-title">Product</span>
+                    <span class="icon1" aria-hidden="true">
+                      <img
+                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/pricing/arrow-down-01.png"
+                        alt="arrow-down-01" />
+                    </span>
+                  </button>
+                  <div class="navbar-accordion-content">
+                    <div>
+                      <h6 style="font-size: 15px; padding-top: 10px">
+                        Platform
+                      </h6>
+                      <div>
+                        <a href="" class="submenu-text hover-comingsoon">
+
+                          <p>Unified Workspace</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="real-time-collaborations" class="submenu-text">
+
+                          <p>Real Time Collaboration</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Al Powered Assistance</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Secured Data Storage</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="template" class="submenu-text">
+
+                          <p>Templates</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <h6 style="font-size: 15px; padding-top: 10px">
+                        Capabilities
+                      </h6>
+                      <div>
+                        <a href="diagram-maker" class="submenu-text">
+
+                          <p>Diagramming Tool</p>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Data Visualization</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Retrospective Tool</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="mind-maps" class="submenu-text">
+
+                          <p>Mindmapping Tool</p>
+                        </a>
+                        <a href="agile" class="submenu-text">
+
+                          <p>Agile and Scrum Support</p>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Animate Connectors</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Smart Goal Setting</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="strategic-planning" class="submenu-text">
+
+                          <p>Strategic Planning Tool</p>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Project and Task Management</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Prototyping and Wireframming</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Customizable Icons and Ilustrations</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Brainstrom and Ideation</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="online-whiteboard" class="submenu-text">
+
+                          <p>Online Whiteboard</p>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>UX Design Maker</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Automated Diagram Generation</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="version-control" class="submenu-text">
+
+                          <p>Version Control</p>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Product Development Software</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Online Sticky Notes</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Al Powered Diagrams</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Scrum Tool</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li style="border-bottom: 1px solid #d4d4d4">
+              <div class="navbar-accordion">
+                <div class="navbar-accordion-item">
+                  <button id="navbar-accordion-button-1" aria-expanded="false">
+                    <span class="navbar-accordion-title">Solutions</span>
+                    <span class="icon1" aria-hidden="true">
+                      <img
+                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/pricing/arrow-down-01.png"
+                        alt="arrow-down-01" />
+                    </span>
+                  </button>
+                  <div class="navbar-accordion-content">
+                    <div>
+                      <h6 style="font-size: 15px; padding-top: 10px">
+                        Teams
+                      </h6>
+                      <div>
+                        <a href="" class="submenu-text">
+
+                          <p>Solutions Architect</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Product Management</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Engineering</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>UX Design</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Sales</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>Project Management</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+
+                          <p>IT</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <h6 style="font-size: 15px; padding-top: 10px">
+                        Cloudairy Al
+                      </h6>
+                      <div>
+                        <a href="" class="submenu-text">
+
+                          <p>Al Flowchart</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Al Mind Map</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Al Sequence Diagram</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Al Docs</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Al Generate Image</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Al Sticky Notes</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                    </div>
+                    <div>
+                      <h6 style="font-size: 15px; padding-top: 10px">
+                        Use Cases
+                      </h6>
+                      <div>
+                        <a href="network-diagram" class="submenu-text">
+                          <p>Network Diagram Maker</p>
+                        </a>
+                        <a href="flowchart" class="submenu-text">
+                          <p>Flowchart Maker</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Circuit Diagram Maker</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>ER Diagrams </p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="venn-diagram" class="submenu-text">
+                          <p>Venn Diagram Maker</p>
+                        </a>
+                        <a href="architecture-diagram" class="submenu-text">
+                          <p>Architecture Diagram Maker</p>
+                        </a>
+                        <a href="vision-boards" class="submenu-text">
+                          <p>Vision Board maker</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Design Canvas</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="uml-diagram" class="submenu-text">
+                          <p>UML Diagram Maker</p>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>PI Planning Tool</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Graphs</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Wiring Diagram Maker</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Tree Diagram </p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <p>Kanban Board</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li style="border-bottom: 1px solid #d4d4d4">
+              <div class="navbar-accordion">
+                <div class="navbar-accordion-item">
+                  <button id="navbar-accordion-button-1" aria-expanded="false">
+                    <span class="navbar-accordion-title">Resources</span>
+                    <span class="icon1" aria-hidden="true">
+                      <img
+                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/pricing/arrow-down-01.png"
+                        alt="arrow-down-01" />
+                    </span>
+                  </button>
+                  <div class="navbar-accordion-content">
+                    <div>
+                      <div>
+                        <a href="blog" class="submenu-text">
+
+                          <p>Blog</p>
+
+                        </a>
+                        <a href="template" class="submenu-text">
+
+                          <p>Template</p>
+
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li style="border-bottom: 1px solid #d4d4d4">
+              <a href="about">About Us</a>
+            </li>
+            <li style="border-bottom: 1px solid #d4d4d4">
+              <a href="pricing">Pricing</a>
+            </li>
+            <li style="border-bottom: 1px solid #d4d4d4">
+              <a href="sales">Contact Sales</a>
+            </li>
+          </ul>
+          <div style="
+                  flex-direction: column;
+                  gap: 10px;
+                  align-items: center;
+                  margin-top: 15px;
+                " class="navbar-sidetoggle-button">
+            <a rel="canonical" href="https://chart.cloudairy.com/signup" class="btn-outline">Sign up free</a>
+            <a rel="canonical" href="https://chart.cloudairy.com/login" class="btn-gradient">Log in</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End: header -->
+  <!-- section 1 -->
+  <section class="banner-section">
+    <div class="banner-section-content">
+      <h1>
+        Discover Insights, Tips, and Trends
+      </h1>
+      <p>Explore our blog to stay updated with expert advice, creative techniques, and best practices. Learn how to
+        maximize Cloudairy’s features and elevate your projects with actionable insights and industry trends.</p>
+      <div class="search-box">
+        <form class="template-list-input d-flex" style="align-items: center; display: flex; gap: 8px">
+          <div class="serach-icon" style="display: flex">
+            <svg width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.0005 18.0009C14.419 18.0009 18.0009 14.419 18.0009 10.0005C18.0009 5.58193 14.419 2 10.0005 2C5.58193 2 2 5.58193 2 10.0005C2 14.419 5.58193 18.0009 10.0005 18.0009Z"
+                stroke="#5E6C87" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M20.0006 19.9987L15.6504 15.6484" stroke="#5E6C87" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <input type="search" placeholder="Search" autocomplete="off" value="" id="blogSearchInput" />
+        </form>
+        <!-- <button class="searchButton">Search</button> -->
+      </div>
+    </div>
+    <!-- <div class="banner-section-arrow">
+      <div class="arrow-content">
+        <div class="orange-arrow">
+          <img src="../assets/image/designSection/pointer.png" />
+        </div>
+        <p>John</p>
+      </div>
+    </div>
+    <div class="banner-section-icon">
+      <img src="../assets/image/designSection/icon4.svg" alt="icon4" style="width: 100%; height: 100%" />
+    </div> -->
+  </section>
+
+  <!------blog-main-section-start------>
+  <section class="blog-main-section section2-padding">
+    <!-- blog-list-section-start- -->
+    <div class="blog-list-main-section">
+      <div class="blog-container-fluid">
+        <!-- <form class="blog-list-input d-flex" style="align-items: center">
+              <div class="serach-icon">
+                <svg width="18" height="18" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10.0005 18.0009C14.419 18.0009 18.0009 14.419 18.0009 10.0005C18.0009 5.58193 14.419 2 10.0005 2C5.58193 2 2 5.58193 2 10.0005C2 14.419 5.58193 18.0009 10.0005 18.0009Z"
+                    stroke="#5E6C87" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.0006 19.9987L15.6504 15.6484" stroke="#5E6C87" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <input id="blogSearchInput" type="search" placeholder="Search Blog..." autocomplete="off" />
+            </form> -->
+        <div style="position: relative;" class="blog-wrap">
+          <div class="left-arrow" id="left-arrow" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"
+              width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <path
+                d="M19.9375 23.875L12.7696 16.7071C12.4363 16.3738 12.2696 16.2071 12.2696 16C12.2696 15.7929 12.4363 15.6262 12.7696 15.2929L19.9375 8.125"
+                stroke="#070529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="blog-selector" id="blog-selector">
+            <div class="blog-option" id="blogcategory"></div>
+          </div>
+          <div class="right-arrow" id="right-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+              viewBox="0 0 32 32" fill="none">
+              <path
+                d="M12.0625 23.875L19.2304 16.7071C19.5637 16.3738 19.7304 16.2071 19.7304 16C19.7304 15.7929 19.5637 15.6262 19.2304 15.2929L12.0625 8.125"
+                stroke="#070529" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+        <div class="most-popular-blog" id="most-popular-blog">
+          <!-- <h3>Most Popular</h3> -->
+          <!-- <div id="first-blog">
+            <div class="first-blog">
+              <div class="blog-image" style="background: url(../assets/image/blog/first-blog.png);"></div>
+              <div class="blog-content">
+                <div class="blog-item-name">
+                  <span>Diagramming Tool</span>
+                </div>
+                <h4>AI Whiteboard Free AI Writing Generato</h4>
+                <p>Welcome to your roadmap for project management success. We’ve reviewed the market’s top tools to
+                  bring you this concise, powerful guide. Our curated Welcome to your roadmap for project management
+                  success. We’ve reviewed the market’s top tools to bring you this concise, powerful guide. Our curated
+                </p>
+                <a href="" class="learn-more-link">Read more<img src="../assets/image/blog/arrow-right-sharp.png"
+                    alt="arrow-up-right-01-sharp" class="learnmore-arrow "></a>
+              </div>
+            </div>
+          </div>
+          <div class="blogs-section">
+            <div class="blog-box">
+              <div class="blog-box-image">
+                <img src="../assets/image/blog/second-blog.png" alt="second-blog" style="width: 100%;" height="100%" />
+              </div>
+              <div class="blog-content-box">
+                <div class="blog-box-items">
+                  <div class="blog-content-type">ALL</div>
+                  <div class="blog-content-type">Diagramming</div>
+                  <div class="blog-content-type">Diagramming</div>
+                </div>
+                <h3>Wrike vs. Asana: which is best for your 2024 team?</h3>
+                <p>As two of the most popular project management software solutions on the market, Wrike and Asana are
+                  both good options. Wrike, a work</p>
+                <a href="" class="learn-more-link">Read more<img src="../assets/image/blog/arrow-right-sharp.png"
+                    alt="arrow-up-right-01-sharp" class="learnmore-arrow "></a>
+              </div>
+            </div>
+            <div class="blog-box">
+              <div class="blog-box-image">
+                <img src="../assets/image/blog/third-blog.png" alt="third-blog" style="width: 100%;" height="100%" />
+              </div>
+              <div class="blog-content-box">
+                <div class="blog-box-items">
+                  <div class="blog-content-type">ALL</div>
+                  <div class="blog-content-type">Diagramming</div>
+                  <div class="blog-content-type">Diagramming</div>
+                </div>
+                <h3>Wrike vs. Asana: which is best for your 2024 team?</h3>
+                <p>As two of the most popular project management software solutions on the market, Wrike and Asana are
+                  both good options. Wrike, a work</p>
+                <a href="" class="learn-more-link">Read more<img src="../assets/image/blog/arrow-right-sharp.png"
+                    alt="arrow-up-right-01-sharp" class="learnmore-arrow "></a>
+              </div>
+            </div>
+            <div class="blog-box blog-blue-box">
+              <img src="../assets/image/blog/white-logo.png" />
+              <h2>Improve the way you run your business</h2>
+              <button class="start-trial-button">
+                Start free Trial
+              </button>
+            </div>
+          </div> -->
+        </div>
+        <div class="blog-container" id="blog-container">
+          <div class="blog-list" id="blog-data">
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center" id="loaderblog">
+          <div class="setLoder" style="width: 100%; height: 100%" id="loader">
+            <div id="lottie-container-loader"></div>
+          </div>
+        </div>
+
+        <!-- pegination-section-start-->
+        <div id="pagination-controls"></div>
+        <!-- pegination-section-end-->
+      </div>
+    </div>
+    <!-- blog-list-section-end- -->
+  </section>
+  <!------blog-main-section-end------>
+
+  <!-- start: Design, Collaborate, Innovate with Cloudchart!-->
+  <section class="design-section">
+    <!-- <div class="section-set-bg">
+      <img src="../assets/image/Home/design-shadow.png" alt="design-shadow" style="width: 100%" />
+    </div>
+    <div class="section-set-border">
+      <img src="../assets/image/designSection/design-set-belowshadow.png" alt="design-set-belowshadow"
+        style="width: 100%" />
+    </div> -->
+    <div class="design-padding">
+      <div class="design-bg">
+        <div class="design-content">
+          <h2>
+            Design, Collaborate, Innovate with &nbsp;
+            <span class="cloudchat-text">Cloudairy
+              <div class="cloudchart-border">
+                <img src="../assets/image/designSection/border-box.png" alt="border-box"
+                  style="width: 100%; height: 100%" />
+              </div>
+            </span>
+          </h2>
+          <p>
+            Unlock the power of AI-driven collaboration and creativity. Start
+            your free trial and experience seamless design, effortless
+            teamwork, and smarter workflows—all in one platform.
+          </p>
+          <div class="icon" id="icon1">
+            <img src="../assets/image/designSection/icon1.svg" alt="icon1" style="width: 100%; height: 100%" />
+          </div>
+          <div id="icon2">
+            <img src="../assets/image/designSection/icon2.svg" alt="icon2" style="width: 100%; height: 100%" />
+          </div>
+          <div class="icon" id="icon3">
+            <img src="../assets/image/designSection/icon3.svg" alt="icon3" style="width: 100%; height: 100%" />
+          </div>
+          <div class="icon" id="icon4">
+            <img src="../assets/image/designSection/icon4.svg" alt="icon4" style="width: 100%; height: 100%" />
+          </div>
+          <div class="icon" id="icon5">
+            <img src="../assets/image/designSection/icon5.svg" alt="icon5" style="width: 100%; height: 100%" />
+          </div>
+          <div id="icon6">
+            <img src="../assets/image/designSection/icon6.svg" alt="icon6" style="width: 100%; height: 100%" />
+          </div>
+          <div class="icon" id="icon7">
+            <img src="../assets/image/designSection/icon7.svg" alt="icon7" style="width: 100%; height: 100%" />
+          </div>
+          <div class="icon" id="icon8">
+            <img src="../assets/image/designSection/icon8.svg" alt="icon8" style="width: 100%; height: 100%" />
+          </div>
+          <div id="icon9">
+            <img src="../assets/image/designSection/icon9.svg" alt="icon9" style="width: 100%; height: 100%" />
+          </div>
+          <div class="design-cta-btn">
+            <button class="design-get-started-btn" type="submit" id="homesignupbtn">
+              <span>Sign up free</span>
+            </button>
+          </div>
+
+          <!-- <form id="homesubscribe" class="design-content-email-input">
+              <div>
+                <div class="email-background">
+                  <input type="text" id="homeemail" name="homeemail" placeholder="Enter your email address"
+                    class="design-email-box" autocomplete="off" required />
+                </div>
+                <div id="homeemailError" style="
+                      color: red;
+                      font-size: 12px;
+                      text-align: left;
+                      padding-top: 8px;
+                    "></div>
+              </div>
+              <button class="design-get-started-btn" type="submit" id="homesignupbtn">
+                <span style="text-transform: capitalize">Sign up free</span>
+              </button>
+            </form> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer-------------------------------------- -->
+  <footer style="background-color: #18181b">
+    <div class="footer-section">
+      <div class="footer-container container-fluid section-padding">
+        <div class="footer-first-sec footer-menu">
+          <h5>Product</h5>
+          <ul class="footer-list">
+            <li class="footer-text">
+              <a rel="canonical" href="diagram-maker">Diagramming Tool</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Product Management</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Project Management</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="online-whiteboard">Online Whiteboard</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Scrum Tool</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-second-sec footer-menu">
+          <h5>Solutions</h5>
+          <ul class="footer-list">
+            <li class="footer-text">
+              <a rel="canonical" href="">Team Building and ice breakers</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Mood Board Maker</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Hybrid Work</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Technical Diagram Maker</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="agile">Agile Development</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Team Collaboration</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Team Brainstorming</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Engineering Diagram Maker</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="flowchart">Flowchart maker</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">ER Diagram Maker</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="uml-diagram">UML Diagram Maker</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Graphics Organizer Platform</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Client Collaboration software</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Project Collaboration Software</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Enterprise Collaboration Software</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Research and Analysis</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">PI Planning Board</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Design Canvas</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Alignment and Coordination</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="architecture-diagram">Cloud Architecture Diagram </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-third-sec footer-menu">
+          <h5>Use cases</h5>
+          <ul class="footer-list">
+            <li class="footer-text">
+              <a rel="canonical" href="">Technical Diagramming</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="mind-maps">Mind Mapping</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Brainstorming</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Meetings</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Workshops</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Customer Journey Mapping</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Organization Design</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Process Mapping</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Team Building</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Root Cause Analysis</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Value Stream Mapping</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Research and Analysis</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Project Collaboration</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-fourth-sec footer-menu">
+          <h5>Resources</h5>
+          <ul class="footer-list">
+            <li class="footer-text">
+              <a rel="canonical" href="template">Templates</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="blog">Blog</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="about">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-fifth-sec footer-menu">
+          <h5>Pricing and Plan</h5>
+          <ul class="footer-list">
+            <li class="footer-text">
+              <a rel="canonical" href="pricing">Pricing</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="pricing">Professional</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="pricing">Business</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="pricing">Startups</a>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Consultants</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+            <li class="footer-text">
+              <a rel="canonical" href="">Educations</a>
+              <div class="coming-soon">Coming Soon</div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-accordion">
+          <div class="footer-accordion-item">
+            <button id="footer-accordion-button-1" aria-expanded="false">
+              <span class="footer-accordion-title">Product</span>
+              <span class="icon1" aria-hidden="true">
+                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+              </span>
+            </button>
+            <div class="footer-accordion-content">
+              <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                <li class="footer-text">
+                  <a rel="canonical" href="diagram-maker">Diagramming Tool</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Product Management</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Project Management</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="online-whiteboard">Online Whiteboard</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Scrum Tool</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li class="footer-text">
+              </ul>
+            </div>
+          </div>
+          <div class="footer-accordion-item">
+            <button id="footer-accordion-button-2" aria-expanded="false">
+              <span class="footer-accordion-title">Solutions</span>
+              <span class="icon1" aria-hidden="true">
+                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+              </span>
+            </button>
+            <div class="footer-accordion-content">
+              <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                <li class="footer-text">
+                  <a rel="canonical" href="">Team Building and ice breakers</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="pricing">Mood Board Maker</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Hybrid Work</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Technical Diagram Maker</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="agile">Agile Development</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Team Collaboration</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Team Brainstorming</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Engineering Diagram Maker</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="flowchart">Flowchart maker</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">ER Diagram Maker</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="uml-diagram">UML Diagram Maker</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Graphics Organizer Platform</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Client Collaboration software</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Project Collaboration Software</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Enterprise Collaboration Software</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Research and Analysis</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">PI Planning Board</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Design Canvas</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Alignment and Coordination</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="architecture-diagram">Cloud Architecture Diagram </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-accordion-item">
+            <button id="footer-accordion-button-1" aria-expanded="false">
+              <span class="footer-accordion-title">Use cases</span>
+              <span class="icon1" aria-hidden="true">
+                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+              </span>
+            </button>
+            <div class="footer-accordion-content">
+              <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                <li class="footer-text">
+                  <a rel="canonical" href="">Technical Diagramming</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="mind-maps">Mind Mapping</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Brainstorming</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Meetings</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Workshops</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Customer Journey Mapping</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Organization Design</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Process Mapping</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Team Building</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Root Cause Analysis</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Value Stream Mapping</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Research and Analysis</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Project Collaboration</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-accordion-item">
+            <button id="footer-accordion-button-1" aria-expanded="false">
+              <span class="footer-accordion-title">Resources</span>
+              <span class="icon1" aria-hidden="true">
+                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+              </span>
+            </button>
+            <div class="footer-accordion-content">
+              <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                <li class="footer-text">
+                  <a rel="canonical" href="template">Templates</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="blog">Blog</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="about">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-accordion-item">
+            <button id="footer-accordion-button-1" aria-expanded="false">
+              <span class="footer-accordion-title">Pricing and Plan</span>
+              <span class="icon1" aria-hidden="true">
+                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+              </span>
+            </button>
+            <div class="footer-accordion-content">
+              <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                <li class="footer-text">
+                  <a rel="canonical" href="pricing">Pricing</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="pricing">Professional</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="pricing">Business</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="pricing">Startups</a>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Consultants</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+                <li class="footer-text">
+                  <a rel="canonical" href="">Educations</a>
+                  <div class="coming-soon">Coming Soon</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-six-sec">
+          <h5>Subscribe to The Newsletter</h5>
+          <p>
+            Stay in the loop! Sign up for our newsletter to receive the latest
+            updates, blog posts, and special offers directly to your inbox.
+          </p>
+          <form id="subscribeForm">
+            <input type="text" id="email" name="email" placeholder="Enter your email address" class="email-input"
+              autocomplete="off" required />
+            <div id="emailError" style="color:#FF592F; font-size: 12px"></div>
+            <button class="footer-subscribe-button d-flex justify-content-center" type="submit" id="submitBtn2">
+              <span>Subscribe</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--copy-right-section -->
+    <div class="copy-right-section">
+      <div class="container-fluid-header">
+        <div class="row justify-content-space-between align-item-center">
+          <div class="copyright-content">
+            <p class="">
+              © 2024&nbsp;<a rel="canonical" href="privacy-policy" style="cursor: pointer">Cloudairy&nbsp;</a>. All
+              rights reserved.
+            </p>
+          </div>
+          <div class="copyright-icons">
+            <ul class="d-flex">
+              <li>
+                <a rel="canonical" href="https://www.facebook.com/cloudairytech/"><img
+                    src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/facebook.svg"
+                    alt="facebook" /></a>
+              </li>
+              <li>
+                <a rel="canonical" href="https://twitter.com/cloudairyhq"><img
+                    src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/twitter.svg"
+                    alt="twitter" /></a>
+              </li>
+              <li>
+                <a rel="canonical" href="https://www.linkedin.com/company/cloudairy"><img
+                    src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/linkdin.svg"
+                    alt="linkdin" /></a>
+              </li>
+              <li>
+                <a rel="canonical" href="https://www.instagram.com/cloudairyhq"><img
+                    src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/instagram.svg"
+                    alt="instagram" /></a>
+              </li>
+              <li>
+                <a rel="canonical" href="https://www.youtube.com/@cloudairyhq"><img
+                    src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/youtube.svg"
+                    alt="youtube" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<!-- script all -->
+<script src="../assets/js/blog.js"></script>
+<script src="../assets/js/subscribe.js"></script>
+<script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var animationPaths = [
+      "https://s3.amazonaws.com/cloudairy-public-website-asset-storage/home/FixedLoader.json",
+    ];
+
+    var containers = [document.getElementById("lottie-container-loader")];
+
+    containers.forEach(function (container, index) {
+      lottie.loadAnimation({
+        container: container,
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: animationPaths[index],
+      });
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const emojiList = document.querySelectorAll(".emoji-list-section li img");
+
+    emojiList.forEach((img) => {
+      img.addEventListener("click", function () {
+        // Remove the 'selected' class from all emojis
+        emojiList.forEach((emoji) =>
+          emoji.parentElement.classList.remove("selected")
+        );
+
+        // Add the 'selected' class to the clicked emoji's parent <li>
+        this.parentElement.classList.add("selected");
+      });
+    });
+  });
+</script>
+<script>
+  $(function () {
+    //   console.log("dfgdgerre");
+    $(".icon").draggable({
+      start: function () {
+        $(this).css(
+          "cursor",
+          "url('../assets/image/designSection/Hold 1.svg') 2 2, pointer"
+        );
+        $(this).css("z-index", "1");
+        $(this).css("transform", "rotate(-10deg) scale(0.95)");
+      },
+      stop: function () {
+        $(this).css(
+          "cursor",
+          "url('../assets/image/designSection/Hold 1.svg') 2 2, pointer"
+        );
+        $(this).css("z-index", "1");
+        $(this).css("transform", "rotate(0deg) scale(1)");
+      },
+    });
+  });
+  $(function () {
+    $(".icon").click(function () {
+      var $this = $(this);
+      $this.css("transform", "rotate(-10deg) scale(0.95)");
+      setTimeout(function () {
+        $this.css("transform", "rotate(0deg) scale(1)");
+      }, 200);
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.submenu-text').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      // Always prevent redirection when "Coming Soon" is shown
+      const comingSoon = link.querySelector('.coming-soon');
+      const isVisible = getComputedStyle(comingSoon).opacity === "1";
+      if (comingSoon) {
+        event.preventDefault(); // Stop the redirect
+      }
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.footer-text').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const comingSoon = link.querySelector('.coming-soon');
+      const isVisible = getComputedStyle(comingSoon).opacity === "1";
+      if (comingSoon) {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const blogSelector = document.querySelector('.blog-selector');
+
+    let isDown = false; // Track whether the mouse is pressed
+    let startX; // Track the starting X position
+    let scrollLeft; // Track the initial scroll position
+
+    blogSelector.addEventListener('mousedown', (e) => {
+      isDown = true;
+      blogSelector.classList.add('active'); // Add an active class if needed
+      startX = e.pageX - blogSelector.offsetLeft;
+      scrollLeft = blogSelector.scrollLeft;
+    });
+
+    blogSelector.addEventListener('mouseleave', () => {
+      isDown = false;
+      blogSelector.classList.remove('active');
+    });
+
+    blogSelector.addEventListener('mouseup', () => {
+      isDown = false;
+      blogSelector.classList.remove('active');
+    });
+
+    blogSelector.addEventListener('mousemove', (e) => {
+      if (!isDown) return; // Stop the function if the mouse is not down
+      e.preventDefault();
+      const x = e.pageX - blogSelector.offsetLeft;
+      const walk = (x - startX) * 2; // Multiply for faster scrolling
+      blogSelector.scrollLeft = scrollLeft - walk;
+    });
+  });
+
+</script>
+<script>
+  document.querySelectorAll('.submenu-text').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      // Always prevent redirection when "Coming Soon" is shown
+      const comingSoon = link.querySelector('.coming-soon');
+      const isVisible = getComputedStyle(comingSoon).opacity === "1";
+      if (comingSoon) {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+<script>
+  document.querySelectorAll('.footer-text').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      const comingSoon = link.querySelector('.coming-soon');
+      const isVisible = getComputedStyle(comingSoon).opacity === "1";
+      if (comingSoon) {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
+<script>
+  const leftArrow = document.getElementById("left-arrow");
+  const rightArrow = document.getElementById("right-arrow");
+  const blogSelector = document.getElementById("blog-selector");
+
+  const updateArrowVisibility = () => {
+    const scrollLeft = blogSelector.scrollLeft;
+    const maxScrollLeft = blogSelector.scrollWidth - blogSelector.clientWidth;
+
+    if (scrollLeft > 0) {
+      leftArrow.style.display = "flex";
+    } else {
+      leftArrow.style.display = "none";
+    }
+
+    // Right arrow visibility
+    if (scrollLeft < maxScrollLeft) {
+      rightArrow.style.display = "flex";
+    } else {
+      rightArrow.style.display = "none";
+    }
+  };
+
+  blogSelector.addEventListener("scroll", updateArrowVisibility);
+
+  leftArrow.addEventListener("click", () => {
+    blogSelector.scrollBy({
+      left: -200,
+      behavior: "smooth",
+    });
+  });
+
+  rightArrow.addEventListener("click", () => {
+    blogSelector.scrollBy({
+      left: 200,
+      behavior: "smooth",
+    });
+  });
+
+  rightArrow.style.display = "flex";
+  leftArrow.style.display = "none";
+
+</script>
+
+</html>

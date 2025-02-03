@@ -1,0 +1,3929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Revolutionize Cloud Architecture Design and Collaboration | Cloudairy
+    </title>
+    <!-- Meta description -->
+    <meta name="description"
+        content="Empower your cloud teams with Cloudairy Cloudchart, the visual collaboration platform for cloud architecture design. Streamline workflows, boost productivity, and accelerate innovation." />
+    <meta property="og:title" content="Cloudairy | From Vision to Reality" />
+    <meta property="og:description"
+        content="At Cloudairy, visual thinking is the key to unlocking potential. Cloudairy Cloudchart is your collaborative whiteboard reimagined, empowering teams to brainstorm, design, and plan seamlessly" />
+    <!-- external css file-->
+    <link rel="stylesheet" href="../assets/main.css" />
+    <link rel="stylesheet" href="../assets/media.css" />
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <script src="../assets/feature-banner.js" defer></script>
+    <script src="../assets/more-mindmap-content.js" defer></script>
+    <script src="../assets/feature-benefit.js" defer></script>
+    <script src="../assets/feature-prefect-mindmapping.js" defer></script>
+    <script src="../assets/feature-mindmap-template.js" defer></script>
+    <script src="../assets/feature-visualize-4box.js" defer></script>
+    <script src="../assets/feature-visualize-4box-fullbg.js" defer></script>
+    <style>
+        h1 {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 54px;
+            background: linear-gradient(104.35deg, #5A05FE -0.55%, #C86DFF 94.95%);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 63px;
+            color: #18181b;
+        }
+
+        h3 {
+            font-size: 44px;
+            font-weight: 600;
+            line-height: 60px;
+            color: #18181B;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 35.28px;
+            color: #18181b;
+        }
+
+        .text_base {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #070529;
+        }
+
+        .text_lg {
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 27px;
+        }
+
+        .text_xl {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25.2px;
+            color: #171617;
+        }
+
+        .text_sm {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            color:#18181B;
+        }
+
+        .text-2xl {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 36px;
+            color: #18181B;
+        }
+
+        .main-bg-sction {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 830px;
+        }
+
+        .btn-gradient-signUp {
+            border-radius: 220px;
+            outline: none;
+            border: 0px;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            cursor: pointer;
+            width: 154px;
+            height: 46px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6762FE;
+        }
+
+        /* section 2 */
+        /* Ai section */
+        .AI-grid {
+            background-color: #10031d;
+            border-radius: 32px;
+            padding: 70px 88px;
+        }
+
+        .Ai-gredient-text {
+            text-align: center;
+            background: linear-gradient(105.61deg,
+                    #5a05fe 7.42%,
+                    #c86dff 24.11%,
+                    #ffffff 34.02%);
+
+            background-size: 200% auto;
+
+            color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 0.4s linear forwards;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .Ai-section-subtitle {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            color:#18181B;
+            padding: 20px 0 50px;
+            max-width: 1001px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .Ai-data-box {
+            border: 1px solid #faf1fe1a;
+            padding: 50px 62px;
+            border-radius: 21px;
+            background: linear-gradient(180deg,
+                    rgba(20, 17, 23, 0.5) 0%,
+                    rgba(16, 3, 29, 0.5) 100%);
+        }
+
+        .Ai-mind-map-section p {
+            text-align: left;
+        }
+
+        .cycle-tab-container a {
+            color:#18181B;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 27px;
+            text-align: center;
+        }
+
+        .cycle-tab-container ul li {
+            list-style: none;
+        }
+
+        .cycle-tab-container .tab-content {
+            max-width: none;
+        }
+
+        .cycle-tab-container .nav-tabs {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 7px;
+        }
+
+        .tab-pane {
+            text-align: center;
+            margin: 60px auto 0;
+            width: 1140px;
+            max-width: 100%;
+            display: none;
+        }
+
+        .fade {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade.active {
+            opacity: 1;
+            display: grid;
+        }
+
+        .Ai-mind-map-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+        }
+
+        .Ai-mind-map-section h2 {
+            color: #fff;
+            text-align: left;
+        }
+
+        .Ai-mind-map-section h3 {
+            color:#18181B;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 30px;
+            padding-top: 20px;
+        }
+
+        .Ai-mind-map-section .learn-more-link p {
+            color: #fff !important;
+        }
+
+        .Ai-mind-map-section-img {
+            width: 530px;
+            height: 381px;
+            border-radius: 20px;
+        }
+
+        .cycle-tab-item {
+            text-align: center;
+            border-bottom: solid 5px #faf1fe1a;
+            position: relative;
+        }
+
+        .cycle-tab-item:after {
+            display: block;
+            content: "";
+            padding-bottom: 20px;
+            border-bottom: solid 5px #5a05fe;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-out;
+            color: #fff;
+            margin-bottom: -5px;
+        }
+
+        .cycle-tab-item.active:after {
+            transform: scaleX(1);
+            transform-origin: 0% 50%;
+            transition: transform 0.3s ease-in;
+        }
+
+        .nav-link:focus,
+        .nav-link:hover,
+        .cycle-tab-item.active a {
+            border-color: transparent !important;
+            color: white;
+        }
+
+        .cycle-tab-item.active svg path {
+            fill: #fff !important;
+            stroke: #fff !important;
+        }
+
+        .key-feature-section {
+            display: flex;
+            gap: 58px;
+        }
+
+        .mobile-key-feature-hide {
+            display: none;
+        }
+
+        .key-content-section {
+            max-width: 580px;
+            padding-right: 59px;
+            border-right: 1px solid #d9d9d9;
+        }
+
+        .key-content-section h2 {
+            font-size: 40px;
+            line-height: 50px;
+            padding-bottom: 16px;
+        }
+
+        .key-content-subtitle {
+            padding-bottom: 10px;
+        }
+
+        .feature-section {
+            max-width: 436px;
+            padding: 30px 30px 30px 45px;
+            background-color: #f0eefb;
+            border-radius: 30px;
+        }
+
+        .feature-options {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        .progress-bar {
+            position: absolute;
+            width: 9px;
+            height: 100%;
+            border-radius: 666px;
+            background: white;
+            left: -20px;
+            top: 0;
+        }
+
+        .active-indicator {
+            position: absolute;
+            width: 100%;
+            height: 78px;
+            border-radius: 666px;
+            background: linear-gradient(294.72deg, #7630ff 6.99%, #3eddfa 83.92%);
+            top: 0;
+            left: 0;
+            transition: left 0.3s ease;
+        }
+
+        .feature-section p {
+            color: #171617;
+            padding: 25px 20px;
+            cursor: pointer;
+        }
+
+        .feature-section p.active {
+            background-color: #fff;
+            border: 2px solid #7630ff;
+            border-radius: 14px;
+            font-weight: 500;
+            color: #171617 !important;
+        }
+
+        .key-image-section p {
+            padding: 20px 0 17px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 110px;
+        }
+
+        .key-image-section img {
+            height: 600px;
+            min-height: 600px;
+            max-height: 600px;
+            border-radius: 17px;
+        }
+
+        /* section 3 */
+        .mobile-mind-template {
+            display: none !important;
+        }
+
+        .mind-mapping-section {
+            border-radius: 32px;
+            padding: 80px 106px 80px 150px;
+        }
+
+        .mind-mapping-section h3 {
+
+            text-align: center;
+            background: linear-gradient(105.61deg,
+                    #5a05fe 7.42%,
+                    #c86dff 24.11%,
+                    #ffffff 40.02%);
+            background-size: 200% auto;
+            color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .more-mindmap-content {
+            padding: 20px 0 50px;
+            color: #070529;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .more-mindmap-section {
+            display: flex;
+            gap: 100px;
+        }
+
+        .more-mindmap-section img {
+            width: 512pxpx;
+            height: 322px;
+            border-radius: 20px;
+        }
+
+        .more-mindmap-section-right {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .more-mindmap-section-right h4 {
+            padding-bottom: 20px;
+            color: #fff;
+        }
+
+        /* section 4 */
+        .benefit-section {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 24px;
+        }
+
+        .benefit-box {
+            padding: 30px 22px;
+            /* border: 1px solid #e6e6e6; */
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .benefit-box:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-box h5 {
+            font-weight: 500;
+            margin: 0 auto;
+            color: #171617;
+            padding: 24px 0;
+        }
+
+        .benefit-icon {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .benefit-box:hover .benefit-icon {
+            transform: rotateY(180deg);
+        }
+
+        .benefit-icon img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.6s ease;
+        }
+
+        .benefit-box:hover .benefit-icon img {
+            transform: rotateY(180deg);/
+        }
+
+        /* section 5 */
+        .use-case-section {
+            display: flex;
+            gap: 100px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .use-case-section img {
+            width: 640px;
+            height: 569px;
+        }
+
+        .usecase-content {
+            display: flex;
+            gap: 33px;
+            padding: 14px 0 10px;
+            border-bottom: 1px solid #e9e6f9;
+        }
+
+        .usecase-content:first-child {
+            padding-top: 0;
+        }
+
+        .usecase-content:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .usecase-heading {
+            padding-bottom: 8px;
+        }
+
+        .usecase-heading-data {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .usecase-no {
+            color: #f0eefb;
+            font-size: 70px;
+            line-height: 88px;
+            font-weight: 700;
+            padding: 0;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #e5e2f9;
+        }
+
+        /* section 6 */
+        .category-section {
+            background-image: url("../assets/image/Home/category-shadow.png");
+        }
+
+        .category-section .sub-title {
+            max-width: 997px;
+            margin: 0 auto;
+            color:#18181B;
+        }
+
+        .mobile-mind-template {
+            display: none !important;
+        }
+
+        .mindmap-template {
+            display: flex;
+            gap: 34px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mindmap-swiper-slide {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 12px 12px 33px;
+            cursor: pointer;
+            width: 200px;
+            height: 267px;
+        }
+
+        .swiper-silde-box {
+            background-color: #e9eafd;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .mindmap-swiper-slide .swiper-box-title1 {
+            padding-top: 16px;
+            font-size: 12px;
+            line-height: 17px;
+            font-weight: 400;
+            text-align: center;
+            color:#18181B;
+        }
+
+        .mindmap-swiper-slide .swiper-box-title2 {
+            font-size: 20px;
+            padding-top: 24px;
+            line-height: 18px;
+            font-weight: 400;
+            text-align: center;
+            color:#18181B;
+        }
+
+        .mindmap-swiper-slide .swiper-box-title3 {
+            font-size: 20px;
+            line-height: 30px;
+            padding-top: 34px;
+            font-weight: 500;
+            text-align: center;
+            color: #171617;
+        }
+
+        .active-slide {
+            width: 350px;
+            min-width: 350px;
+            height: 357px;
+            min-height: 357px;
+            box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.04);
+        }
+
+        .active-slide img {
+            width: 330px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .active-prev-next-slide {
+            width: 250px;
+            min-width: 250px;
+            max-width: 250px;
+            height: 292px;
+            min-height: 292px;
+            max-height: 292px;
+            padding: 10px;
+        }
+
+        .active-prev-next-slide img {
+            width: 230px;
+            height: 180px;
+            max-height: 180px;
+            min-height: 180px;
+        }
+
+        .swiper-silde-box-last img {
+            width: 138px;
+            height: 110px;
+            max-height: 110px;
+            min-height: 110px;
+        }
+
+        .swiper-silde-box-last {
+            padding: 6px;
+            width: 150px;
+            min-width: 150px;
+            max-width: 150px;
+            height: 184px;
+            min-height: 184px;
+            max-height: 184px;
+        }
+
+        /* section 7 */
+        .testimonial-section {
+            position: relative;
+            padding: 0;
+            background-image: url('../assets/image/mindmap/ready to tranform.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 500px;
+            border-radius: 16px !important;
+        }
+
+        .testimotinal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 670px;
+        }
+
+        .testimotinal-subtext {
+            padding: 40px 0 50px;
+            color: #fff;
+            line-height: 29px;
+        }
+
+        .grdient-text {
+            font-size: 42px;
+            line-height: 63px;
+            font-weight: 600;
+            background: linear-gradient(105.61deg, #FFFFFF 7.42%, #C86DFF 52.35%, #FFFFFF 82.02%);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            max-width: 542px;
+            margin: 0 auto;
+        }
+
+        .testimonal-icon {
+            position: absolute;
+            animation: bounce 2s infinite;
+        }
+
+        .icon1 {
+            top: 15%;
+            right: 15%;
+            width: 83px;
+            height: 83px;
+        }
+
+        .icon2 {
+            bottom: 15%;
+            left: 15%;
+            width: 83px;
+            height: 83px;
+        }
+
+        .icon3 {
+            top: 8%;
+            left: 10%;
+            width: 83px;
+            height: 83px;
+        }
+
+        .icon4 {
+            bottom: 15%;
+            right: 25%;
+            width: 83px;
+            height: 83px;
+        }
+
+        /* section 8 */
+        .accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding-top: 50px;
+            max-width: 1350px;
+            margin: 0 auto;
+        }
+
+        .accordion-bg {
+            background-color: #F7F6FD;
+            border-radius: 14px;
+        }
+
+        .accordion .accordion-item {
+            background-color: #F7F6FD;
+            border-radius: 14px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .accordion button {
+            display: block;
+            text-align: left;
+            width: 100%;
+            color: #18181B;
+            font-size: 1.15rem;
+            font-weight: 400;
+            border: none;
+            background: none;
+            outline: none;
+
+        }
+
+        .accordion button .accordion-title {
+            padding: 0;
+            font-weight: 600;
+            color: #1b1139;
+            cursor: pointer;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .accordion button .icon-faqs {
+            display: inline-block;
+            position: absolute;
+            top: 40px;
+            right: 58px;
+            cursor: pointer;
+        }
+
+        .accordion button .icon-faqs::before {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 9px;
+            left: 3px;
+            width: 20px;
+            height: 3px;
+            background: #1b1139;
+            border-radius: 16px;
+        }
+
+        .accordion button .icon-faqs::after {
+            display: block;
+            position: absolute;
+            content: "";
+            top: 0px;
+            left: 12px;
+            width: 3px;
+            height: 20px;
+            background: #1b1139;
+            border-radius: 16px;
+        }
+
+        .accordion button[aria-expanded="true"] .icon-faqs::before,
+        .accordion button[aria-expanded="true"] .icon-faqs::after {
+            background: #52bd95 !important;
+        }
+
+        .accordion button[aria-expanded="true"] .icon-faqs::after {
+            width: 0;
+        }
+
+        .accordion button[aria-expanded="true"] .accordion-item {
+            /* background-color: linear-gradient(123.88deg, #EE28FF -7.22%, #8962FF 47.49%, #1F79FF 96.99%);
+        padding: 2px;
+        border-radius: 14px; */
+            box-shadow: 0px 4px 14px 0px #FF4DED33;
+            box-shadow: 0px -4px 14px 0px #7630FF4D;
+        }
+
+        .accordion button[aria-expanded="false"] .accordion-bg {
+            background-color: #F7F6FD;
+            border-radius: 14px;
+        }
+
+        .accordion button[aria-expanded="true"]+.accordion-content {
+            opacity: 1;
+            max-height: 9em;
+            transition: all 1s linear;
+            will-change: opacity, max-height;
+        }
+
+        .accordion .accordion-content {
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 1s linear, max-height 0.5s linear;
+            will-change: opacity, max-height;
+        }
+
+        .accordion .accordion-content p {
+            font-size: 1rem;
+            font-weight: 300;
+            margin: 1em 0 0;
+            max-width: 850px;
+            color: #070529;
+        }
+
+        /* section 9 */
+        .blog-section-box {
+            padding: 0 16px;
+        }
+
+        .blog-section-box h5 {
+            padding: 20px 0 50px;
+        }
+
+        .blog-section .sub-title {
+            max-width: 766px;
+            margin: 0 auto;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            gap: 16px;
+        }
+
+        .swiper-slide {
+            margin-bottom: 20px;
+        }
+
+        .blog-section .swiper-pagination {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        /* .swiper-pagination-bullet {
+        background-color: #fff;
+      } */
+
+        @media (max-width: 1559px) {
+            h1 {
+                font-size: 40px;
+                line-height: 50px;
+            }
+
+            h4 {
+                font-size: 26px;
+            }
+
+            /* section 1 */
+            .home-banner {
+                padding: 75px 0;
+            }
+
+            .content-section p {
+                padding: 16px 0 30px;
+            }
+
+            .home-banner-section {
+                gap: 60px;
+            }
+
+            .banner-video {
+                height: 403px;
+                min-height: 403px;
+                max-height: 403px;
+            }
+
+            .main-bg-sction {
+                height: 760px;
+            }
+
+            .key-feature-section {
+                gap: 30px;
+            }
+
+            .key-content-section {
+                padding-right: 30px;
+            }
+
+            .key-content-section h2 {
+                font-size: 30px;
+                line-height: 38px;
+                padding-bottom: 7px;
+            }
+
+            .mind-mapping-section {
+                padding: 80px 50px;
+            }
+
+            .more-mindmap-section {
+                gap: 50px;
+            }
+
+            .feature-section p {
+                padding: 22px 20px;
+            }
+
+            .progress-bar .text_base {
+                font-size: 14px;
+            }
+
+        }
+
+        @media (max-width: 1440px) {
+            h1 {
+                font-size: 40px;
+                line-height:
+                    50px;
+            }
+
+            .more-mindmap-section {
+                gap: 70px;
+            }
+
+            .home-banner {
+                padding: 66px 0;
+            }
+
+            .main-bg-sction {
+                height: 741px;
+            }
+
+            .mindmap-swiper-slide {
+                height: 224px;
+            }
+
+            .key-content-subtitle {
+                padding-bottom: 14px;
+            }
+        }
+
+        @media (max-width: 1319px) {
+            h1 {
+                font-size: 42px;
+                line-height: 52px;
+            }
+
+            h2 {
+                font-size: 36px;
+            }
+
+            .text_base {
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+            h3 {
+                font-size: 36px;
+            }
+
+            .text_lg {
+                font-size: 16px;
+                line-height: 27px;
+            }
+
+            .text_sm {
+                font-size: 13px;
+                line-height: 21px;
+            }
+
+            .main-bg-sction {
+                height: 630px;
+            }
+
+            /* section 1 */
+            .home-banner {
+                padding: 70px 0;
+            }
+
+            .content-section p {
+                padding: 10px 0 20px;
+            }
+
+            .home-banner-section {
+                gap: 30px;
+            }
+
+            .banner-video {
+                height: 300px;
+                min-height: 300px;
+                max-height: 300px;
+            }
+
+            .btn-gradient-signUp {
+                font-size: 14px;
+                width: 146px;
+                height: 45px;
+            }
+
+            .content-section {
+                max-width: 479px;
+            }
+
+            .key-feature-section {
+                display: none;
+            }
+
+            .Key-feature-hide {
+                display: none;
+            }
+
+            .mobile-key-feature-hide {
+                display: block;
+            }
+
+            .mobile-key-feature-section {
+
+                padding: 40px 16px;
+                background-color: #18181B;
+                border-radius: 16px;
+            }
+
+            .image-faqs-box {
+                /* background-color: #F9F8FB; */
+                border-radius: 20px;
+                /* padding: 30px; */
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .container {
+                /* background-color: white; */
+                border: 1px solid #454448;
+                color: black;
+                border-radius: 10px;
+                /* margin: 20px 0; */
+            }
+
+            .question {
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding: 20px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                color: #fff !important;
+                -webkit-tap-highlight-color: transparent !important;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            /* .question .active{
+          color: #18181B !important;
+        } */
+
+            .question.active img {
+                rotate: 180deg;
+            }
+
+            .answercont {
+                max-height: 0;
+                overflow: hidden;
+                transition: 0.3s;
+            }
+
+            .answercont img {
+                padding: 0 205px 20px;
+            }
+
+            .answer {
+                padding: 0 20px 20px;
+                line-height: 1.5rem;
+                padding-bottom: 20px;
+                color:#18181B;
+            }
+
+            .mobile-key-feature-section h2 {
+                text-align: center;
+                font-size: 38px;
+                line-height: 56px;
+            }
+
+            .key-content-subtitle {
+                max-width: 700px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            /* section 3 */
+            .mind-mapping-section {
+                margin-top: 60px;
+            }
+
+            .dekstop-mind-template {
+                display: none;
+            }
+
+            .mobile-mind-template {
+                display: flex !important;
+                overflow-x: auto;
+            }
+
+            .mindmap-template {
+                justify-content: left;
+            }
+
+            .mobile-mind-template .swiper-silde-box img {
+                max-width: 100px;
+                min-width: 100px;
+                width: 100px;
+                height: 100px;
+                padding: 10px;
+            }
+
+            .active-prev-next-slide {
+                min-height: 232px;
+                max-height: 232px;
+            }
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+
+            .more-mindmap-section {
+                gap: 40px;
+            }
+
+            .more-mindmap-content {
+                padding: 14px 0 35px;
+                max-width: 715px;
+            }
+
+            .more-mindmap-section img {
+                width: 541px;
+                height: 359px;
+                border-radius: 8px;
+            }
+
+            .more-mindmap-section-right h5 {
+                padding-bottom: 14px;
+            }
+
+            /* section 4 */
+            .benefit-section {
+                gap: 16px;
+            }
+
+            .benefit-box {
+                padding: 16px 14px;
+            }
+
+            .benefit-box h5 {
+                padding: 10px 0;
+            }
+
+            .benefit-icon img {
+                width: 40px;
+                height: 40px;
+            }
+
+            .benefit-icon {
+                height: 70px;
+                width: 70px;
+            }
+
+            .use-case-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 60px;
+            }
+
+            .use-case-section img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .grdient-text {
+                font-size: 42px;
+            }
+
+            .testimotinal-subtext {
+                padding: 33px 0 37px;
+            }
+
+            .testimonial-section {
+                min-height: 420px;
+            }
+        }
+
+        @media (max-width: 1240px) {
+            .main-bg-sction {
+                height: 630px;
+            }
+
+            .home-banner-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .accordion {
+                gap: 14px;
+                padding-top: 30px;
+            }
+
+            .accordion .accordion-item {
+                padding: 20px 60px 20px 20px;
+
+            }
+
+            .accordion button .icon-faqs {
+                right: 12px;
+            }
+
+            .accordion button .icon-faqs::after {
+                top: -18px;
+                left: -21px;
+                width: 3px;
+                height: 19px;
+            }
+
+            .accordion button .icon-faqs::before {
+                top: -10px;
+                left: -29px;
+                width: 19px;
+                height: 3px;
+            }
+
+            .accordion button {
+                font-size: 16px;
+                -webkit-tap-highlight-color: none !important;
+            }
+
+            .accordion .accordion-content p {
+                font-size: 14px;
+            }
+
+            .mobile-key-feature-section h2 {
+                text-align: center;
+                font-size: 32px;
+                line-height: 45px;
+                padding-bottom: 10px;
+            }
+        }
+
+        @media (max-width: 1139px) {
+            h1 {
+                font-size: 34px;
+                line-height: 42px;
+            }
+
+            h3 {
+                font-size: 32px;
+                line-height: 35px;
+            }
+
+            .text_lg {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            /* section 1 */
+            .home-banner {
+                padding: 60px 0;
+            }
+
+            .btn-gradient-signUp {
+                font-size: 13px;
+                width: 133px;
+                height: 38px;
+            }
+
+            .content-section p {
+                padding: 10px 0 26px;
+            }
+
+            .banner-video {
+                height: 250px;
+                min-height: 250px;
+                max-height: 250px;
+            }
+
+            .main-bg-sction {
+                height: 575px;
+            }
+
+            /* section 3 */
+            .more-mindmap-section {
+                gap: 30px;
+            }
+
+            .more-mindmap-content {
+                padding: 10px 0 20px;
+                max-width: 600px;
+            }
+
+            .more-mindmap-section img {
+                width: 450px;
+                height: 301px;
+                border-radius: 8px;
+            }
+
+            .more-mindmap-section-right h5 {
+                padding-bottom: 13px;
+                line-height: 24px;
+            }
+
+            .benefit-section {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 16px;
+            }
+
+            .usecase-no {
+                font-size: 50px;
+                line-height: 74px;
+            }
+
+            .grdient-text {
+                font-size: 36px;
+                line-height: 50px;
+            }
+
+            .testimonial-section {
+                min-height: 344px;
+            }
+
+            .text_xl {
+                line-height: 27px;
+            }
+
+            .testimonal-icon img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .icon1,
+            .icon4,
+            .icon2,
+            .icon3 {
+                width: 63px;
+                height: 63px;
+            }
+
+            .testimotinal-subtext {
+                padding: 23px 0 20px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .active-prev-next-slide {
+                width: 310px;
+                min-width: 211px;
+                max-width: 261px;
+                height: 203px;
+                min-height: 225px;
+                max-height: 309px;
+                padding: 7px;
+            }
+
+            .mobile-key-feature-section h2 {
+                padding-bottom: 8px;
+            }
+        }
+
+        @media (max-width: 959px) {
+            h1 {
+                font-size: 34px;
+                line-height: 44px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            .more-mindmap-section-right h4 {
+                padding-bottom: 12px;
+            }
+
+            .text_base {
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+            .text_lg {
+                font-size: 13px;
+                line-height: 19px;
+            }
+
+            .text-2xl {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 26px;
+                line-height: 28px;
+            }
+
+            .text_xl {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .text_sm {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            /* section 1 */
+            .home-banner {
+                padding: 30px 0;
+            }
+
+            .home-banner-section {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .content-section {
+                align-items: center;
+                text-align: center;
+                margin: 0 auto;
+            }
+
+            .content-section p {
+                padding: 8px 0 16px;
+                max-width: none;
+            }
+
+            .home-banner-section {
+                gap: 30px;
+                flex-direction: column;
+            }
+
+            .banner-video {
+                height: 100%;
+                min-height: 100%;
+                max-height: 100%;
+            }
+
+            .btn-gradient-signUp {
+                font-size: 12px;
+                width: 129px;
+                height: 40px;
+            }
+
+            /* contetn 2 */
+            .mind-mapping-section {
+                margin-top: 35px;
+                padding: 50px 30px;
+            }
+
+            .more-mindmap-section {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .more-mindmap-section img {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+
+            .more-mindmap-section-right h5 {
+                padding-bottom: 13px;
+                line-height: 14px;
+            }
+
+            .benefit-section {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .use-case-section {
+                gap: 45px;
+                margin-top: -40px;
+
+            }
+
+            .usecase-content {
+                gap: 24px;
+                padding: 9px 0 3px;
+            }
+
+            .usecase-no {
+                font-size: 32px;
+                line-height: 59px;
+            }
+
+            .usecase-heading {
+                padding-bottom: 3px;
+            }
+
+            .grdient-text {
+                font-size: 27px;
+                line-height: 34px;
+            }
+
+            .testimotinal-subtext {
+                padding: 14px 0 15px;
+            }
+
+            .testimonial-section {
+                min-height: 275px;
+            }
+
+            .icon1,
+            .icon2,
+            .icon3 {
+                width: 43px;
+            }
+
+            .icon4 {
+                width: 60px;
+                height: 30px;
+                bottom: 11%;
+            }
+
+            .mobile-key-feature-section {
+                padding: 30px 16px;
+            }
+
+            .mobile-key-feature-section h2 {
+                text-align: center;
+                font-size: 26px;
+                line-height: 35px;
+                padding-bottom: 4px;
+            }
+
+            .key-content-subtitle {
+                max-width: 600px;
+            }
+
+            .mobile-key-feature-section {
+                padding: 16px 16px;
+            }
+
+            .image-faqs-box {
+                /* padding: 20px; */
+                gap: 16px;
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 34px;
+                line-height: 42px;
+            }
+
+            .use-case-section {
+                display: block;
+            }
+
+            .banner-video-bg {
+                padding: 12px;
+            }
+
+            .blog-section {
+                padding: 0 16px;
+            }
+
+            .mobile-key-feature-section h2 {
+                text-align: center;
+                font-size: 24px;
+                line-height: 30px;
+                padding-bottom: 4px;
+            }
+
+            .key-content-subtitle {
+                max-width: 500px;
+            }
+
+            .question {
+                font-size: 16px;
+            }
+
+            .answercont img {
+                padding: 0 20px 20px;
+            }
+        }
+
+        @media (max-width: 719px) {
+            h1 {
+                font-size: 32px;
+                line-height: 40px;
+            }
+
+            h3 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            .more-mindmap-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .icon1,
+            .icon4,
+            .icon2,
+            .icon3 {
+                display: none;
+            }
+
+            .testimonial-section {
+                min-height: 238px;
+            }
+
+            .grdient-text {
+                font-size: 25px;
+                line-height: 30px;
+            }
+
+            .testimotinal-content {
+                top: 10%;
+                left: 0;
+                transform: none;
+                padding: 16px;
+            }
+
+            .more-mindmap-section-right h4 {
+                padding-bottom: 8px;
+                color: #fff;
+            }
+
+            h4 {
+                font-size: 20px;
+            }
+
+            .mind-mapping-section {
+                margin-top: 10px;
+                border-radius: 12px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            .text_base {
+                font-size: 13px;
+                line-height: 22px;
+            }
+
+            .text-2xl {
+                font-size: 20px;
+            }
+
+            .text_lg {
+                font-size: 12px;
+                line-height: 19px;
+            }
+
+            .btn-gradient-signUp {
+                font-size: 12px;
+                width: 117px;
+                height: 36px;
+            }
+
+            .main-bg-sction {
+                height: 747px;
+            }
+
+            .home-banner-section {
+                gap: 20px;
+            }
+
+            .home-banner {
+                padding: 24px 0;
+            }
+
+            .content-section p {
+                padding: 5px 0 11px;
+            }
+
+            .more-mindmap-section-right h5 {
+                padding-bottom: 8px;
+                line-height: 18px;
+            }
+
+            .usecase-content {
+                gap: 18px;
+                padding: 13px 0 6px;
+            }
+
+            .mobile-key-feature-section h2 {
+                font-size: 19px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+
+            .question {
+                padding: 14px;
+            }
+
+            .image-faqs-box {
+                /* padding: 16px; */
+            }
+        }
+
+        @media (max-width: 425px) {
+            h1 {
+                font-size: 26px;
+                line-height: 34px;
+            }
+
+            h3 {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .text_xl {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .text_sm {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            .main-bg-sction {
+                height: 725px;
+            }
+
+            .home-banner {
+                padding: 25px 0;
+            }
+
+            .banner-video {
+                /* box-shadow: 3px 3px 0px 0px #000000; */
+                border-radius: 8px;
+            }
+
+            .home-banner-section {
+                padding: 0 16px;
+            }
+
+            .benefit-section {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 16px;
+            }
+
+            .benefit-box h5 {
+                max-width: none;
+                padding: 8px 0;
+            }
+
+            .benefit-icon img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .benefit-icon {
+                height: 50px;
+                width: 50px;
+            }
+
+            .grdient-text {
+                font-size: 23px;
+                line-height: 29px;
+            }
+
+            .testimotinal-content {
+                top: -5%;
+            }
+
+            .testimonial-section {
+                min-height: 214px;
+                border-radius: 8px;
+            }
+
+            .accordion {
+                gap: 10px;
+                padding-top: 20px;
+            }
+
+            .accordion .accordion-item {
+                padding: 16px 40px 16px 16px;
+            }
+
+            .accordion button .icon-faqs::after {
+                top: -16px;
+                left: -17px;
+                width: 2px;
+                height: 14px;
+            }
+
+            .accordion button .icon-faqs::before {
+                top: -10px;
+                left: -23px;
+                width: 13px;
+                height: 2px;
+            }
+
+            .accordion button {
+                font-size: 14px;
+                line-height: 20px;
+            }
+
+            .accordion .accordion-content p {
+                font-size: 12px;
+                line-height: 18px;
+            }
+
+            .blog-section-box h5 {
+                padding: 16px 0 25px;
+            }
+
+            .mind-mapping-section {
+                padding: 30px 16px;
+            }
+
+            .more-mindmap-section {
+                gap: 12px;
+            }
+
+            h4 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .mobile-key-feature-section h2 {
+                font-size: 18px;
+                line-height: 24px;
+                padding-bottom: 4px;
+            }
+
+            .mobile-key-feature-section {
+                padding: 30px 16px;
+            }
+
+            .question {
+                font-size: 14px;
+            }
+
+            .answercont img {
+                padding: 0 14px 14px;
+            }
+
+            .answer {
+                padding: 0 14px 14px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            h1 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            .text_base {
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .text_xl {
+                font-size: 13px;
+                line-height: 20px;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            .text-2xl {
+                font-size: 18px;
+            }
+
+            .more-mindmap-content {
+                padding: 7px 0 24px;
+            }
+
+            .grdient-text {
+                font-size: 21px;
+                line-height: 25px;
+            }
+
+            .testimotinal-subtext {
+                padding: 9px 0 11px;
+            }
+
+            .mindmap-template {
+                gap: 12px;
+            }
+
+            .main-bg-sction {
+                height: 675px;
+            }
+
+            .mind-mapping-section {
+                margin-top: 18px;
+            }
+
+            .btn-gradient-signUp {
+                font-size: 11px;
+                width: 114px;
+                height: 32px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            h3 {
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            .home-banner {
+                padding: 18px 0;
+            }
+
+            h1 {
+                font-size: 22px;
+                line-height: 29px;
+            }
+
+            .main-bg-sction {
+                height: 645px;
+            }
+
+            h4 {
+                font-size: 15px;
+                line-height: 20px;
+            }
+
+            .more-mindmap-content {
+                padding: 7px 0 24px;
+            }
+        }
+    </style>
+</head>
+
+<body style="position: relative; background-color: #fff">
+    <div class="main-bg-sction">
+        <img src="../assets/image/mindmap/mind-banner-image.png" alt="mind-banner-image" style="
+          background-position: top;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+        " />
+    </div>
+    <!-- start: header -->
+    <header class="header-bg header-hidden">
+        <div class="container-fluid-header header-part">
+        <a href="./" class="header-logo">
+            <img src="../assets/image/Header/black-logo.svg" alt="logo" style="width: 100%; height: 100%" />
+        </a>
+            <div class="header-navigation">
+                <nav>
+                    <ul class="navbar-main-menus">
+                        <!-- <li><a class="active" href="./">Home</a></li> -->
+                        <li>
+                            <a class="navbar-menu header-menu-hover" onclick="toggleMenu()">
+                                Product
+                                <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 6L8.01828 8.51828C8.24537 8.74537 8.35891 8.85891 8.5 8.85891C8.64109 8.85891 8.75463 8.74537 8.98172 8.51828L11.5 6"
+                                        stroke="#18181B" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+
+                            <ul id="productMenu" class="dropdown-menu">
+                                <div class="product-menu">
+                                    <div class="product-submenu platform-menu">
+                                        <h6>Platform</h6>
+                                        <a href="unified-workspace" class="submenu-text hover-comingsoon">
+                                            <img src="../assets/image/Header/product/icon1.svg" alt="icon1" />
+                                            <p>Unified Workspace</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="real-time-collaborations" class="submenu-text">
+                                            <img src="../assets/image/Header/product/icon2.svg" alt="icon2" />
+                                            <p>Real Time Collaboration</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="AI-assistance" class="submenu-text">
+                                            <img src="../assets/image/Header/product/icon3.svg" alt="icon3" />
+                                            <p>Al Powered Assistance</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="" class="submenu-text">
+                                            <img src="../assets/image/Header/product/icon4.svg" alt="icon4" />
+                                            <p>Secured Data Storage</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="template" class="submenu-text">
+                                            <img src="../assets/image/Header/product/icon5.svg" alt="icon5" />
+                                            <p>Templates</p>
+                                        </a>
+
+                                    </div>
+                                    <div class="capability-menu">
+                                        <h6>Capabilities</h6>
+                                        <div class="capability-box">
+                                            <div class="product-submenu">
+                                                <a href="diagram-maker" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon6.svg" alt="icon6" />
+                                                    <p>Diagramming Tool</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon7.svg" alt="icon7" />
+                                                    <p>Data Visualization</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon8.svg" alt="icon8" />
+                                                    <p>Retrospective Tool</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="mind-maps" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon9.svg" alt="icon9" />
+                                                    <p>Mindmapping Tool</p>
+                                                </a>
+                                                <a href="agile" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon10.svg" alt="icon10" />
+                                                    <p>Agile and Scrum Support</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon11.svg" alt="icon11" />
+                                                    <p>Animate Connectors</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon12.svg" alt="icon12" />
+                                                    <p>Smart Goal Setting</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                            <div class="product-submenu">
+                                                <a href="strategic-planning" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon13.svg" alt="icon13" />
+                                                    <p>Strategic Planning Tool</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon14.svg" alt="icon14" />
+                                                    <p>Project and Task Management</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon15.svg" alt="icon15" />
+                                                    <p>Prototyping and Wireframming</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon16.svg" alt="icon16" />
+                                                    <p>Customizable Icons and Ilustrations</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="brainstorming" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon17.svg" alt="icon17" />
+                                                    <p>Brainstrom and Ideation</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="online-whiteboard" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon18.svg" alt="icon18" />
+                                                    <p>Online Whiteboard</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon19.svg" alt="icon19" />
+                                                    <p>UX Design Maker</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                            <div class="product-submenu">
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon20.svg" alt="icon20" />
+                                                    <p>Automated Diagram Generation</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="version-control" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon21.svg" alt="icon21" />
+                                                    <p>Version Control</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon22.svg" alt="icon22" />
+                                                    <p>Product Development Software</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon23.svg" alt="icon23" />
+                                                    <p>Online Sticky Notes</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon24.svg" alt="icon24" />
+                                                    <p>Al Powered Diagrams</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/product/icon25.svg" alt="icon25" />
+                                                    <p>Scrum Tool</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a class="navbar-menu header-menu-hover" onclick="toggleMenu1()">Solutions
+                                <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 6L8.01828 8.51828C8.24537 8.74537 8.35891 8.85891 8.5 8.85891C8.64109 8.85891 8.75463 8.74537 8.98172 8.51828L11.5 6"
+                                        stroke="#18181B" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                            <ul id="productMenu1" class="dropdown-menu">
+                                <div class="product-menu">
+                                    <div class="product-submenu platform-menu">
+                                        <h6>Teams</h6>
+                                        <a href="solutions-architect" class="submenu-text">
+                                            <img src="../assets/image/Header/resources/icon1.svg" alt="icon1" />
+                                            <p>Solutions Architect</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="project-management" class="submenu-text">
+                                            <img src="../assets/image/Header/resources/icon2.svg" alt="icon2" />
+                                            <p>Product Management</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="engineering-team" class="submenu-text">
+                                            <img src="../assets/image/Header/resources/icon3.svg" alt="icon3" />
+                                            <p>Engineering</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="ux-designer" class="submenu-text">
+                                            <img src="../assets/image/Header/resources/icon4.svg" alt="icon4" />
+                                            <p>UX Design</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="sales-team" class="submenu-text">
+                                            <img src="../assets/image/Header/resources/icon5.svg" alt="icon5" />
+                                            <p>Sales</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="" class="submenu-text">
+                                            <img src="../assets/image/Header/resources/icon6.svg" alt="icon6" />
+                                            <p>Project Management</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                        <a href="" class="submenu-text">
+                                            <img src="../assets/image/Header/resources/icon7.svg" alt="icon7" />
+                                            <p>IT</p>
+                                            <div class="coming-soon">Coming Soon</div>
+                                        </a>
+                                    </div>
+                                    <div class="capability-menu platform-menu">
+                                        <h6>Cloudairy Al</h6>
+                                        <div class="capability-box">
+                                            <div class="product-submenu">
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon8.svg" alt="icon8" />
+                                                    <p>Al Flowchart</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon9.svg" alt="icon9" />
+                                                    <p>Al Mind Map</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon10.svg"
+                                                        alt="icon10" />
+                                                    <p>Al Sequence Diagram</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon11.svg"
+                                                        alt="icon11" />
+                                                    <p>Al Docs</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon12.svg"
+                                                        alt="icon12" />
+                                                    <p>Al Generate Image</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon13.svg"
+                                                        alt="icon13" />
+                                                    <p>Al Sticky Notes</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="capability-menu">
+                                        <h6>Use Cases</h6>
+                                        <div class="capability-box">
+                                            <div class="product-submenu">
+                                                <a href="network-diagram" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon14.svg"
+                                                        alt="icon14" />
+                                                    <p>Network Diagram Maker</p>
+                                                </a>
+                                                <a href="flowchart" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon15.svg"
+                                                        alt="icon15" />
+                                                    <p>Flowchart Maker</p>
+                                                </a>
+                                                <a href="circuit-diagram-maker" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon16.svg"
+                                                        alt="icon16" />
+                                                    <p>Circuit Diagram Maker</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="er-diagram" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon17.svg"
+                                                        alt="icon17" />
+                                                    <p>ER Diagrams </p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="venn-diagram" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon18.svg"
+                                                        alt="icon18" />
+                                                    <p>Venn Diagram Maker</p>
+                                                </a>
+                                                <a href="architecture-diagram" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon19.svg"
+                                                        alt="icon19" />
+                                                    <p>Architecture Diagram Maker</p>
+                                                </a>
+                                                <a href="vision-boards" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon20.svg"
+                                                        alt="icon20" />
+                                                    <p>Vision Board maker</p>
+                                                </a>
+                                            </div>
+                                            <div class="product-submenu">
+                                                <a href="design-canvas" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon21.svg"
+                                                        alt="icon21" />
+                                                    <p>Design Canvas</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="uml-diagram" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon22.svg"
+                                                        alt="icon22" />
+                                                    <p>UML Diagram Maker</p>
+                                                </a>
+                                                <a href="pI-planning-tool" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon23.svg"
+                                                        alt="icon23" />
+                                                    <p>PI Planning Tool</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="powerful-graph-maker" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon24.svg"
+                                                        alt="icon24" />
+                                                    <p>Graphs</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="wiring-diagram-maker" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon25.svg"
+                                                        alt="icon25" />
+                                                    <p>Wiring Diagram Maker</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="storyboard-creator" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon26.svg"
+                                                        alt="icon26" />
+                                                    <p>Tree Diagram </p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="kanban-tool" class="submenu-text">
+                                                    <img src="../assets/image/Header/resources/icon27.svg"
+                                                        alt="icon27" />
+                                                    <p>Kanban Board</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="navbar-menu header-menu-hover" onclick="toggleMenu2()">Resources
+                                <svg width="17" height="12" viewBox="0 0 17 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.5 6L8.01828 8.51828C8.24537 8.74537 8.35891 8.85891 8.5 8.85891C8.64109 8.85891 8.75463 8.74537 8.98172 8.51828L11.5 6"
+                                        stroke="#18181B" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                            <ul id="productMenu2" class="dropdown-menu resourcesMenu" style="padding: 20px 30px;">
+                                <div class="product-menu">
+                                    <div class="product-submenu">
+                                        <a href="blog" class="submenu-text">
+                                            <p>Blog</p>
+                                        </a>
+                                        <a href="template" class="submenu-text">
+                                            <p>Templates</p>
+                                        </a>
+                                        <!-- <a href="about-us" class="submenu-text">
+                      <p>About Us</p>
+                    </a> -->
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a class="header-menu-hover" href="pricing">Pricing</a></li>
+                        <li>
+                            <a class="header-menu-hover" href="about">About Us</a>
+                        </li>
+                        <li><a class="header-menu-hover" href="sales">Contact Sales</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-buttons">
+                    <a href="https://chart.cloudairy.com/login" class="btn-outline">Login</a>
+                    <a href="https://chart.cloudairy.com/login" class="btn-gradient">Sign up free</a>
+                </div>
+                <div class="navbar-drawer-menu">
+                    <svg width="20" height="20" class="toggle-open" viewBox="0 0 24 24" fill="white"
+                        xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                        <path d="M20 18H4M20 12H4M20 6H4" stroke="white" stroke-width="2" stroke-linecap="round"
+                            fill="white">
+                        </path>
+                    </svg>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256"
+                        class="text-white toggle-close" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z">
+                        </path>
+                    </svg>
+                </div>
+
+                <div class="navbar-drawer-sidebar">
+                    <ul>
+                        <li style="border-bottom: 1px solid #d4d4d4">
+                            <a class="active" href="./">Home</a>
+                        </li>
+                        <li style="border-bottom: 1px solid #d4d4d4">
+                            <div class="navbar-accordion">
+                                <div class="navbar-accordion-item">
+                                    <button id="navbar-accordion-button-1" aria-expanded="false">
+                                        <span class="navbar-accordion-title">Product</span>
+                                        <span class="icon1" aria-hidden="true">
+                                            <img src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/pricing/arrow-down-01.png"
+                                                alt="arrow-down-01" />
+                                        </span>
+                                    </button>
+                                    <div class="navbar-accordion-content">
+                                        <div>
+                                            <h6 style="font-size: 15px; padding-top: 10px">
+                                                Platform
+                                            </h6>
+                                            <div>
+                                                <a href="" class="submenu-text hover-comingsoon">
+
+                                                    <p>Unified Workspace</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="real-time-collaborations" class="submenu-text">
+
+                                                    <p>Real Time Collaboration</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Al Powered Assistance</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Secured Data Storage</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="template" class="submenu-text">
+
+                                                    <p>Templates</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 style="font-size: 15px; padding-top: 10px">
+                                                Capabilities
+                                            </h6>
+                                            <div>
+                                                <a href="diagram-maker" class="submenu-text">
+
+                                                    <p>Diagramming Tool</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Data Visualization</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Retrospective Tool</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="mind-maps" class="submenu-text">
+
+                                                    <p>Mindmapping Tool</p>
+                                                </a>
+                                                <a href="agile" class="submenu-text">
+
+                                                    <p>Agile and Scrum Support</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Animate Connectors</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Smart Goal Setting</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="strategic-planning" class="submenu-text">
+
+                                                    <p>Strategic Planning Tool</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Project and Task Management</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Prototyping and Wireframming</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Customizable Icons and Ilustrations</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Brainstrom and Ideation</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="online-whiteboard" class="submenu-text">
+
+                                                    <p>Online Whiteboard</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>UX Design Maker</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Automated Diagram Generation</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="version-control" class="submenu-text">
+
+                                                    <p>Version Control</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Product Development Software</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Online Sticky Notes</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Al Powered Diagrams</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Scrum Tool</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li style="border-bottom: 1px solid #d4d4d4">
+                            <div class="navbar-accordion">
+                                <div class="navbar-accordion-item">
+                                    <button id="navbar-accordion-button-1" aria-expanded="false">
+                                        <span class="navbar-accordion-title">Solutions</span>
+                                        <span class="icon1" aria-hidden="true">
+                                            <img src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/pricing/arrow-down-01.png"
+                                                alt="arrow-down-01" />
+                                        </span>
+                                    </button>
+                                    <div class="navbar-accordion-content">
+                                        <div>
+                                            <h6 style="font-size: 15px; padding-top: 10px">
+                                                Teams
+                                            </h6>
+                                            <div>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Solutions Architect</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Product Management</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Engineering</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>UX Design</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Sales</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Project Management</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>IT</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 style="font-size: 15px; padding-top: 10px">
+                                                Cloudairy Al
+                                            </h6>
+                                            <div>
+                                                <a href="" class="submenu-text">
+
+                                                    <p>Al Flowchart</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Al Mind Map</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Al Sequence Diagram</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Al Docs</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Al Generate Image</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Al Sticky Notes</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h6 style="font-size: 15px; padding-top: 10px">
+                                                Use Cases
+                                            </h6>
+                                            <div>
+                                                <a href="network-diagram" class="submenu-text">
+                                                    <p>Network Diagram Maker</p>
+                                                </a>
+                                                <a href="flowchart" class="submenu-text">
+                                                    <p>Flowchart Maker</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Circuit Diagram Maker</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>ER Diagrams </p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="venn-diagram" class="submenu-text">
+                                                    <p>Venn Diagram Maker</p>
+                                                </a>
+                                                <a href="architecture-diagram" class="submenu-text">
+                                                    <p>Architecture Diagram Maker</p>
+                                                </a>
+                                                <a href="vision-boards" class="submenu-text">
+                                                    <p>Vision Board maker</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Design Canvas</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="uml-diagram" class="submenu-text">
+                                                    <p>UML Diagram Maker</p>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>PI Planning Tool</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Graphs</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Wiring Diagram Maker</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Tree Diagram </p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                                <a href="" class="submenu-text">
+                                                    <p>Kanban Board</p>
+                                                    <div class="coming-soon">Coming Soon</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="border-bottom: 1px solid #d4d4d4">
+                            <div class="navbar-accordion">
+                                <div class="navbar-accordion-item">
+                                    <button id="navbar-accordion-button-1" aria-expanded="false">
+                                        <span class="navbar-accordion-title">Resources</span>
+                                        <span class="icon1" aria-hidden="true">
+                                            <img src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/pricing/arrow-down-01.png"
+                                                alt="arrow-down-01" />
+                                        </span>
+                                    </button>
+                                    <div class="navbar-accordion-content">
+                                        <div>
+                                            <div>
+                                                <a href="blog" class="submenu-text">
+
+                                                    <p>Blog</p>
+
+                                                </a>
+                                                <a href="template" class="submenu-text">
+
+                                                    <p>Template</p>
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li style="border-bottom: 1px solid #d4d4d4">
+                            <a href="about">About Us</a>
+                        </li>
+                        <li style="border-bottom: 1px solid #d4d4d4">
+                            <a href="pricing">Pricing</a>
+                        </li>
+                        <li style="border-bottom: 1px solid #d4d4d4">
+                            <a href="sales">Contact Sales</a>
+                        </li>
+                    </ul>
+                    <div style="
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                margin-top: 15px;
+              " class="navbar-sidetoggle-button">
+                        <a rel="canonical" href="https://chart.cloudairy.com/signup" class="btn-outline">Sign up
+                            free</a>
+                        <a rel="canonical" href="https://chart.cloudairy.com/login" class="btn-gradient">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End: header -->
+    <!-- section 1 -->
+    <section class="loading">
+        <feature-banner data-title="Your all-in-one platform for seamless teamwork! "
+            text_base="Cloudairy's Unified Workspace is a single place where you can find all your work tools, teams, and ideas. It makes work easier by organizing everything in one spot. With the help of AI, you can work more efficiently and get the most out of your projects. "
+            data-image="https://s3.amazonaws.com/cloudairy-website-storage/home/home-banner.mp4"></feature-banner>
+    </section>
+    <!-- section 2 -->
+    <!-- AI section -->
+    <section class="container-fluid section-padding Key-feature-hide">
+        <div class="AI-grid">
+            <h3 style="color: #fff">
+                Simplify your work life with Cloudairy's Unified Workspace
+            </h3>
+            <p class="Ai-section-subtitle">
+                This centralized platform brings together all your projects, tasks, and tools into one easy-to-use
+                interface.
+                Collaborate seamlessly, manage tasks efficiently, and keep your team aligned, all from a single
+                location. 
+            </p>
+
+            <div class="cycle-tab-container">
+                <ul class="nav nav-tabs">
+                    <li class="cycle-tab-item active">
+                        <a class="nav-link" role="tab" data-toggle="tab" href="#profile"
+                            style="gap: 12px; display: flex; flex-direction: column;align-items: center;">
+                            <div>
+                                <svg width="30" height="40" viewBox="0 0 30 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M22.5023 8.5402C22.087 8.54014 21.6797 8.6545 21.3252 8.87072C20.9706 9.08694 20.6825 9.39666 20.4924 9.76589C20.3024 10.1351 20.2177 10.5496 20.2478 10.9638C20.2778 11.378 20.4214 11.7759 20.6627 12.1138L18.3432 16.1311C18.2712 16.1247 18.1989 16.1213 18.1266 16.1211C17.6561 16.1202 17.1973 16.2675 16.8152 16.5419L12.7973 14.2224C12.8045 14.1502 12.808 14.0778 12.8079 14.0053C12.8081 13.6492 12.7242 13.298 12.5631 12.9805C12.4019 12.6629 12.168 12.3879 11.8804 12.1778C11.5929 11.9678 11.2597 11.8286 10.9082 11.7717C10.5567 11.7147 10.1966 11.7416 9.85746 11.8502C9.51829 11.9587 9.20954 12.1458 8.95636 12.3963C8.70319 12.6467 8.51275 12.9534 8.40055 13.2914C8.28835 13.6294 8.25756 13.9891 8.3107 14.3412C8.36384 14.6933 8.49939 15.028 8.70633 15.3178L5.3582 21.117C5.23388 21.3324 5.20021 21.5883 5.26458 21.8285C5.32896 22.0687 5.48612 22.2735 5.70148 22.3978C5.91685 22.5221 6.17278 22.5558 6.41297 22.4914C6.65316 22.427 6.85794 22.2699 6.98226 22.0545L10.3298 16.2563C10.4018 16.2632 10.4741 16.2668 10.5464 16.2669C11.0168 16.2672 11.4755 16.12 11.858 15.8461L15.8758 18.1656C15.8689 18.2374 15.8653 18.3095 15.8652 18.3816C15.8649 18.7377 15.9487 19.0889 16.1098 19.4065C16.2708 19.7241 16.5047 19.9992 16.7922 20.2094C17.0797 20.4195 17.4128 20.5587 17.7643 20.6158C18.1159 20.6728 18.4759 20.646 18.8151 20.5375C19.1543 20.429 19.4631 20.242 19.7163 19.9916C19.9695 19.7412 20.16 19.4345 20.2723 19.0965C20.3846 18.7585 20.4154 18.3988 20.3623 18.0467C20.3092 17.6945 20.1737 17.3599 19.9668 17.07L22.2863 13.0522C22.3581 13.0595 22.4302 13.0633 22.5023 13.0633C22.7993 13.0633 23.0934 13.0048 23.3678 12.8912C23.6421 12.7775 23.8915 12.611 24.1014 12.401C24.3114 12.191 24.478 11.9417 24.5917 11.6673C24.7053 11.3929 24.7638 11.0988 24.7638 10.8018C24.7638 10.5049 24.7053 10.2108 24.5917 9.93641C24.478 9.66204 24.3114 9.41273 24.1014 9.20273C23.8915 8.99274 23.6421 8.82616 23.3678 8.71251C23.0934 8.59886 22.7993 8.54036 22.5023 8.54036L22.5023 8.5402ZM20.8837 31.7114H9.11258L11.2507 27.5356H18.7462L20.8837 31.7114ZM2.21828 25.1134V5.9495C2.21843 5.8045 2.27609 5.66549 2.37862 5.56296C2.48114 5.46043 2.62016 5.40277 2.76516 5.40263H27.2317C27.3767 5.40285 27.5158 5.46052 27.6184 5.56301C27.721 5.66551 27.7788 5.80447 27.7792 5.9495V25.1136C27.7789 25.2587 27.7212 25.3978 27.6186 25.5004C27.5159 25.603 27.3768 25.6608 27.2317 25.6611H2.76562C2.62054 25.6609 2.48146 25.6031 2.37893 25.5004C2.2764 25.3978 2.21879 25.2587 2.21875 25.1136L2.21828 25.1134ZM27.2317 27.5353H20.8525L22.9901 31.7111H25.4798C25.7284 31.7111 25.9669 31.8098 26.1427 31.9857C26.3185 32.1615 26.4173 32.3999 26.4173 32.6486C26.4173 32.8972 26.3185 33.1357 26.1427 33.3115C25.9669 33.4873 25.7284 33.5861 25.4798 33.5861H23.95L26.5351 38.6342C26.6485 38.8556 26.6693 39.1129 26.593 39.3496C26.5166 39.5863 26.3494 39.783 26.128 39.8963C25.9066 40.0097 25.6493 40.0305 25.4126 39.9542C25.1759 39.8778 24.9792 39.7106 24.8659 39.4892L21.8437 33.5866H8.1532L5.13047 39.4897C5.01709 39.711 4.82044 39.8782 4.5838 39.9545C4.34715 40.0308 4.08988 40.01 3.86859 39.8966C3.6473 39.7832 3.48012 39.5866 3.40381 39.3499C3.32751 39.1133 3.34834 38.856 3.46172 38.6347L6.04633 33.5866H4.51656C4.26792 33.5866 4.02946 33.4878 3.85365 33.312C3.67783 33.1362 3.57906 32.8978 3.57906 32.6491C3.57906 32.4005 3.67783 32.162 3.85365 31.9862C4.02946 31.8104 4.26792 31.7116 4.51656 31.7116H7.00633L9.14383 27.5358H2.76562C2.12353 27.5351 1.50795 27.2797 1.05392 26.8257C0.599894 26.3716 0.344494 25.756 0.34375 25.114V5.9495C0.344453 5.30739 0.59984 4.69179 1.05388 4.23775C1.50791 3.78372 2.12352 3.52833 2.76562 3.52763H12.6354V2.36192C12.639 1.73763 12.8895 1.14013 13.3322 0.69995C13.7749 0.259772 14.3739 0.0126953 14.9982 0.0126953C15.6225 0.0126953 16.2214 0.259772 16.6641 0.69995C17.1068 1.14013 17.3573 1.73763 17.3609 2.36192V3.52786H27.2317C27.8739 3.52846 28.4897 3.78379 28.9439 4.23782C29.3981 4.69186 29.6536 5.30752 29.6544 5.94973V25.1138C29.6536 25.756 29.398 26.3716 28.9438 26.8256C28.4896 27.2797 27.8739 27.535 27.2317 27.5356V27.5353Z"
+                                        fill="#848382" />
+                                </svg>
+                                <div>Real-Time Collaboration </div>
+                        </a>
+                    </li>
+                    <li class="cycle-tab-item">
+                        <a class="nav-link" role="tab" data-toggle="tab" href="#profile2"
+                            style="gap: 12px; display: flex; flex-direction: column;align-items: center;">
+                            <div>
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill=""
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_170_4156)">
+                                        <path
+                                            d="M13.6312 40H1.67187C1.025 40 0.5 39.475 0.5 38.8281V37.5227C0.5 33.5797 3.70781 30.3711 7.65156 30.3711C11.5953 30.3711 14.8031 33.5789 14.8031 37.5227V38.8281C14.8031 39.475 14.2781 40 13.6312 40ZM2.84375 37.6562H12.4594V37.5227C12.4594 34.8719 10.3023 32.7148 7.65156 32.7148C5.00078 32.7148 2.84375 34.8719 2.84375 37.5227V37.6562Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M7.65039 32.7148C5.06602 32.7148 2.96289 30.6117 2.96289 28.0273C2.96289 25.443 5.06602 23.3398 7.65039 23.3398C10.2348 23.3398 12.3379 25.443 12.3379 28.0273C12.3379 30.6117 10.2348 32.7148 7.65039 32.7148ZM7.65039 25.6836C6.3582 25.6836 5.30664 26.7352 5.30664 28.0273C5.30664 29.3195 6.3582 30.3711 7.65039 30.3711C8.94258 30.3711 9.99414 29.3195 9.99414 28.0273C9.99414 26.7352 8.94258 25.6836 7.65039 25.6836Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M39.3285 40H27.3691C26.7223 40 26.1973 39.475 26.1973 38.8281V37.5227C26.1973 33.5797 29.4051 30.3711 33.3488 30.3711C37.2926 30.3711 40.5004 33.5789 40.5004 37.5227V38.8281C40.5004 39.475 39.9754 40 39.3285 40ZM28.541 37.6562H38.1566V37.5227C38.1566 34.8719 35.9996 32.7148 33.3488 32.7148C30.698 32.7148 28.541 34.8719 28.541 37.5227V37.6562Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M33.3496 32.7148C30.7652 32.7148 28.6621 30.6117 28.6621 28.0273C28.6621 25.443 30.7652 23.3398 33.3496 23.3398C35.934 23.3398 38.0371 25.443 38.0371 28.0273C38.0371 30.6117 35.934 32.7148 33.3496 32.7148ZM33.3496 25.6836C32.0574 25.6836 31.0059 26.7352 31.0059 28.0273C31.0059 29.3195 32.0574 30.3711 33.3496 30.3711C34.6418 30.3711 35.6934 29.3195 35.6934 28.0273C35.6934 26.7352 34.6418 25.6836 33.3496 25.6836Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M26.4809 16.6602H14.5215C13.8746 16.6602 13.3496 16.1352 13.3496 15.4883V14.1828C13.3496 10.2398 16.5574 7.03125 20.5012 7.03125C24.4449 7.03125 27.6527 10.2391 27.6527 14.1828V15.4883C27.6527 16.1352 27.1277 16.6602 26.4809 16.6602ZM15.6934 14.3164H25.309V14.1828C25.309 11.532 23.152 9.375 20.5012 9.375C17.8504 9.375 15.6934 11.532 15.6934 14.1828V14.3164Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M20.5 9.375C17.9156 9.375 15.8125 7.27188 15.8125 4.6875C15.8125 2.10312 17.9156 0 20.5 0C23.0844 0 25.1875 2.10312 25.1875 4.6875C25.1875 7.27188 23.0844 9.375 20.5 9.375ZM20.5 2.34375C19.2078 2.34375 18.1562 3.39531 18.1562 4.6875C18.1562 5.97969 19.2078 7.03125 20.5 7.03125C21.7922 7.03125 22.8438 5.97969 22.8438 4.6875C22.8438 3.39531 21.7922 2.34375 20.5 2.34375Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M20.436 32.7152C18.6016 32.7152 16.8016 32.4402 15.0875 31.898C14.4703 31.7027 14.1282 31.0441 14.3235 30.4277C14.5188 29.8105 15.1766 29.4691 15.7938 29.6637C17.2789 30.1332 18.8407 30.3715 20.436 30.3715C22.0313 30.3715 23.7032 30.1168 25.2344 29.6137C25.8493 29.4113 26.5118 29.7465 26.7133 30.3613C26.9149 30.9762 26.5805 31.6387 25.9657 31.8402C24.1977 32.4207 22.3375 32.7152 20.436 32.7152Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M5.71009 20.6814C5.64056 20.6814 5.57025 20.6752 5.49916 20.6619C4.86244 20.5463 4.44056 19.9361 4.55619 19.2994C4.889 17.4689 5.51869 15.6939 6.42572 14.0221C7.3015 12.4096 8.4015 10.9588 9.69603 9.71113C10.1617 9.26191 10.9038 9.2752 11.3531 9.7416C11.8023 10.2072 11.789 10.9494 11.3226 11.3986C10.2015 12.4799 9.24681 13.7385 8.48587 15.14C7.69681 16.5924 7.15072 18.133 6.86244 19.7189C6.75931 20.2846 6.26634 20.6814 5.71087 20.6814H5.71009Z"
+                                            fill="#848382" />
+                                        <path
+                                            d="M35.2886 20.6812C34.7331 20.6812 34.2401 20.2851 34.137 19.7187C33.8487 18.1335 33.3026 16.5929 32.5136 15.1398C31.7526 13.7382 30.798 12.4788 29.6769 11.3983C29.2112 10.9491 29.1972 10.2069 29.6464 9.74132C30.0956 9.27569 30.837 9.26163 31.3034 9.71085C32.598 10.9585 33.698 12.4085 34.5737 14.0218C35.4816 15.6937 36.1105 17.4687 36.4433 19.2991C36.5589 19.9359 36.137 20.546 35.5003 20.6616C35.4292 20.6749 35.3589 20.6812 35.2894 20.6812H35.2886Z"
+                                            fill="#848382" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_170_4156">
+                                            <rect width="40" height="40" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <div>Task and Project Management </div>
+                        </a>
+                    </li>
+                    <li class="cycle-tab-item">
+                        <a class="nav-link" role="tab" data-toggle="tab" href="#profile3"
+                            style="gap: 12px; display: flex; flex-direction: column;align-items: center;">
+                            <div>
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.75 14.6725H15.5C17.5675 14.6725 19.25 12.99 19.25 10.9225V6.25C19.25 4.1825 17.5675 2.5 15.5 2.5H6.75C4.6825 2.5 3 4.1825 3 6.25V10.9225C3 12.99 4.6825 14.6725 6.75 14.6725ZM5.5 6.25C5.5 5.56125 6.06 5 6.75 5H15.5C16.19 5 16.75 5.56125 16.75 6.25V10.9225C16.75 11.6112 16.19 12.1725 15.5 12.1725H6.75C6.06 12.1725 5.5 11.6112 5.5 10.9225V6.25ZM19.25 33.75V20.4625C19.25 18.395 17.5675 16.7125 15.5 16.7125H6.75C4.6825 16.7125 3 18.395 3 20.4625V33.75C3 35.8175 4.6825 37.5 6.75 37.5H15.5C17.5675 37.5 19.25 35.8175 19.25 33.75ZM5.5 33.75V20.4625C5.5 19.7738 6.06 19.2125 6.75 19.2125H15.5C16.19 19.2125 16.75 19.7738 16.75 20.4625V33.75C16.75 34.4387 16.19 35 15.5 35H6.75C6.06 35 5.5 34.4387 5.5 33.75ZM34.25 25.3275H25.5C23.4325 25.3275 21.75 27.01 21.75 29.0775V33.75C21.75 35.8175 23.4325 37.5 25.5 37.5H34.25C36.3175 37.5 38 35.8175 38 33.75V29.0775C38 27.01 36.3175 25.3275 34.25 25.3275ZM35.5 33.75C35.5 34.4387 34.94 35 34.25 35H25.5C24.81 35 24.25 34.4387 24.25 33.75V29.0775C24.25 28.3887 24.81 27.8275 25.5 27.8275H34.25C34.94 27.8275 35.5 28.3887 35.5 29.0775V33.75ZM34.25 2.5H25.5C23.4325 2.5 21.75 4.1825 21.75 6.25V19.5375C21.75 21.605 23.4325 23.2875 25.5 23.2875H34.25C36.3175 23.2875 38 21.605 38 19.5375V6.25C38 4.1825 36.3175 2.5 34.25 2.5ZM35.5 19.5375C35.5 20.2262 34.94 20.7875 34.25 20.7875H25.5C24.81 20.7875 24.25 20.2262 24.25 19.5375V6.25C24.25 5.56125 24.81 5 25.5 5H34.25C34.94 5 35.5 5.56125 35.5 6.25V19.5375Z"
+                                        fill="#848382" />
+                                </svg>
+
+                                <div>AI-Powered Assistance </div>
+                        </a>
+                    </li>
+                    <li class="cycle-tab-item">
+                        <a class="nav-link" role="tab" data-toggle="tab" href="#profile4"
+                            style="gap: 12px; display: flex; flex-direction: column;align-items: center;">
+                            <div>
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M29.5844 6.875H22.0625V4.625C22.0625 4.39294 21.9703 4.17038 21.8062 4.00628C21.6421 3.84219 21.4196 3.75 21.1875 3.75H19.8125C19.5804 3.75 19.3579 3.84219 19.1938 4.00628C19.0297 4.17038 18.9375 4.39294 18.9375 4.625V6.875H11.4156C9.84696 6.87583 8.34278 7.49935 7.23356 8.60856C6.12435 9.71778 5.50083 11.222 5.5 12.7906V16.3156C5.5 20.1936 7.04051 23.9127 9.78265 26.6549C12.5248 29.397 16.2439 30.9375 20.1219 30.9375H21.1875C21.4196 30.9375 21.6421 30.8453 21.8062 30.6812C21.9703 30.5171 22.0625 30.2946 22.0625 30.0625V28.6875C22.0625 28.4554 21.9703 28.2329 21.8062 28.0688C21.6421 27.9047 21.4196 27.8125 21.1875 27.8125H20.1219C17.0727 27.8125 14.1484 26.6012 11.9924 24.4451C9.83628 22.2891 8.625 19.3648 8.625 16.3156V12.7906C8.625 12.0505 8.91901 11.3407 9.44235 10.8174C9.9657 10.294 10.6755 10 11.4156 10H29.5844C30.3245 10 31.0343 10.294 31.5576 10.8174C32.081 11.3407 32.375 12.0505 32.375 12.7906V16.5625C32.373 17.4199 32.2681 18.2739 32.0625 19.1062C32.008 19.3207 32.0371 19.5479 32.1439 19.7417C32.2506 19.9355 32.4271 20.0815 32.6375 20.15L33.95 20.5781C34.0634 20.6157 34.1833 20.6297 34.3022 20.619C34.4212 20.6084 34.5367 20.5734 34.6417 20.5163C34.7466 20.4591 34.8386 20.3811 34.9121 20.2869C34.9855 20.1927 35.0389 20.0844 35.0688 19.9688C35.3529 18.8556 35.4978 17.7114 35.5 16.5625V12.7906C35.4992 11.222 34.8757 9.71778 33.7664 8.60856C32.6572 7.49935 31.153 6.87583 29.5844 6.875Z"
+                                        fill="#848382" />
+                                    <path
+                                        d="M15.5 20C16.8807 20 18 18.8807 18 17.5C18 16.1193 16.8807 15 15.5 15C14.1193 15 13 16.1193 13 17.5C13 18.8807 14.1193 20 15.5 20Z"
+                                        fill="#848382" />
+                                    <path
+                                        d="M25.5 20C26.8807 20 28 18.8807 28 17.5C28 16.1193 26.8807 15 25.5 15C24.1193 15 23 16.1193 23 17.5C23 18.8807 24.1193 20 25.5 20Z"
+                                        fill="#848382" />
+                                    <path
+                                        d="M35.416 29.0002L38.2472 30.1158C38.3055 30.1388 38.3556 30.1789 38.3908 30.2307C38.426 30.2825 38.4449 30.3438 38.4449 30.4064C38.4449 30.4691 38.426 30.5303 38.3908 30.5822C38.3556 30.634 38.3055 30.674 38.2472 30.6971L35.416 31.8127C34.9148 32.0108 34.4596 32.3097 34.0785 32.6908C33.6974 33.0719 33.3985 33.5271 33.2004 34.0283L32.0847 36.8408C32.0617 36.8991 32.0217 36.9491 31.9699 36.9844C31.918 37.0196 31.8568 37.0384 31.7941 37.0384C31.7314 37.0384 31.6702 37.0196 31.6184 36.9844C31.5666 36.9491 31.5265 36.8991 31.5035 36.8408L30.3879 34.0283C30.1902 33.5268 29.8915 33.0714 29.5103 32.6902C29.1292 32.3091 28.6737 32.0104 28.1722 31.8127L25.3597 30.6971C25.3015 30.674 25.2514 30.634 25.2162 30.5822C25.181 30.5303 25.1621 30.4691 25.1621 30.4064C25.1621 30.3438 25.181 30.2825 25.2162 30.2307C25.2514 30.1789 25.3015 30.1388 25.3597 30.1158L28.1722 29.0002C28.6737 28.8025 29.1292 28.5038 29.5103 28.1226C29.8915 27.7415 30.1902 27.286 30.3879 26.7846L31.5035 23.9721C31.5265 23.9138 31.5666 23.8637 31.6184 23.8285C31.6702 23.7933 31.7314 23.7744 31.7941 23.7744C31.8568 23.7744 31.918 23.7933 31.9699 23.8285C32.0217 23.8637 32.0617 23.9138 32.0847 23.9721L33.2004 26.7846C33.3985 27.2857 33.6974 27.741 34.0785 28.122C34.4596 28.5031 34.9148 28.802 35.416 29.0002Z"
+                                        fill="#848382" />
+                                </svg>
+
+                                <div>Customizable Workspaces </div>
+                        </a>
+                    </li>
+                    <li class="cycle-tab-item">
+                        <a class="nav-link" role="tab" data-toggle="tab" href="#profile5"
+                            style="gap: 12px; display: flex; flex-direction: column;align-items: center;">
+                            <div>
+                                <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M35.5 18.195V17.5C35.5 13.5218 33.9196 9.70644 31.1066 6.8934C28.2936 4.08035 24.4782 2.5 20.5 2.5C16.5218 2.5 12.7064 4.08035 9.8934 6.8934C7.08035 9.70644 5.5 13.5218 5.5 17.5V18.195C4.74248 18.6304 4.11276 19.2574 3.67397 20.013C3.23519 20.7686 3.00276 21.6262 3 22.5V26.25C3 27.5761 3.52678 28.8479 4.46447 29.7855C5.40215 30.7232 6.67392 31.25 8 31.25H9.25C9.91304 31.25 10.5489 30.9866 11.0178 30.5178C11.4866 30.0489 11.75 29.413 11.75 28.75V20C11.75 19.337 11.4866 18.7011 11.0178 18.2322C10.5489 17.7634 9.91304 17.5 9.25 17.5H8C8 14.1848 9.31696 11.0054 11.6612 8.66117C14.0054 6.31696 17.1848 5 20.5 5C23.8152 5 26.9946 6.31696 29.3388 8.66117C31.683 11.0054 33 14.1848 33 17.5H31.75C31.087 17.5 30.4511 17.7634 29.9822 18.2322C29.5134 18.7011 29.25 19.337 29.25 20V28.75C29.25 29.413 29.5134 30.0489 29.9822 30.5178C30.4511 30.9866 31.087 31.25 31.75 31.25H32.6525C32.4348 31.6288 32.1214 31.9437 31.7436 32.1631C31.3657 32.3825 30.9369 32.4987 30.5 32.5H27.77C27.5124 31.7714 27.036 31.1401 26.4059 30.6926C25.7758 30.2451 25.0228 30.0032 24.25 30H21.75C20.7554 30 19.8016 30.3951 19.0983 31.0983C18.3951 31.8016 18 32.7554 18 33.75C18 34.7446 18.3951 35.6984 19.0983 36.4016C19.8016 37.1049 20.7554 37.5 21.75 37.5H24.25C25.0228 37.4968 25.7758 37.2549 26.4059 36.8074C27.036 36.3599 27.5124 35.7286 27.77 35H30.5C31.721 34.9962 32.8982 34.5449 33.8089 33.7315C34.7195 32.9181 35.3003 31.7991 35.4412 30.5863C36.2143 30.1557 36.8588 29.5271 37.3085 28.765C37.7582 28.0029 37.9968 27.1349 38 26.25V22.5C37.9972 21.6262 37.7648 20.7686 37.326 20.013C36.8872 19.2574 36.2575 18.6304 35.5 18.195ZM9.25 20V28.75H8C7.33696 28.75 6.70107 28.4866 6.23223 28.0178C5.76339 27.5489 5.5 26.913 5.5 26.25V22.5C5.5 21.837 5.76339 21.2011 6.23223 20.7322C6.70107 20.2634 7.33696 20 8 20H9.25ZM24.25 35H21.75C21.4185 35 21.1005 34.8683 20.8661 34.6339C20.6317 34.3995 20.5 34.0815 20.5 33.75C20.5 33.4185 20.6317 33.1005 20.8661 32.8661C21.1005 32.6317 21.4185 32.5 21.75 32.5H24.25C24.5815 32.5 24.8995 32.6317 25.1339 32.8661C25.3683 33.1005 25.5 33.4185 25.5 33.75C25.5 34.0815 25.3683 34.3995 25.1339 34.6339C24.8995 34.8683 24.5815 35 24.25 35ZM35.5 26.25C35.5 26.913 35.2366 27.5489 34.7678 28.0178C34.2989 28.4866 33.663 28.75 33 28.75H31.75V20H33C33.663 20 34.2989 20.2634 34.7678 20.7322C35.2366 21.2011 35.5 21.837 35.5 22.5V26.25Z"
+                                        fill="#848382" />
+                                </svg>
+
+                                <div>Integrated Tools  </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-conten t">
+                    <div class="tab-pane fade active in" id="profile" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="Ai-mind-map-section">
+                            <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                  ">
+                                <p class="text-2xl" style="color: #fff">
+                                    Real-Time Collaboration 
+                                </p>
+                                <h3>
+                                    Stay connected with your team in real-time, no matter where they are. Collaborate on
+                                    documents, share ideas, and make
+                                    decisions instantly. With real-time updates and notifications, everyone is always on
+                                    the same page. 
+                                </h3>
+                            </div>
+                            <div class="Ai-mind-map-section-img">
+                                <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image1.png"
+                                    alt="capability1" style="width: 100%; height: 100%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile2" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="Ai-mind-map-section">
+                            <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                  ">
+                                <p class="text-2xl" style="color: #fff">
+                                    Task and Project Management 
+                                </p>
+                                <h3>
+                                    Efficiently manage your workload and track progress. Assign tasks, set deadlines,
+                                    and monitor progress visually.
+                                    Collaborate with team members to ensure tasks are completed on time and within
+                                    budget.
+                                </h3>
+                            </div>
+                            <div class="Ai-mind-map-section-img">
+                                <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image2.png"
+                                    alt="capability1" style="width: 100%; height: 100%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile3" role="tabpanel" aria-labelledby="messages-tab">
+                        <div class="Ai-mind-map-section">
+                            <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                  ">
+                                <p class="text-2xl" style="color: #fff">
+                                    AI-Powered Assistance 
+                                </p>
+                                <h3>
+                                    Let AI be your productivity partner. Automate repetitive tasks, such as scheduling
+                                    meetings and generating reports, to
+                                    free up your time for more strategic work. Gain valuable insights from data-driven
+                                    analytics to make informed decisions.
+                                </h3>
+                            </div>
+                            <div class="Ai-mind-map-section-img">
+                                <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image3.png"
+                                    alt="capability1" style="width: 100%; height: 100%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile4" role="tabpanel" aria-labelledby="settings-tab">
+                        <div class="Ai-mind-map-section">
+                            <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                  ">
+                                <p class="text-2xl" style="color: #fff">
+                                    Customizable Workspaces 
+                                </p>
+                                <h3>
+                                    Tailor your workspace to your unique needs. Create custom dashboards, set
+                                    personalized preferences, and organize your
+                                    work in a way that suits your style.
+                                </h3>
+                            </div>
+                            <div class="Ai-mind-map-section-img">
+                                <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image4.png"
+                                    alt="capability1" style="width: 100%; height: 100%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile5" role="tabpanel" aria-labelledby="settings-tab">
+                        <div class="Ai-mind-map-section">
+                            <div style="
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                  ">
+                                <p class="text-2xl" style="color: #fff">Integrated Tools </p>
+
+                                <h3>
+                                    Seamlessly integrate with the tools you already love. Connect with popular
+                                    third-party apps to streamline your workflow
+                                    and access the information you need, when you need it.
+                                </h3>
+                            </div>
+                            <div class="Ai-mind-map-section-img">
+                                <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image5.png"
+                                    alt="capability1" style="width: 100%; height: 100%" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-padding mobile-key-feature-hide">
+        <div class="mobile-key-feature-section container-fluid">
+            <h2 style="color: #fff;">Simplify your work life with Cloudairy's Unified Workspace</h2>
+            <p class="text_lg key-content-subtitle" style="color: #848382;">
+                This centralized platform brings together all your projects, tasks, and tools into one easy-to-use
+                interface.
+                Collaborate seamlessly, manage tasks efficiently, and keep your team aligned, all from a single
+                location. 
+            </p>
+            <div class="image-faqs-box">
+                <div class="container">
+                    <div class="question">
+                        Real-Time Collaboration <img src="../assets/image/Home/arrow-down-01-sharp@2x.svg"
+                            alt="arrow-down-01" />
+                    </div>
+                    <div class="answercont">
+                        <div class="answer text_base">
+                            Stay connected with your team in real-time, no matter where they are. Collaborate on
+                            documents, share ideas, and make
+                            decisions instantly. With real-time updates and notifications, everyone is always on the
+                            same page. 
+                        </div>
+                        <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image1.png"
+                            alt="AI-Powered Mind Mapping" style="width: 100%; height: 100%" />
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="question">
+                        Task and Project Management <img src="../assets/image/Home/arrow-down-01-sharp@2x.svg"
+                            alt="arrow-down-01" />
+                    </div>
+                    <div class="answercont">
+                        <div class="answer text_base">
+                            Efficiently manage your workload and track progress. Assign tasks, set deadlines, and
+                            monitor progress visually.
+                            Collaborate with team members to ensure tasks are completed on time and within budget.
+                        </div>
+                        <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image2.png"
+                            alt="AI-Powered Mind Mapping" style="width: 100%; height: 100%" />
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="question">
+                        AI-Powered Assistance<img src="../assets/image/Home/arrow-down-01-sharp@2x.svg"
+                            alt="arrow-down-01" />
+                    </div>
+                    <div class="answercont">
+                        <div class="answer text_base">
+                            Let AI be your productivity partner. Automate repetitive tasks, such as scheduling meetings
+                            and generating reports, to
+                            free up your time for more strategic work. Gain valuable insights from data-driven analytics
+                            to make informed decisions.
+                        </div>
+                        <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image3.png"
+                            alt="AI-Powered Mind Mapping" style="width: 100%; height: 100%" />
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="question">
+                        Customizable Workspaces<img src="../assets/image/Home/arrow-down-01-sharp@2x.svg"
+                            alt="arrow-down-01" />
+                    </div>
+                    <div class="answercont">
+                        <div class="answer text_base">
+                            Tailor your workspace to your unique needs. Create custom dashboards, set personalized
+                            preferences, and organize your
+                            work in a way that suits your style.
+                        </div>
+                        <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image4.png"
+                            alt="AI-Powered Mind Mapping" style="width: 100%; height: 100%" />
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="question">
+                        Integrated Tools<img src="../assets/image/Home/arrow-down-01-sharp@2x.svg"
+                            alt="arrow-down-01" />
+                    </div>
+                    <div class="answercont">
+                        <div class="answer text_base">
+                            Seamlessly integrate with the tools you already love. Connect with popular third-party apps
+                            to streamline your workflow
+                            and access the information you need, when you need it.
+                        </div>
+                        <img src="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming-tools/key-image5.png"
+                            alt="AI-Powered Mind Mapping" style="width: 100%; height: 100%" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="">
+        <feature-visualize-4box-fullbg data-title="Get More  Cloudairy's Unified Workspace"
+            text_base="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+            image1="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming_tool/visualize1.png"
+            data1="Document Management "
+            data1_desc="Organize and access your documents effortlessly. Store, share, and collaborate on files directly within the workspace. "
+            image2="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming_tool/visualize2.png"
+            data2="Cross-Team Collaboration "
+            data2_desc="Break down silos and foster collaboration across teams. Facilitate communication, share information, and work together on complex projects.  "
+            image3="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming_tool/visualize3.png"
+            data3="Analytics and Reporting "
+            data3_desc="Gain valuable insights into your team's performance. Track key metrics, generate custom reports, and identify areas for improvement. "
+            image4="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming_tool/visualize4.png"
+            data4="Secure Data Storage "
+            data4_desc="Protect your sensitive information with robust security measures. Rest assured that your data is safe and accessible, with advanced encryption and access controls. "
+            image5="https://s3.amazonaws.com/cloudairy-website-storage/brainstorming_tool/visualize4.png"
+            data5="Shared Templates "
+            data5_desc="Standardize processes and save time. Create and share templates for common tasks, such as project plans, reports, and proposals. "
+            isShow="5"></feature-visualize-4box-fullbg>
+    </section>
+    <!-- section 7 -->
+    <section class="section-padding">
+        <div class="container-fluid">
+            <div class="testimonial-section">
+                <!-- <img
+                src="../assets/image/mindmap/ready to tranform.svg"
+                alt="ready to tranform"
+              /> -->
+                <div class="testimotinal-content">
+                    <p class="grdient-text text-center">
+                        Don't Miss Out on the Future of Work 
+                    </p>
+                    <p class="text_xl testimotinal-subtext">
+                        Join thousands of teams already using Cloudairy to streamline workflows and accelerate
+                        productivity. Start your free
+                        trial now. 
+                    </p>
+                    <button class="btn-gradient-signUp">
+                        <span style="text-transform: capitalize">Sign up free</span>
+                    </button>
+                </div>
+                <div class="testimonal-icon icon1">
+                    <img src="../assets/image/mindmap/user2.png" alt="user1" />
+                </div>
+                <div class="testimonal-icon icon2">
+                    <img src="../assets/image/mindmap/user3.png" alt="user2" />
+                </div>
+                <div class="testimonal-icon icon3">
+                    <img src="../assets/image/mindmap/user1.png" alt="user3" />
+                </div>
+                <div class="testimonal-icon icon4">
+                    <img src="../assets/image/mindmap/user4.png" alt="user4" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Frequently Asked Questions -->
+    <section>
+        <div class="container-fluid">
+            <h3>Frequently Ask Questions</h3>
+            <div class="faqs-box">
+                <div class="accordion">
+                    <div class="accordion-bg">
+                        <div class="accordion-item">
+                            <button id="accordion-button-1" aria-expanded="false">
+                                <span class="accordion-title">What is Cloudairy’s Unified Workspace?  </span>
+                                <span class="icon-faqs" aria-hidden="true"></span>
+                            </button>
+                            <div class="accordion-content">
+                                <p>
+                                    It’s a centralized platform that combines all your tools, tasks, and collaboration
+                                    features into one intuitive
+                                    workspace.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">
+                                Can I customize my workspace?      </span>
+                            <span class="icon-faqs" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Yes, Cloudairy allows you to customize dashboards, templates, and layouts to suit your
+                                team’s specific needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">
+                                Does Unified Workspace support remote teams?       </span>
+                            <span class="icon-faqs" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Absolutely. Cloudairy’s real-time collaboration and cross-team communication features
+                                are designed for both remote and
+                                in-office teams.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">
+                                How does the AI assistance work?     </span>
+                            <span class="icon-faqs" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Cloudairy’s AI automates repetitive tasks, provides intelligent insights, and helps you
+                                optimize workflows effortlessly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false">
+                            <span class="accordion-title">
+                                Is my data secure on Cloudairy?      </span>
+                            <span class="icon-faqs" aria-hidden="true"></span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>
+                                Yes, Cloudairy employs advanced security measures to ensure your data is safe and
+                                accessible only to authorized users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ready-to-Use Mind Map Templates -->
+    <div class="section-padding">
+        <feature-mindmap-template data-title="Unified Workspace Community Template"
+            subtitle="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
+            data1="Meeting and Workshops" data2="Agile and Project Management" data3="Technical Diagram"
+            data4="Agile and Project Management" data5="Meeting and Workshops"></feature-mindmap-template>
+    </div>
+
+    <!-- section 9 -->
+    <section class="container-fluid blog-section">
+        <h3 class="text-center">
+            Expert Tips for Effective Document Creation
+        </h3>
+        <p class="text-center more-mindmap-content sub-title text_lg">
+            Explore Cloudairy’s blog for insights, tutorials, and best practices in document design. Learn how to create
+            impactful
+            documents that effectively communicate your message.
+        </p>
+        <div class="blog-all-list" id="blog-data-detail"></div>
+    </section>
+    <!-- contact us -->
+    <section></section>
+    <!-- start: Design, Collaborate, Innovate with Cloudchart!-->
+    <section class="design-section">
+        <div class="section-set-bg">
+            <img src="../assets/image/Home/design-shadow.png" alt="" style="width: 100%" />
+        </div>
+        <div class="section-set-border">
+            <img src="../assets/image/designSection/design-set-belowshadow.png" alt="" style="width: 100%" />
+        </div>
+        <div class="design-padding">
+            <div class="design-bg">
+                <div class="design-content">
+                    <h2>
+                        Design, Collaborate, Innovate with &nbsp;
+                        <span class="cloudchat-text">Cloudairy
+                            <div class="cloudchart-border">
+                                <img src="../assets/image/designSection/border-box.png" alt=""
+                                    style="width: 100%; height: 100%" />
+                            </div>
+                        </span>
+                    </h2>
+                    <p>
+                        Unlock the power of AI-driven collaboration and creativity. Start
+                        your free trial and experience seamless design, effortless
+                        teamwork, and smarter workflows—all in one platform.
+                    </p>
+                    <div class="icon" id="icon1">
+                        <img src="../assets/image/designSection/icon1.svg" alt="icon1"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div id="icon2">
+                        <img src="../assets/image/designSection/icon2.svg" alt="icon2"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div class="icon" id="icon3">
+                        <img src="../assets/image/designSection/icon3.svg" alt="icon3"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div class="icon" id="icon4">
+                        <img src="../assets/image/designSection/icon4.svg" alt="icon4"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div class="icon" id="icon5">
+                        <img src="../assets/image/designSection/icon5.svg" alt="icon5"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div id="icon6">
+                        <img src="../assets/image/designSection/icon6.svg" alt="icon6"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div class="icon" id="icon7">
+                        <img src="../assets/image/designSection/icon7.svg" alt="icon7"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div class="icon" id="icon8">
+                        <img src="../assets/image/designSection/icon8.svg" alt="icon8"
+                            style="width: 100%; height: 100%" />
+                    </div>
+                    <div id="icon9">
+                        <img src="../assets/image/designSection/icon9.svg" alt="icon9"
+                            style="width: 100%; height: 100%" />
+                    </div>
+
+                    <!-- <form id="homesubscribe" class="design-content-email-input">
+                    <div>
+                      <div class="email-background">
+                        <input type="text" id="homeemail" name="homeemail" placeholder="Enter your email address"
+                          class="design-email-box" autocomplete="off" required />
+                      </div>
+                      <div id="homeemailError" style="
+                            color: red;
+                            font-size: 12px;
+                            text-align: left;
+                            padding-top: 8px;
+                          "></div>
+                    </div>
+                    <button class="design-get-started-btn" type="submit" id="homesignupbtn">
+                      <span style="text-transform: capitalize">Sign up free</span>
+                    </button>
+                  </form> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer-------------------------------------- -->
+    <footer style="background-color: #18181b">
+        <div class="footer-section">
+            <div class="footer-container container-fluid section-padding">
+                <div class="footer-first-sec footer-menu">
+                    <h5>Product</h5>
+                    <ul class="footer-list">
+                        <li class="footer-text">
+                            <a rel="canonical" href="diagram-maker">Diagramming Tool</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Product Management</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Project Management</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="online-whiteboard">Online Whiteboard</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Scrum Tool</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-second-sec footer-menu">
+                    <h5>Solutions</h5>
+                    <ul class="footer-list">
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Team Building and ice breakers</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Mood Board Maker</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Hybrid Work</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Technical Diagram Maker</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="agile">Agile Development</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Team Collaboration</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Team Brainstorming</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Engineering Diagram Maker</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="flowchart">Flowchart maker</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">ER Diagram Maker</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="uml-diagram">UML Diagram Maker</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Graphics Organizer Platform</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Client Collaboration software</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Project Collaboration Software</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Enterprise Collaboration Software</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Research and Analysis</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">PI Planning Board</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Design Canvas</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Alignment and Coordination</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="architecture-diagram">Cloud Architecture Diagram </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-third-sec footer-menu">
+                    <h5>Use cases</h5>
+                    <ul class="footer-list">
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Technical Diagramming</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="mind-maps">Mind Mapping</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Brainstorming</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Meetings</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Workshops</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Customer Journey Mapping</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Organization Design</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Process Mapping</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Team Building</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Root Cause Analysis</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Value Stream Mapping</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Research and Analysis</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Project Collaboration</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-fourth-sec footer-menu">
+                    <h5>Resources</h5>
+                    <ul class="footer-list">
+                        <li class="footer-text">
+                            <a rel="canonical" href="template">Templates</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="blog">Blog</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="about">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-fifth-sec footer-menu">
+                    <h5>Pricing and Plan</h5>
+                    <ul class="footer-list">
+                        <li class="footer-text">
+                            <a rel="canonical" href="pricing">Pricing</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="pricing">Professional</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="pricing">Business</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="pricing">Startups</a>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Consultants</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                        <li class="footer-text">
+                            <a rel="canonical" href="">Educations</a>
+                            <div class="coming-soon">Coming Soon</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-accordion">
+                    <div class="footer-accordion-item">
+                        <button id="footer-accordion-button-1" aria-expanded="false">
+                            <span class="footer-accordion-title">Product</span>
+                            <span class="icon1" aria-hidden="true">
+                                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+                            </span>
+                        </button>
+                        <div class="footer-accordion-content">
+                            <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                                <li class="footer-text">
+                                    <a rel="canonical" href="diagram-maker">Diagramming Tool</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Product Management</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Project Management</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="online-whiteboard">Online Whiteboard</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Scrum Tool</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li class="footer-text">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-accordion-item">
+                        <button id="footer-accordion-button-2" aria-expanded="false">
+                            <span class="footer-accordion-title">Solutions</span>
+                            <span class="icon1" aria-hidden="true">
+                                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+                            </span>
+                        </button>
+                        <div class="footer-accordion-content">
+                            <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Team Building and ice breakers</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="pricing">Mood Board Maker</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Hybrid Work</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Technical Diagram Maker</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="agile">Agile Development</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Team Collaboration</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Team Brainstorming</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Engineering Diagram Maker</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="flowchart">Flowchart maker</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">ER Diagram Maker</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="uml-diagram">UML Diagram Maker</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Graphics Organizer Platform</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Client Collaboration software</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Project Collaboration Software</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Enterprise Collaboration Software</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Research and Analysis</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">PI Planning Board</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Design Canvas</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Alignment and Coordination</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="architecture-diagram">Cloud Architecture Diagram </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-accordion-item">
+                        <button id="footer-accordion-button-1" aria-expanded="false">
+                            <span class="footer-accordion-title">Use cases</span>
+                            <span class="icon1" aria-hidden="true">
+                                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+                            </span>
+                        </button>
+                        <div class="footer-accordion-content">
+                            <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Technical Diagramming</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="mind-maps">Mind Mapping</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Brainstorming</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Meetings</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Workshops</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Customer Journey Mapping</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Organization Design</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Process Mapping</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Team Building</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Root Cause Analysis</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Value Stream Mapping</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Research and Analysis</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Project Collaboration</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-accordion-item">
+                        <button id="footer-accordion-button-1" aria-expanded="false">
+                            <span class="footer-accordion-title">Resources</span>
+                            <span class="icon1" aria-hidden="true">
+                                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+                            </span>
+                        </button>
+                        <div class="footer-accordion-content">
+                            <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                                <li class="footer-text">
+                                    <a rel="canonical" href="template">Templates</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="blog">Blog</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="about">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-accordion-item">
+                        <button id="footer-accordion-button-1" aria-expanded="false">
+                            <span class="footer-accordion-title">Pricing and Plan</span>
+                            <span class="icon1" aria-hidden="true">
+                                <img src="../assets/image/Header/white-down-arrow.png" alt="arrow-down-01" />
+                            </span>
+                        </button>
+                        <div class="footer-accordion-content">
+                            <ul class="footer-list" style="padding-top: 0; padding-bottom: 10px">
+                                <li class="footer-text">
+                                    <a rel="canonical" href="pricing">Pricing</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="pricing">Professional</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="pricing">Business</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="pricing">Startups</a>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Consultants</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                                <li class="footer-text">
+                                    <a rel="canonical" href="">Educations</a>
+                                    <div class="coming-soon">Coming Soon</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-six-sec">
+                    <h5>Subscribe to The Newsletter</h5>
+                    <p>
+                        Stay in the loop! Sign up for our newsletter to receive the latest
+                        updates, blog posts, and special offers directly to your inbox.
+                    </p>
+                <form id="subscribeForm">
+                    <input type="text" id="email" name="email" placeholder="Enter your email address" class="email-input"
+                        autocomplete="off" required />
+                    <div id="emailError" style="color:#FF592F; font-size: 12px"></div>
+                    <button class="footer-subscribe-button d-flex justify-content-center" type="submit" id="submitBtn2">
+                        <span>Subscribe</span>
+                    </button>
+                </form>
+                </div>
+            </div>
+        </div>
+
+        <!--copy-right-section -->
+        <div class="copy-right-section">
+            <div class="container-fluid-header">
+                <div class="row justify-content-space-between align-item-center">
+                    <div class="copyright-content">
+                        <p class="">
+                            © 2024&nbsp;<a rel="canonical" href="privacy-policy"
+                                style="cursor: pointer">Cloudairy&nbsp;</a>. All
+                            rights reserved.
+                        </p>
+                    </div>
+                    <div class="copyright-icons">
+                        <ul class="d-flex">
+                            <li>
+                                <a rel="canonical" href="https://www.facebook.com/cloudairytech/"><img
+                                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/facebook.svg"
+                                        alt="facebook" /></a>
+                            </li>
+                            <li>
+                                <a rel="canonical" href="https://twitter.com/cloudairyhq"><img
+                                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/twitter.svg"
+                                        alt="twitter" /></a>
+                            </li>
+                            <li>
+                                <a rel="canonical" href="https://www.linkedin.com/company/cloudairy"><img
+                                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/linkdin.svg"
+                                        alt="linkdin" /></a>
+                            </li>
+                            <li>
+                                <a rel="canonical" href="https://www.instagram.com/cloudairyhq"><img
+                                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/instagram.svg"
+                                        alt="instagram" /></a>
+                            </li>
+                            <li>
+                                <a rel="canonical" href="https://www.youtube.com/@cloudairyhq"><img
+                                        src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/footer/youtube.svg"
+                                        alt="youtube" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/subscribe.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    let question = document.querySelectorAll(".question");
+
+    question.forEach((question) => {
+        question.addEventListener("click", (event) => {
+            const active = document.querySelector(".question.active");
+            if (active && active !== question) {
+                active.classList.toggle("active");
+                active.nextElementSibling.style.maxHeight = 0;
+            }
+            question.classList.toggle("active");
+            const answer = question.nextElementSibling;
+            if (question.classList.contains("active")) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                answer.style.maxHeight = 0;
+            }
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const items = document.querySelectorAll(".accordion button");
+
+        function toggleAccordion() {
+            const itemToggle = this.getAttribute("aria-expanded");
+
+            items.forEach((item) => {
+                item.setAttribute("aria-expanded", "false");
+            });
+
+            if (itemToggle === "false") {
+                this.setAttribute("aria-expanded", "true");
+            }
+        }
+
+        items.forEach((item) => item.addEventListener("click", toggleAccordion));
+    });
+</script>
+
+<script>
+    $(function () {
+        //   console.log("dfgdgerre");
+        $(".icon").draggable({
+            start: function () {
+                $(this).css(
+                    "cursor",
+                    "url('../assets/image/designSection/Hold 1.svg') 2 2, pointer"
+                );
+                $(this).css("z-index", "1");
+                $(this).css("transform", "rotate(-10deg) scale(0.95)");
+            },
+            stop: function () {
+                $(this).css(
+                    "cursor",
+                    "url('../assets/image/designSection/Hold 1.svg') 2 2, pointer"
+                );
+                $(this).css("z-index", "1");
+                $(this).css("transform", "rotate(0deg) scale(1)");
+            },
+        });
+    });
+    $(function () {
+        $(".icon").click(function () {
+            var $this = $(this);
+            $this.css("transform", "rotate(-10deg) scale(0.95)");
+            setTimeout(function () {
+                $this.css("transform", "rotate(0deg) scale(1)");
+            }, 200);
+        });
+    });
+</script>
+<script>
+    window.addEventListener("load", () => {
+        const loadingSection = document.querySelector(".loading");
+        loadingSection.classList.remove("loading");
+    });
+</script>
+<script>
+    function tabChange() {
+        var tabs = $(".nav-tabs > li");
+        var active = tabs.filter(".active");
+        var next = active.next("li").length
+            ? active.next("li").find("a")
+            : tabs.first().find("a");
+        next.tab("show");
+    }
+
+    var tabCycle = setInterval(tabChange, 5000);
+
+    $(".tab-pane").hover(
+        function () {
+            clearInterval(tabCycle);
+        },
+        function () {
+            tabCycle = setInterval(tabChange, 5000);
+        }
+    );
+
+    $(function () {
+        $(".nav-tabs a").click(function (e) {
+            e.preventDefault();
+            clearInterval(tabCycle);
+            $(this).tab("show");
+            tabCycle = setInterval(tabChange, 5000);
+        });
+
+        $(".nav-tabs a:first").tab("show");
+    });
+</script>
+
+</html>
