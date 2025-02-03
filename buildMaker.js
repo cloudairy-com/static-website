@@ -31,6 +31,34 @@ const renderStaticPages = () => {
     fs.copyFileSync(sourcePath, destPath);
   });
 
+  // Ensure 404 page exists
+  const notFoundPage = path.join(pagesDir, '404.html');
+  if (!fs.existsSync(notFoundPage)) {
+    console.error('Warning: 404.html not found in pages directory');
+  } else {
+    const notFoundDestPath = path.join(distDir, '404.html');
+    fs.copyFileSync(notFoundPage, notFoundDestPath);
+  }
+
+  // Create .htaccess file for routing
+  const htaccessContent = `# Custom 404 error document
+ErrorDocument 404 /404.html
+
+# Redirect all non-existent pages to 404
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /404.html [L,R=404]
+
+# Optional: Remove .html extension
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]`;
+
+  // Write .htaccess file
+  fs.writeFileSync(path.join(distDir, '.htaccess'), htaccessContent);
+
   // Copy static assets
   const assetsDir = path.join(__dirname, 'assets');
   const distAssetsDir = path.join(distDir, 'assets');
