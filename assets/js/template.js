@@ -117,8 +117,7 @@ function displayTemplates1(templates, index) {
 
   // Build templates
   templates.forEach((template, index) => {
-    const defaultImage =
-      "https://s3.amazonaws.com/cloudairy-public-website-asset-storage/template/template-default-image.png";
+    const defaultImage = "../assets/image/template/template-default-image.png";
 
     const templateHTML = `
  <div class="template-cards1">
@@ -194,10 +193,7 @@ function displayTemplates(templates) {
     templateGrid.innerHTML = `
       <div class="no-data-found loader" style="display:flex;justify-content: center;">
         <div class="no-data-template">
-          <img 
-            src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/template/no-data-template.svg" 
-            alt="no-data-template" 
-            style="width:100%; height:100%;" />
+        
           <h1 class="heading-no-data" style="text-align:center; padding-top:10px;">No Data Found</h1>
         </div>
       </div>`;
