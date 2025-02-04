@@ -35,11 +35,11 @@ const loadHubSpotScript = () => {
   document.body.appendChild(script);
 };
 
-if (window.hbspt) {
-  console.log("HubSpot script already loaded.");
-} else {
-  loadHubSpotScript();
-}
+// if (window.hbspt) {
+//   console.log("HubSpot script already loaded.");
+// } else {
+//   loadHubSpotScript();
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("subscribeForm");
