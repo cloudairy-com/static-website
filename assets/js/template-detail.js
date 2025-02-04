@@ -148,7 +148,7 @@ function displayLastestTemplate(lastestTemplate) {
                         <div class="template-img-side-2">
                             <img id="displayImage${index}" alt="${
       template.template_name
-    }" src="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/template/template-default-image.png" />
+    }" src="../assets/image/template/template-default-image.png" />
                             <div class="overlay">
                                 <a href="https://chart.cloudairy.com/login" class="btn-Use-Template">Use Template</a>
                                 <a href="./template-detail?template=${

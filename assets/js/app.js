@@ -227,10 +227,11 @@ async function fetchLatestBlogData() {
                       <div class="blog-learn-more-link">
   <p >Read more</p>
   <div class="learnmore-arrow">
-    <svg width="24" height="27" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19.0711 11.9989H3.5148" stroke="#6762FE" stroke-width="1.6" stroke-linecap="round"/>
-      <path d="M15.5352 7.04883L19.7778 11.2915C20.1111 11.6248 20.2778 11.7915 20.2778 11.9986C20.2778 12.2057 20.1111 12.3723 19.7778 12.7057L15.5352 16.9483" stroke="#6762FE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.0711 11.9969H3.5148" stroke="#6762FE" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M15.5352 7.05469L19.7778 11.2973C20.1111 11.6307 20.2778 11.7973 20.2778 12.0044C20.2778 12.2115 20.1111 12.3782 19.7778 12.7115L15.5352 16.9542" stroke="#6762FE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
   </div>
                   </div>
                   </div>

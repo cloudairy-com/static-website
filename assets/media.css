@@ -175,7 +175,6 @@
   }
 }
 @media (max-width: 1320px) {
-
   /* -------------------header- footer------------------------------- */
   .header-navigation ul a {
     font-size: 14px;
@@ -307,7 +306,7 @@
     border-radius: 10px;
   }
   .design-email-box {
-    border-radius: 10px;
+    border-radius: 50px;
     padding: 14px;
     font-size: 14px;
   }
@@ -330,7 +329,7 @@
   }
 }
 @media (max-width: 1319px) {
-  .set-mindmap-swiper{
+  .set-mindmap-swiper {
     display: none;
   }
 }
@@ -498,9 +497,9 @@
     justify-content: flex-start;
     gap: 10px;
   }
-  .navbar-accordion-content h6{
+  .navbar-accordion-content h6 {
     font-weight: 500;
-    color: #18181B;
+    color: #18181b;
   }
   .navbar-accordion ul li a {
     padding: 0;
@@ -758,6 +757,9 @@
   }
   .section-set-bg {
     height: 500px;
+  }
+  .design-cta-btn {
+    margin-top: 16px;
   }
 }
 @media (max-width: 425px) {
