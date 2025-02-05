@@ -519,7 +519,7 @@ class CommonComponent8 extends HTMLElement {
           } */
       /* category-section */
       .category-section {
-        background-image: url("../assets/image/Home/category-shadow.png");
+        background-image: url("IMAGE_PATHHome/category-shadow.png");
       }
       .category-section .sub-title {
         max-width: 997px;

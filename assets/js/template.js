@@ -1,5 +1,5 @@
 var category = localStorage.getItem("category");
-
+const IMAGE_PATH = "https://cdn.cloudairy.net/image/";
 
 async function fetchTemplateData(
   page = 1,
@@ -61,12 +61,11 @@ async function fetchTemplateDataSearch(
     hideLoader();
   }
 }
-if(category){
-
+if (category) {
   setTimeout(function () {
-    // fetchTemplateDataSearch(1, 10, category, "", 0); 
-     localStorage.removeItem("category");
-     localStorage.removeItem("template");
+    // fetchTemplateDataSearch(1, 10, category, "", 0);
+    localStorage.removeItem("category");
+    localStorage.removeItem("template");
   }, 2000);
 }
 
@@ -94,7 +93,7 @@ function displayTemplates1(templates, index) {
     templateGrid.innerHTML = `
       <div class="no-data-found loader" style="display:flex;justify-content: center;">
         <div class="no-data-template">
-        <img src="../assets/image/blog/no-data-found.svg" alt="no-data-found">
+        <img src="${IMAGE_PATH}blog/no-data-found.svg" alt="no-data-found">
         </div>
       </div>`;
     return;
@@ -117,7 +116,7 @@ function displayTemplates1(templates, index) {
 
   // Build templates
   templates.forEach((template, index) => {
-    const defaultImage = "../assets/image/template/template-default-image.png";
+    const defaultImage = `${IMAGE_PATH}template/template-default-image.png`;
 
     const templateHTML = `
  <div class="template-cards1">
@@ -130,9 +129,7 @@ function displayTemplates1(templates, index) {
               src="${defaultImage}" />
             <div class="overlay">
               <a 
-                href="https://cloudairy.net/app?${
-                  template.template_id
-                }" 
+                href="https://cloudairy.net/app?${template.template_id}" 
                 target="_blank" 
                 class="btn-Use-Template">Use Template</a>
               <a 
@@ -249,9 +246,7 @@ function displayTemplates(templates) {
       }" />
           <div class="overlay">
               <a 
-                href="https://cloudairy.net/app?${
-                  template.template_id
-                }" 
+                href="https://cloudairy.net/app?${template.template_id}" 
                 target="_blank" 
                 class="btn-Use-Template">Use Template</a>
                 <a 
@@ -377,7 +372,6 @@ async function fetchCategories1() {
     var category = localStorage.getItem("category");
 
     if (category) {
-
       selectElement.value = category;
 
       const selectedText =
@@ -388,9 +382,9 @@ async function fetchCategories1() {
       });
 
       setTimeout(function () {
-        fetchTemplateDataSearch(1, 10, category, "", 0); 
+        fetchTemplateDataSearch(1, 10, category, "", 0);
         localStorage.removeItem("category");
-      }, 1000); 
+      }, 1000);
     }
 
     selectElement.addEventListener("change", (event) => {

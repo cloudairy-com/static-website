@@ -406,7 +406,7 @@ class CommonComponent extends HTMLElement {
        }
        /* section 6 */
         .category-section {
-        background-image: url("../assets/image/Home/category-shadow.png");
+        background-image: url("IMAGE_PATHHome/category-shadow.png");
       }
       .category-section .sub-title {
         max-width: 997px;
@@ -510,7 +510,7 @@ class CommonComponent extends HTMLElement {
       .testimonial-section {
           position: relative;
           padding: 0;
-          background-image: url('../assets/image/mindmap/ready to tranform.png');
+          background-image: url('IMAGE_PATHmindmap/ready to tranform.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;

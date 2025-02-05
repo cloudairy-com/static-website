@@ -475,7 +475,7 @@ class CommonComponent6 extends HTMLElement {
       .testimonial-section {
           position: relative;
           padding: 0;
-          background-image: url('../assets/image/mindmap/ready to tranform.png');
+          background-image: url('IMAGE_PATHmindmap/ready to tranform.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -1499,7 +1499,7 @@ class CommonComponent6 extends HTMLElement {
           <div class="mindmap-swiper-slide swiper-silde-box-last">
             <div class="swiper-silde-box swiper-silde-box3">
               <img
-                src="../assets/image/Home/template-swiper/UML.svg"
+                src="IMAGE_PATHHome/template-swiper/UML.svg"
                 alt="meeting-and-workshop"
                 style="width: 100%; height: 100%"
               />
@@ -1509,7 +1509,7 @@ class CommonComponent6 extends HTMLElement {
           <div class="mindmap-swiper-slide active-prev-next-slide">
             <div class="swiper-silde-box swiper-silde-box2">
               <img
-                src="../assets/image/Home/template-swiper/flowchart.svg"
+                src="IMAGE_PATHHome/template-swiper/flowchart.svg"
                 alt="agile-and-project-management"
                 style="width: 100%; height: 100%"
               />
@@ -1518,14 +1518,14 @@ class CommonComponent6 extends HTMLElement {
           </div>
           <div class="mindmap-swiper-slide active-slide">
             <div class="swiper-silde-box swiper-silde-box1">
-              <img src="../assets/image/Home/template-swiper/Diagramming.svg" alt="technical-diagram" />
+              <img src="IMAGE_PATHHome/template-swiper/Diagramming.svg" alt="technical-diagram" />
             </div>
             <div class="swiper-box-title3">${data3}</div>
           </div>
           <div class="mindmap-swiper-slide active-prev-next-slide">
             <div class="swiper-silde-box swiper-silde-box2">
               <img
-                src="../assets/image/Home/template-swiper/AWS.svg"
+                src="IMAGE_PATHHome/template-swiper/AWS.svg"
                 alt="brainstorming"
                 style="width: 100%; height: 100%"
               />
@@ -1535,7 +1535,7 @@ class CommonComponent6 extends HTMLElement {
           <div class="mindmap-swiper-slide swiper-silde-box-last">
             <div class="swiper-silde-box swiper-silde-box3">
               <img
-                src="../assets/image/Home/template-swiper/Azure.svg"
+                src="IMAGE_PATHHome/template-swiper/Azure.svg"
                 alt="processes"
                 style="width: 100%; height: 100%"
               />
@@ -1546,31 +1546,31 @@ class CommonComponent6 extends HTMLElement {
         <div class="mindmap-template mobile-mind-template">
           <div class="mindmap-swiper-slide active-prev-next-slide">
             <div class="swiper-silde-box swiper-silde-box2">
-              <img src="../assets/image/Home/template-swiper/UML.svg" alt="meeting-and-workshop" />
+              <img src="IMAGE_PATHHome/template-swiper/UML.svg" alt="meeting-and-workshop" />
             </div>
             <div class="swiper-box-title1">${data1}</div>
           </div>
           <div class="mindmap-swiper-slide active-prev-next-slide">
             <div class="swiper-silde-box swiper-silde-box2">
-              <img src="../assets/image/Home/template-swiper/flowchart.svg" alt="agile-and-project-management" />
+              <img src="IMAGE_PATHHome/template-swiper/flowchart.svg" alt="agile-and-project-management" />
             </div>
             <div class="swiper-box-title1">${data2}</div>
           </div>
           <div class="mindmap-swiper-slide active-prev-next-slide">
             <div class="swiper-silde-box swiper-silde-box2">
-              <img src="../assets/image/Home/template-swiper/Diagramming.svg" alt="technical-diagram" />
+              <img src="IMAGE_PATHHome/template-swiper/Diagramming.svg" alt="technical-diagram" />
             </div>
             <div class="swiper-box-title1">${data3}</div>
           </div>
           <div class="mindmap-swiper-slide active-prev-next-slide">
             <div class="swiper-silde-box swiper-silde-box2">
-              <img src="../assets/image/Home/template-swiper/AWS.svg" alt="brainstorming" />
+              <img src="IMAGE_PATHHome/template-swiper/AWS.svg" alt="brainstorming" />
             </div>
             <div class="swiper-box-title1">${data4}</div>
           </div>
           <div class="mindmap-swiper-slide active-prev-next-slide">
             <div class="swiper-silde-box swiper-silde-box2">
-              <img src="../assets/image/Home/template-swiper/Azure.svg"  alt="processes"/>
+              <img src="IMAGE_PATHHome/template-swiper/Azure.svg"  alt="processes"/>
             </div>
             <div class="swiper-box-title1">${data5}</div>
           </div>

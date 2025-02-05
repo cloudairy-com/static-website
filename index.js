@@ -135,6 +135,8 @@ app.get("/blog/:slug", async (req, res) => {
     const blogDetail = response.data.blog;
     // console.log(blogDetail, "blogDetail");
 
+    const imagePath = "https://cdn.cloudairy.net/image/";
+
     // Render the EJS template with dynamic data
     res.render("blog-detail", {
       title: blogDetail.metaTitle,
@@ -148,6 +150,7 @@ app.get("/blog/:slug", async (req, res) => {
       url: `https://cloudairy.com/blog/${slug}`,
       author: blogDetail?.author?.name,
       date: blogDetail?.createdAt,
+      imagePath: imagePath,
       base_url: url,
     });
   } catch (err) {
@@ -175,6 +178,8 @@ app.get("/template/:slug", async (req, res) => {
     );
     const templateDetail = response?.data?.data?.templateDetails;
 
+    const imagePath = "https://cdn.cloudairy.net/image/";
+
     // Render the EJS template with dynamic data
     res.render("template-detail", {
       title: templateDetail?.meta_title || templateDetail?.template_name,
@@ -188,6 +193,7 @@ app.get("/template/:slug", async (req, res) => {
           : encodeURI(templateDetail?.thumbnail_image)
         : "https://cloudairy-template-storage.s3.amazonaws.com/public/metaLogo.png",
       url: `https://cloudairy.com/template/${slug}`,
+      imagePath: imagePath,
       base_url: url,
     });
   } catch (err) {
@@ -212,10 +218,13 @@ app.get("/", (req, res) => {
       const injectedScript = `<script>window.config = ${JSON.stringify(
         serverData
       )};</script>`;
-      const modifiedHtml = html.replace(
-        "</head>", // Inject the script before the closing </head> tag
-        `${injectedScript}</head>`
-      );
+
+      // Replace all instances of IMAGE_PATH with the actual path
+      const modifiedHtml = html
+        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.net/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
+        .replace("</head>", `${injectedScript}</head>`); // Inject server-side data into the <head> section
+
+      // Send the modified HTML
       res.send(modifiedHtml);
     }
   });
@@ -359,10 +368,9 @@ app.get("/:page", (req, res) => {
       const injectedScript = `<script>window.config = ${JSON.stringify(
         serverData
       )};</script>`;
-      const modifiedHtml = html.replace(
-        "</head>", // Inject the script before the closing </head> tag
-        `${injectedScript}</head>`
-      );
+      const modifiedHtml = html
+        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.net/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
+        .replace("</head>", `${injectedScript}</head>`); // Inject server-side data into the <head> section
       res.send(modifiedHtml);
     }
   });
@@ -384,10 +392,9 @@ app.get("/", (req, res) => {
       const injectedScript = `<script>window.config = ${JSON.stringify(
         serverData
       )};</script>`;
-      const modifiedHtml = html.replace(
-        "</head>", // Inject the script before the closing </head> tag
-        `${injectedScript}</head>`
-      );
+      const modifiedHtml = html
+        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.net/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
+        .replace("</head>", `${injectedScript}</head>`); // Inject server-side data into the <head> section
       res.send(modifiedHtml);
     }
   });

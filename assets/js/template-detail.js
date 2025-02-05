@@ -37,7 +37,7 @@ const getTemplateDetail = async (url) => {
     if (metaDesc) {
       metaDesc.setAttribute("content", templateDesc);
     }
-    console.log(templateDetail.template_id,"1111111111111111111");
+    console.log(templateDetail.template_id, "1111111111111111111");
     const lastestTemplate = templatelistdata?.data?.relatedTemplates;
     // console.log(lastestTemplate, "lastestTemplate");
     if (lastestTemplate) {
@@ -65,12 +65,11 @@ function displayTemplatedetails(templateDetail) {
     templateDetail.template_name !== null && templateDetail.template_name !== ""
       ? templateDetail.template_name
       : "";
-        const templateTitleElement1 = document.getElementById("template-title1");
-        templateTitleElement1.innerText =
-          templateDetail.template_name !== null &&
-          templateDetail.template_name !== ""
-            ? templateDetail.template_name
-            : "";
+  const templateTitleElement1 = document.getElementById("template-title1");
+  templateTitleElement1.innerText =
+    templateDetail.template_name !== null && templateDetail.template_name !== ""
+      ? templateDetail.template_name
+      : "";
   const templatedescElement = document.getElementById("template-desc");
   templatedescElement.innerText =
     templateDetail.template_description !== null &&
@@ -148,7 +147,7 @@ function displayLastestTemplate(lastestTemplate) {
                         <div class="template-img-side-2">
                             <img id="displayImage${index}" alt="${
       template.template_name
-    }" src="../assets/image/template/template-default-image.png" />
+    }" src="IMAGE_PATHtemplate/template-default-image.png" />
                             <div class="overlay">
                                 <a href="https://chart.cloudairy.com/login" class="btn-Use-Template">Use Template</a>
                                 <a href="./template-detail?template=${

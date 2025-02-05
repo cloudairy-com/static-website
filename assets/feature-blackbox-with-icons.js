@@ -352,7 +352,7 @@ class CommonComponent7 extends HTMLElement {
          }
          /* section 6 */
           .category-section {
-          background-image: url("../assets/image/Home/category-shadow.png");
+          background-image: url("IMAGE_PATHHome/category-shadow.png");
         }
         .category-section .sub-title {
           max-width: 997px;
@@ -458,7 +458,7 @@ class CommonComponent7 extends HTMLElement {
         .testimonial-section {
             position: relative;
             padding: 0;
-            background-image: url('../assets/image/mindmap/ready to tranform.png');
+            background-image: url('IMAGE_PATHmindmap/ready to tranform.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -1468,7 +1468,7 @@ class CommonComponent7 extends HTMLElement {
       <div class="container-fluid">
         <div class="testimonial-section">
           <!-- <img
-            src="../assets/image/mindmap/ready to tranform.svg"
+            src="IMAGE_PATHmindmap/ready to tranform.svg"
             alt="ready to tranform"
           /> -->
           <div class="testimotinal-content">
@@ -1483,16 +1483,16 @@ class CommonComponent7 extends HTMLElement {
             </button>
           </div>
           <div class="testimonal-icon icon1">
-            <img src="../assets/image/mindmap/user2.png" alt="user2" />
+            <img src="IMAGE_PATHmindmap/user2.png" alt="user2" />
           </div>
           <div class="testimonal-icon icon2">
-            <img src="../assets/image/mindmap/user3.png" alt="user3" />
+            <img src="IMAGE_PATHmindmap/user3.png" alt="user3" />
           </div>
           <div class="testimonal-icon icon3">
-            <img src="../assets/image/mindmap/user1.png" alt="user1" />
+            <img src="IMAGE_PATHmindmap/user1.png" alt="user1" />
           </div>
           <div class="testimonal-icon icon4">
-            <img src="../assets/image/mindmap/user4.png" alt="user4" />
+            <img src="IMAGE_PATHmindmap/user4.png" alt="user4" />
           </div>
         </div>
       </div>

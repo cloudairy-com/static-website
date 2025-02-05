@@ -26,7 +26,6 @@ class CommonComponent5 extends HTMLElement {
       this.getAttribute("image") ||
       "https://s3.amazonaws.com/cloudairy-website-storage/mindmap/perfect-mindmap.png";
 
-
     this.shadowRoot.innerHTML = `
       <style>
        @import url('./assets/main.css');
@@ -229,7 +228,7 @@ class CommonComponent5 extends HTMLElement {
        }
        /* section 6 */
         .category-section {
-        background-image: url("../assets/image/Home/category-shadow.png");
+        background-image: url("IMAGE_PATHHome/category-shadow.png");
       }
       .category-section .sub-title {
         max-width: 997px;
@@ -333,7 +332,7 @@ class CommonComponent5 extends HTMLElement {
       .testimonial-section {
           position: relative;
           padding: 0;
-          background-image: url('../assets/image/mindmap/ready to tranform.png');
+          background-image: url('IMAGE_PATHmindmap/ready to tranform.png');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
@@ -1419,8 +1418,4 @@ class CommonComponent5 extends HTMLElement {
   }
 }
 
-customElements.define(
-  "feature-prefect-mindmapping",
-  CommonComponent5
-  
-);
+customElements.define("feature-prefect-mindmapping", CommonComponent5);

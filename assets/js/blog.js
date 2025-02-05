@@ -4,6 +4,7 @@ const limit = 6;
 let totalBlogs = 0;
 let allBlogs = [];
 let clickedValue = "All Category";
+const IMAGE_PATH = "https://cdn.cloudairy.net/image/";
 
 // Function to fetch and display blog data
 async function fetchBlogData(page, clickedValue, searchValue) {
@@ -86,7 +87,7 @@ function displayMostPopularBlogs(popularBlogs) {
             <p>${firstBlog.shortDescription}</p>
             <span class="learn-more-link">Read more
               <img 
-                src="../assets/image/blog/arrow-right-sharp.png" 
+                src="${IMAGE_PATH}blog/arrow-right-sharp.png" 
                 alt="arrow-right" 
                 class="learnmore-arrow">
             </span>
@@ -121,7 +122,7 @@ function displayMostPopularBlogs(popularBlogs) {
                                   <p class="blog-box-title">${blog.title}</p>
                                   <p class="blog-box-shortDescription" >${blog.shortDescription}</p>
                                  </div>
-                                 <div class="learn-more-link">Read more<img src="../assets/image/blog/arrow-right-sharp.png" alt="arrow-up-right-01-sharp" class="learnmore-arrow "></div>
+                                 <div class="learn-more-link">Read more<img src="${IMAGE_PATH}blog/arrow-right-sharp.png" alt="arrow-up-right-01-sharp" class="learnmore-arrow "></div>
                             </div>
                         </div>
                     </a>
@@ -138,7 +139,7 @@ function displayMostPopularBlogs(popularBlogs) {
                  background-position: center;
                  cursor: pointer;"
           onclick="window.location.href='https://chart.cloudairy.com/login'">
-      <img src="../assets/image/blog/white-logo.png" />
+      <img src="${IMAGE_PATH}blog/white-logo.png" />
       <h2>${bannerBlogs[0].title}</h2>
       <button class="start-trial-button">
         Start free trial
@@ -176,7 +177,7 @@ function displayBlogs(blogs, clickedValue, searchValue) {
   if (blogs.length === 0) {
     result = `<div style="display:flex;justify-content: center;" class="no-data-found">
              <div class="no-data-template">
-                  <img src="../assets/image/blog/no-data-found.svg" alt="no-data-found">
+                  <img src="${IMAGE_PATH}blog/no-data-found.svg" alt="no-data-found">
                 
                </div>
               </div>`;
@@ -203,7 +204,7 @@ function displayBlogs(blogs, clickedValue, searchValue) {
                                   <p class="blog-box-title">${blog.title}</p>
                                   <p class="blog-box-shortDescription" >${blog.shortDescription}</p>
                                  </div>
-                                 <div class="learn-more-link">Read more<img src="../assets/image/blog/arrow-right-sharp.png" alt="arrow-up-right-01-sharp" class="learnmore-arrow "></div>
+                                 <div class="learn-more-link">Read more<img src="${IMAGE_PATH}blog/arrow-right-sharp.png" alt="arrow-up-right-01-sharp" class="learnmore-arrow "></div>
                             </div>
                         </div>
                     </a>`;
