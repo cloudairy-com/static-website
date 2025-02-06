@@ -335,7 +335,7 @@ class CommonComponent100 extends HTMLElement {
           </p>
           <a class="btn-cta-signUp" href="https://chart.cloudairy.com/signup">
             <div>Get started, it’s free!</div>
-            <div class="cta-arrow-box"><img src="IMAGE_PATHctc/white-arrow-cta.svg" alt="white-arrow-cta">
+            <div class="cta-arrow-box"><img src="https://cdn.cloudairy.net/image/ctc/white-arrow-cta.svg" alt="white-arrow-cta">
             </div>
           </a>
         </div>

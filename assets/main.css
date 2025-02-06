@@ -1059,12 +1059,12 @@ svg.toggle-close {
 .design-padding {
   padding: 100px 0;
   background-color: #f9fafc;
-  background-image: url("IMAGE_PATHdesignSection/Vector.png");
+  background-image: url("https://cdn.cloudairy.net/image/designsection/vector.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   /* border-radius: 50px 50px 0 0; */
-  /* cursor: url("IMAGE_PATHdesignSection/Group\ 1618878083.png"), pointer; */
+  /* cursor: url("https://cdn.cloudairy.net/image/designSection/Group\ 1618878083.png"), pointer; */
   overflow: hidden;
 }
 .design-cta-btn {
@@ -1118,7 +1118,7 @@ svg.toggle-close {
   display: none;
 }
 .design-padding .icon {
-  cursor: url("IMAGE_PATHdesignSection/hold_1.svg") 2 2, pointer;
+  cursor: url("https://cdn.cloudairy.net/image/designSection/hold_1.svg") 2 2, pointer;
   transition: transform 0.2s ease;
 }
 .design-icon {
