@@ -46,10 +46,10 @@ const getTemplateDetail = async (url) => {
       displayLastestTemplate(lastestTemplate);
     }
     displayTemplatedetails(templateDetail);
-    // templateLink.href = `https://app.cloudairy.info?${templateDetail.template_id}`;
-    templateLink1.href = `https://app.cloudairy.info?t_id=${templateDetail.template_id}`;
-    templateLink2.href = `https://app.cloudairy.info?t_id=${templateDetail.template_id}`;
-    // imageLink.href = `https://app.cloudairy.info?${templateDetail.template_id}`;
+    // templateLink.href = `https://app.cloudairy.com?${templateDetail.template_id}`;
+    templateLink1.href = `https://app.cloudairy.com?t_id=${templateDetail.template_id}`;
+    templateLink2.href = `https://app.cloudairy.com?t_id=${templateDetail.template_id}`;
+    // imageLink.href = `https://app.cloudairy.com?${templateDetail.template_id}`;
   } catch (error) {
     console.error("Error::", error);
   } finally {
@@ -57,7 +57,8 @@ const getTemplateDetail = async (url) => {
   }
 };
 function displayTemplatedetails(templateDetail) {
-  const template_cta = document.getElementById("template-cta");.0
+  const template_cta = document.getElementById("template-cta");
+  0.0;
 
   template_cta.innerText = templateDetail.template_name;
 
@@ -150,7 +151,7 @@ function displayLastestTemplate(lastestTemplate) {
       template.template_name
     }" src="IMAGE_PATHtemplate/template-default-image.png" />
                             <div class="overlay">
-                                <a href="https://app.cloudairy.info/login" class="btn-Use-Template">Use Template</a>
+                                <a href="https://app.cloudairy.com/login" class="btn-Use-Template">Use Template</a>
                                 <a href="./template-detail?template=${
                                   template.uri
                                 }" target="_blank" class="btn-Preview">Preview</a>

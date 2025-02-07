@@ -1335,8 +1335,8 @@
                     </ul>
                 </nav>
                 <div class="navbar-buttons">
-                    <a href="https://app.cloudairy.info/login" class="btn-outline">Login</a>
-                    <a href="https://app.cloudairy.info/signup" class="btn-gradient">Sign up free</a>
+                    <a href="https://app.cloudairy.com/login" class="btn-outline">Login</a>
+                    <a href="https://app.cloudairy.com/signup" class="btn-gradient">Sign up free</a>
                 </div>
                 <div class="navbar-drawer-menu">
                     <svg width="20" height="20" class="toggle-open" viewBox="0 0 24 24" fill="white"
@@ -1692,9 +1692,9 @@
                     align-items: center;
                     margin-top: 15px;
                   " class="navbar-sidetoggle-button">
-                        <a rel="canonical" href="https://app.cloudairy.info/signup" class="btn-outline">Sign up
+                        <a rel="canonical" href="https://app.cloudairy.com/signup" class="btn-outline">Sign up
                             free</a>
-                        <a rel="canonical" href="https://app.cloudairy.info/login" class="btn-gradient">Log in</a>
+                        <a rel="canonical" href="https://app.cloudairy.com/login" class="btn-gradient">Log in</a>
                     </div>
                 </div>
             </div>
@@ -1752,204 +1752,207 @@
                             <div class="error-message" id="lastNameError"></div>
                         </div>
                     </div>
-            <div class="name-group">
-                <div class="form-group">
-                    <label for="email">Email Address <span class="required">&nbsp;*</span></label>
-                    <input type="email" id="email" name="email" placeholder="Email" />
-                    <div class="error-message" id="emailError"></div>
-                </div>
-
-                <div class="form-group">
-                    <label for="jobtitle">Job Title</label>
-                    <input type="text" id="jobtitle" name="jobtitle" placeholder="Title" />
-                    <div class="error-message" id="jobtitleError"></div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="phoneNumber">Phone number</label>
-                <div class="phone-group">
-                    <div class="custom-dropdown">
-                        <div class="selected" id="selectedFlagContainer">
-                            <img id="selectedFlag" src="" alt="" style="display:none; width: 44px; height: 30px;">
-                            <div style="margin-left: 6px;margin-top: 5px;" id="phone"><img
-                                    src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" /></div>
+                    <div class="name-group">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">&nbsp;*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Email" />
+                            <div class="error-message" id="emailError"></div>
                         </div>
-                        <div class="options" id="countrySelect" style="display: none;">
-                            <!-- Options will be populated here -->
+
+                        <div class="form-group">
+                            <label for="jobtitle">Job Title</label>
+                            <input type="text" id="jobtitle" name="jobtitle" placeholder="Title" />
+                            <div class="error-message" id="jobtitleError"></div>
                         </div>
                     </div>
-                    <div style="border: 1px solid #E1E1E1 ; height: 33px; "></div>
-                    <div class="code">
-                        <input type="text" id="mobilephone" maxlength="10" placeholder="
-                                    " oninput="this.value = this.value.replace(/[^0-9]/g, '')" placeholder="(222)222-2222"><span
-                            class="country-code" id="countryCode">
-                            country code
-                        </span>
-                    </div>
-                </div>
-                <div class="error" id="phoneNumberError">Valid phone number is required</div>
-            </div>
-
-            <div class="form-group">
-                <label for="company">Company Name</label>
-                <input type="text" id="company" name="company" placeholder="Company" />
-                <div class="error-message" id="companyError"></div>
-
-
-            </div>
-
-            <div class="form-group">
-                <label for="helpMessage">Message</label>
-                <textarea  id="messageError"  placeholder="Enter more details.."></textarea>
-                <div class="error" id="messageError">This field is required</div>
-            </div>
-            <div class="form-group checkbox-group  privacy-policy">
-                <input class="checkbox-class" type="checkbox" id="isAgree">
-                <label for="privacyPolicy">
-                    By clicking submit, I acknowledge Cloudairy.com's
-                    <a href="privacy-policy" class="privacy-policy" style="text-decoration: underline;">Privacy
-                        Policy</a>.
-                </label>
-                <div class="error" id="privacyPolicyError">You must accept the privacy policy</div>
-            </div>
-            <div class="form-group submit-group ">
-                <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
-            </div>
-            </form>
-
-            <!-- Email Us Form -->
-            <form id="emailForm">
-                <div class="form-group">
-                    <label for="manageOptions">What topic can we help you with?</label>
-                    <div class="select">
-                        <select id="manageOptions">
-                            <option>Getting Started</option>
-                            <option>Media Management</option>
-                            <option>Digital Asset Optimization</option>
-                            <option>Other</option>
-
-
-                        </select>
-
-                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M1 1L6.29289 6.29289C6.62623 6.62623 6.79289 6.79289 7 6.79289C7.20711 6.79289 7.37377 6.62623 7.70711 6.29289L13 1"
-                                stroke="#171617" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-
-                    </div>
-                </div>
-                <div class="name-group">
                     <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" placeholder="Enter your first name">
+                        <label for="phoneNumber">Phone number</label>
+                        <div class="phone-group">
+                            <div class="custom-dropdown">
+                                <div class="selected" id="selectedFlagContainer">
+                                    <img id="selectedFlag" src="" alt=""
+                                        style="display:none; width: 44px; height: 30px;">
+                                    <div style="margin-left: 6px;margin-top: 5px;" id="phone"><img
+                                            src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" /></div>
+                                </div>
+                                <div class="options" id="countrySelect" style="display: none;">
+                                    <!-- Options will be populated here -->
+                                </div>
+                            </div>
+                            <div style="border: 1px solid #E1E1E1 ; height: 33px; "></div>
+                            <div class="code">
+                                <input type="text" id="mobilephone" maxlength="10" placeholder="
+                                    " oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                                    placeholder="(222)222-2222"><span class="country-code" id="countryCode">
+                                    country code
+                                </span>
+                            </div>
+                        </div>
+                        <div class="error" id="phoneNumberError">Valid phone number is required</div>
                     </div>
-                    <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" placeholder="Enter your last name">
-                    </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="workEmail">Your email address</label>
-                    <p class="workEmail">Associated with your Cloudairy.com account</p>
-                    <input type="email" id="workEmail" placeholder="name@company.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="helpMessage">Tell us more about what we can help you with</label>
-                    <textarea id="helpMessage"
-                        placeholder="Tell us more about your team and what work you'd like to manage with Cloudairy.com"></textarea>
-                </div>
-
-                <div class="drag-drop-area">
-                    Drag and drop or <a href="#" class="upload-link">upload a file here</a>
-                </div>
-                <div class="form-group checkbox-group  privacy-policy">
-                    <input class="checkbox-class" type="checkbox" id="privacyPolicy">
-                    <label for="privacyPolicy">
-                        By clicking submit, I acknowledge Cloudairy.com's
-                        <a href="#" class="privacy-policy">Privacy Policy</a>.
-                    </label>
-                </div>
-                <div class="form-group submit-group ">
-                    <button type="submit" class="submit-btn">Send Email</button>
-                </div>
-            </form>
-            <!-- Request a Call Form -->
-            <form id="callForm">
-                <div class="form-group">
-                    <label for="manageOptions">What topic can we help you with?</label>
-                    <p class="workEmail">Billing is the only call back topic we support at the moment but more
-                        topics are coming soon</p>
-                    <select id="manageOptions">
-                        <option>Please select</option>
-                        <option>Media Management</option>
-                        <option>Digital Asset Optimization</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-                <div class="form-group checkbox-group admin  privacy-policy">
-                    <input class="checkbox-class" type="checkbox" id="privacyPolicy">
-                    <label for="privacyPolicy">
-                        I'm the admin of my CloudAairy.com account
-                    </label>
-                </div>
-                <p class="workEmail">We only conduct callbacks with the account's Admin, in adherence to our
-                    security and privacy protocols regarding billing matters, given their sensitive nature.</p>
-                <div class="name-group">
                     <div class="form-group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" placeholder="Enter your first name">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company" placeholder="Company" />
+                        <div class="error-message" id="companyError"></div>
+
+
                     </div>
+
                     <div class="form-group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" placeholder="Enter your last name">
+                        <label for="helpMessage">Message</label>
+                        <textarea id="messageError" placeholder="Enter more details.."></textarea>
+                        <div class="error" id="messageError">This field is required</div>
                     </div>
-                </div>
-                <div class="name-group">
+                    <div class="form-group checkbox-group  privacy-policy">
+                        <input class="checkbox-class" type="checkbox" id="isAgree">
+                        <label for="privacyPolicy">
+                            By clicking submit, I acknowledge Cloudairy.com's
+                            <a href="privacy-policy" class="privacy-policy" style="text-decoration: underline;">Privacy
+                                Policy</a>.
+                        </label>
+                        <div class="error" id="privacyPolicyError">You must accept the privacy policy</div>
+                    </div>
+                    <div class="form-group submit-group ">
+                        <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+
+                <!-- Email Us Form -->
+                <form id="emailForm">
+                    <div class="form-group">
+                        <label for="manageOptions">What topic can we help you with?</label>
+                        <div class="select">
+                            <select id="manageOptions">
+                                <option>Getting Started</option>
+                                <option>Media Management</option>
+                                <option>Digital Asset Optimization</option>
+                                <option>Other</option>
+
+
+                            </select>
+
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 1L6.29289 6.29289C6.62623 6.62623 6.79289 6.79289 7 6.79289C7.20711 6.79289 7.37377 6.62623 7.70711 6.29289L13 1"
+                                    stroke="#171617" stroke-width="1.6" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                    </div>
+                    <div class="name-group">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter your last name">
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <label for="workEmail">Your email address</label>
                         <p class="workEmail">Associated with your Cloudairy.com account</p>
                         <input type="email" id="workEmail" placeholder="name@company.com">
                     </div>
-                    <div class="form-group mt">
-                        <label for="phoneNumber">Phone Number</label>
-                        <div class="phone-group">
-                            <select>
-                                <option>+91</option>
-                                <option>+1</option>
-                                <option>+44</option>
-                                <option>+61</option>
-                            </select>
-                            <div class="code">
-                                <input type="text" maxlength="10" placeholder="
-                                    " oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="phoneNumber"> <span
-                                    class="country-code"> +91
-                                </span>
-                                </input>
-                            </div>
 
-                        </div>
+                    <div class="form-group">
+                        <label for="helpMessage">Tell us more about what we can help you with</label>
+                        <textarea id="helpMessage"
+                            placeholder="Tell us more about your team and what work you'd like to manage with Cloudairy.com"></textarea>
                     </div>
 
-                </div>
-                <div class="form-group">
-                    <label for="helpMessage">Tell us more about what we can help you with</label>
-                    <textarea id="helpMessage"
-                        placeholder="Tell us more about your team and what you'd like to manage."></textarea>
-                </div>
-                <div class="form-group checkbox-group  privacy-policy">
-                    <input class="checkbox-class" type="checkbox" id="privacyPolicy">
-                    <label for="privacyPolicy">
-                        By submitting this form, I acknowledge receipt of the cloudairy.com's
-                        <a href="privacy-policy" class="privacy-policy">Privacy Policy</a>.
-                    </label>
-                </div>
-                <div class="form-group submit-group ">
-                    <button type="submit" class="submit-btn">Call Me</button>
-                </div>
-            </form>
+                    <div class="drag-drop-area">
+                        Drag and drop or <a href="#" class="upload-link">upload a file here</a>
+                    </div>
+                    <div class="form-group checkbox-group  privacy-policy">
+                        <input class="checkbox-class" type="checkbox" id="privacyPolicy">
+                        <label for="privacyPolicy">
+                            By clicking submit, I acknowledge Cloudairy.com's
+                            <a href="#" class="privacy-policy">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="form-group submit-group ">
+                        <button type="submit" class="submit-btn">Send Email</button>
+                    </div>
+                </form>
+                <!-- Request a Call Form -->
+                <form id="callForm">
+                    <div class="form-group">
+                        <label for="manageOptions">What topic can we help you with?</label>
+                        <p class="workEmail">Billing is the only call back topic we support at the moment but more
+                            topics are coming soon</p>
+                        <select id="manageOptions">
+                            <option>Please select</option>
+                            <option>Media Management</option>
+                            <option>Digital Asset Optimization</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox-group admin  privacy-policy">
+                        <input class="checkbox-class" type="checkbox" id="privacyPolicy">
+                        <label for="privacyPolicy">
+                            I'm the admin of my CloudAairy.com account
+                        </label>
+                    </div>
+                    <p class="workEmail">We only conduct callbacks with the account's Admin, in adherence to our
+                        security and privacy protocols regarding billing matters, given their sensitive nature.</p>
+                    <div class="name-group">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Enter your first name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                    <div class="name-group">
+                        <div class="form-group">
+                            <label for="workEmail">Your email address</label>
+                            <p class="workEmail">Associated with your Cloudairy.com account</p>
+                            <input type="email" id="workEmail" placeholder="name@company.com">
+                        </div>
+                        <div class="form-group mt">
+                            <label for="phoneNumber">Phone Number</label>
+                            <div class="phone-group">
+                                <select>
+                                    <option>+91</option>
+                                    <option>+1</option>
+                                    <option>+44</option>
+                                    <option>+61</option>
+                                </select>
+                                <div class="code">
+                                    <input type="text" maxlength="10" placeholder="
+                                    " oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="phoneNumber"> <span
+                                        class="country-code"> +91
+                                    </span>
+                                    </input>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="helpMessage">Tell us more about what we can help you with</label>
+                        <textarea id="helpMessage"
+                            placeholder="Tell us more about your team and what you'd like to manage."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group  privacy-policy">
+                        <input class="checkbox-class" type="checkbox" id="privacyPolicy">
+                        <label for="privacyPolicy">
+                            By submitting this form, I acknowledge receipt of the cloudairy.com's
+                            <a href="privacy-policy" class="privacy-policy">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="form-group submit-group ">
+                        <button type="submit" class="submit-btn">Call Me</button>
+                    </div>
+                </form>
             </div>
         </section>
     </section>
@@ -2065,7 +2068,7 @@
                         <img src="IMAGE_PATHdesignsection/iconnine.svg" alt="icon9" style="width: 100%; height: 100%" />
                     </div>
                     <div class="design-cta-btn">
-                        <a class="design-get-started-btn" href="https://app.cloudairy.info/signup">
+                        <a class="design-get-started-btn" href="https://app.cloudairy.com/signup">
                             <span>Sign up free</span>
                         </a>
                     </div>

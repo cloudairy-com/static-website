@@ -138,7 +138,7 @@ function displayMostPopularBlogs(popularBlogs) {
                  background-repeat: no-repeat; 
                  background-position: center;
                  cursor: pointer;"
-          onclick="window.location.href='https://app.cloudairy.info/login'">
+          onclick="window.location.href='https://app.cloudairy.com/login'">
       <img src="${IMAGE_PATH}blog/white-logo.png" />
       <h2>${bannerBlogs[0].title}</h2>
       <button class="start-trial-button">

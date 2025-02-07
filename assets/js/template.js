@@ -129,9 +129,7 @@ function displayTemplates1(templates, index) {
               src="${defaultImage}" />
             <div class="overlay">
               <a 
-                href="https://app.cloudairy.info?t_id=${
-                  template.template_id
-                }" 
+                href="https://app.cloudairy.com?t_id=${template.template_id}" 
                 target="_blank" 
                 class="btn-Use-Template">Use Template</a>
               <a 
@@ -248,7 +246,7 @@ function displayTemplates(templates) {
       }" />
           <div class="overlay">
               <a 
-                href="https://app.cloudairy.info?t_id=${template.template_id}" 
+                href="https://app.cloudairy.com?t_id=${template.template_id}" 
                 target="_blank" 
                 class="btn-Use-Template">Use Template</a>
                 <a 

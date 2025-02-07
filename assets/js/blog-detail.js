@@ -130,7 +130,6 @@ function displayblogdetails(blogs) {
     sectionDiv.appendChild(titleElement);
 
     data.section.forEach((sectionData, ind) => {
-
       const contentDiv = createElement("div", { key: ind });
       // if (!sectionData.template_description && ind === 0) {
       //   const titleElement = createElement(
@@ -320,7 +319,6 @@ function displayblogdetails(blogs) {
 
           const descriptionElement = createElement("p", {
             class: "cta-description",
-           
           });
           descriptionElement.textContent = sectionData.cta_description;
           templateDescriptionElement.appendChild(descriptionElement);
@@ -328,7 +326,7 @@ function displayblogdetails(blogs) {
           const signUpButton = createElement("a", {
             class: "cta-signup-button",
             target: "_blank",
-            href: "https://app.cloudairy.info/signup",
+            href: "https://app.cloudairy.com/signup",
           });
           signUpButton.textContent = "Sign up free";
 
