@@ -193,12 +193,18 @@
     }
 
     .setLoder {
-      max-width: 100px;
+      /* max-width: 100px; */
       height: 100px;
       display: flex;
       justify-content: center;
       margin: 200px 0;
     }
+
+    #loaderblog {
+      display: flex;
+      justify-content: center;
+    }
+
 
     .search-box {
       /* padding: 20px; */
@@ -1293,21 +1299,21 @@
                           <p>Project and Task Management</p>
                           <div class="coming-soon">Coming Soon</div>
                         </a>
-                      <a href="" class="submenu-text">
-                        <img src="https://cdn.cloudairy.net/image/header/product/icononefive.svg" alt="icon15" />
-                        <p>Prototyping and Wireframing</p>
-                        <div class="coming-soon">Coming Soon</div>
-                      </a>
-                      <a href="" class="submenu-text">
-                        <img src="https://cdn.cloudairy.net/image/header/product/icononesix.svg" alt="icon16" />
-                        <p>Customizable Icons and Illustrations</p>
-                        <div class="coming-soon">Coming Soon</div>
-                      </a>
-                      <a href="brainstorming" class="submenu-text">
-                        <img src="https://cdn.cloudairy.net/image/header/product/icononeseven.svg" alt="icon17" />
-                        <p>Brainstorm and Ideation</p>
-                        <div class="coming-soon">Coming Soon</div>
-                      </a>
+                        <a href="" class="submenu-text">
+                          <img src="https://cdn.cloudairy.net/image/header/product/icononefive.svg" alt="icon15" />
+                          <p>Prototyping and Wireframing</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="https://cdn.cloudairy.net/image/header/product/icononesix.svg" alt="icon16" />
+                          <p>Customizable Icons and Illustrations</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="brainstorming" class="submenu-text">
+                          <img src="https://cdn.cloudairy.net/image/header/product/icononeseven.svg" alt="icon17" />
+                          <p>Brainstorm and Ideation</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
                         <a href="online-whiteboard" class="submenu-text">
                           <img src="IMAGE_PATHheader/product/icononeeight.svg" alt="icon18" />
                           <p>Online Whiteboard</p>
@@ -2055,8 +2061,9 @@
           </div>
         </div>
         <div style="display: flex; justify-content: center" id="loaderblog">
-          <div class="setLoder" style="width: 100%; height: 100%" id="loader">
-            <div id="lottie-container-loader"></div>
+          <div style="width: 100%; height: 100%" id="loader">
+            <div id="lottie-container-loader" class="setLoder"><img src="../assets/image/home/fixedloader.gif" alt="">
+            </div>
           </div>
         </div>
 
@@ -2098,7 +2105,7 @@
               <span>Sign up free</span>
             </a>
           </div>
-  
+
           <!-- <form id="homesubscribe" class="design-content-email-input">
                     <div>
                       <div class="email-background">
@@ -2626,23 +2633,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var animationPaths = [
-      "IMAGE_PATHhome/FixedLoader.json",
-    ];
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   var animationPaths = [
+  //     "https://cdn.cloudairy.net/image/home/fixedloader.json",
+  //   ];
 
-    var containers = [document.getElementById("lottie-container-loader")];
+  //   var containers = [document.getElementById("lottie-container-loader")];
 
-    containers.forEach(function (container, index) {
-      lottie.loadAnimation({
-        container: container,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: animationPaths[index],
-      });
-    });
-  });
+  //   containers.forEach(function (container, index) {
+  //     lottie.loadAnimation({
+  //       container: container,
+  //       renderer: "svg",
+  //       loop: true,
+  //       autoplay: true,
+  //       path: animationPaths[index],
+  //     });
+  //   });
+  // });
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {

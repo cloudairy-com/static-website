@@ -700,11 +700,15 @@
     }
 
     .setLoder {
-      max-width: 100px;
+      /* max-width: 100px; */
       height: 100px;
       display: flex;
       justify-content: center;
-      margin: 180px 0;
+      margin: 140px 0;
+    }
+    #loaderblog{
+       display: flex;
+      justify-content: center;
     }
 
     /*----all-template--section----*/
@@ -2412,12 +2416,14 @@
 
   <!--Start: Template list -->
   <section class="container-fluid blog-container-fluid">
-    <div style="display: flex; justify-content: center" id="loaderblog">
-      <div class="setLoder" style="width: 100%; height: 100%" id="loader">
-        <div id="lottie-container-loader2"></div>
+    <div id="loaderblog">
+      <div  style="width: 100%; height: 100%" id="loader">
+        <div id="lottie-container-loader2" class="setLoder">
+          <img src="../assets/image/home/fixedloader.gif" alt="">
+        </div>
       </div>
+      <div id="templateGrid-loeader"></div>
     </div>
-    <div id="templateGrid-loeader"></div>
     <div id="templateGrid-title"></div>
     <div class="template-grid" id="templateGrid"></div>
     <div id="templateGrid-title1"></div>
@@ -3026,23 +3032,23 @@
   });
 </script> -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var animationPaths = [
-      "IMAGE_PATHhome/FixedLoader.json",
-    ];
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   var animationPaths = [
+  //     "https://cdn.cloudairy.net/image/home/fixedloader.json",
+  //   ];
 
-    var containers = [document.getElementById("lottie-container-loader2")];
+  //   var containers = [document.getElementById("lottie-container-loader2")];
 
-    containers.forEach(function (container, index) {
-      lottie.loadAnimation({
-        container: container,
-        renderer: "svg",
-        loop: true,
-        autoplay: true,
-        path: animationPaths[index],
-      });
-    });
-  });
+  //   containers.forEach(function (container, index) {
+  //     lottie.loadAnimation({
+  //       container: container,
+  //       renderer: "svg",
+  //       loop: true,
+  //       autoplay: true,
+  //       path: animationPaths[index],
+  //     });
+  //   });
+  // });
 </script>
 <script>
   window.addEventListener("DOMContentLoaded", function () {
