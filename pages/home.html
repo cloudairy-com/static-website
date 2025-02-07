@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>
     A Collaborative Workspace | Cloudairy
   </title>
@@ -12,6 +12,7 @@
   <meta property="og:title" content="A Collaborative Workspace | Cloudairy" />
   <meta property="og:description"
     content="A collaborative workspace for creating animated architecture diagrams, mindmap and project planning." />
+ 
   <!-- external css file-->
   <link rel="stylesheet" href="../assets/main.css" />
   <link rel="stylesheet" href="../assets/media.css" />
@@ -4077,21 +4078,21 @@
                           <p>Project and Task Management</p>
                           <div class="coming-soon">Coming Soon</div>
                         </a>
-                      <a href="" class="submenu-text">
-                        <img src="https://cdn.cloudairy.net/image/header/product/icononefive.svg" alt="icon15" />
-                        <p>Prototyping and Wireframing</p>
-                        <div class="coming-soon">Coming Soon</div>
-                      </a>
-                      <a href="" class="submenu-text">
-                        <img src="https://cdn.cloudairy.net/image/header/product/icononesix.svg" alt="icon16" />
-                        <p>Customizable Icons and Illustrations</p>
-                        <div class="coming-soon">Coming Soon</div>
-                      </a>
-                      <a href="brainstorming" class="submenu-text">
-                        <img src="https://cdn.cloudairy.net/image/header/product/icononeseven.svg" alt="icon17" />
-                        <p>Brainstorm and Ideation</p>
-                        <div class="coming-soon">Coming Soon</div>
-                      </a>
+                        <a href="" class="submenu-text">
+                          <img src="https://cdn.cloudairy.net/image/header/product/icononefive.svg" alt="icon15" />
+                          <p>Prototyping and Wireframing</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="" class="submenu-text">
+                          <img src="https://cdn.cloudairy.net/image/header/product/icononesix.svg" alt="icon16" />
+                          <p>Customizable Icons and Illustrations</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
+                        <a href="brainstorming" class="submenu-text">
+                          <img src="https://cdn.cloudairy.net/image/header/product/icononeseven.svg" alt="icon17" />
+                          <p>Brainstorm and Ideation</p>
+                          <div class="coming-soon">Coming Soon</div>
+                        </a>
                         <a href="online-whiteboard" class="submenu-text">
                           <img src="IMAGE_PATHheader/product/icononeeight.svg" alt="icon18" />
                           <p>Online Whiteboard</p>
@@ -6594,7 +6595,7 @@
               <span>Sign up free</span>
             </a>
           </div>
-  
+
           <!-- <form id="homesubscribe" class="design-content-email-input">
                     <div>
                       <div class="email-background">
@@ -7695,7 +7696,7 @@
           // }
           else {
             // alert(result.data.message || "An error occurred. Please try again.");
-             window.location.href = "thank-you";
+            window.location.href = "thank-you";
           }
         } catch (error) {
           console.error("Error:", error);
@@ -7755,11 +7756,9 @@
 
           // Check if the API response is successful
           if (result.status === 200) {
-            // Redirect to signup page with email as query parameter
             window.location.href = `https://app.cloudairy.info/signup?email=${encodeURIComponent(values.email)}`;
           }
           else {
-            // Handle errors or unsuccessful status codes here
             window.location.href = `https://app.cloudairy.info/signup?email=${encodeURIComponent(values.email)}`;
           }
         } catch (error) {

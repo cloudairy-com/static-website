@@ -80,12 +80,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const response = await hubpost("/contact", { ...data });
-        const result = await response.json();
-        console.log(result, "result");
+        console.log(response, "response");
         
+        // const result = await response.json();
+      
 
-        if (result.data.redirectUri.includes("thank-you")) {
-          window.location.href = result.data.redirectUri; // Redirect after success
+        if (response.data.redirectUri.includes("thank-you")) {
+          window.location.href = "thank-you";
         }
       } catch (error) {
         console.error("Error:", error);
