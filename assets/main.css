@@ -1039,7 +1039,7 @@ svg.toggle-close {
 .design-section {
   position: relative;
   overflow: hidden;
-  padding: 100px 0px 0px;
+  /* padding: 100px 0px 0px; */
 }
 .section-set-bg {
   position: absolute;
