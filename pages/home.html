@@ -7687,7 +7687,7 @@
         submitBtn.disabled = true;
 
         const values = {
-          email: document.getElementById("email").value,
+          email: document.getElementById("homeemail").value,
         };
 
         const data = {
@@ -7698,24 +7698,19 @@
           const result = await hubpost("/subscribe", data);
           console.log(result, "result");
 
+          // Handle successful response
           if (result.status === 200) {
-            window.location.href = "thank-you";
-          }
-          // else if (result.status === 204) {
-          // Adjust the status code if necessary
-          // alert("You are already subscribed !!!");
-          // document.getElementById("email").value = "";
-          // }
-          else {
-            // alert(result.data.message || "An error occurred. Please try again.");
-            window.location.href = "thank-you";
+            window.location.href = `https://app.cloudairy.info/signup?email=${encodeURIComponent(values.email)}`;
+          } else if (result.status === 204) {
+            alert("You are already subscribed!");
+          } else {
+            alert(result.data.message || "An error occurred. Please try again.");
           }
         } catch (error) {
           console.error("Error:", error);
           alert("An error occurred. Please try again.");
         } finally {
           submitBtn.disabled = false;
-          window.location.href = "thank-you";
         }
       }
     });
