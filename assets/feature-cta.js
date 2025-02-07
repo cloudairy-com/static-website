@@ -294,7 +294,7 @@ class CommonComponent100 extends HTMLElement {
 
       .testimonial-section {
         background-color: #8C33F8;
-        background: url(IMAGE_PATHfeature-mobile-cta.png);
+        background: url("https://cdn.cloudairy.net/image/feature-mobile-cta.png");
         background-repeat: no-repeat;
         background-size: cover;
 
