@@ -328,8 +328,7 @@ function displayblogdetails(blogs) {
           const signUpButton = createElement("a", {
             class: "cta-signup-button",
             target: "_blank",
-            href: "https://chart.cloudairy.com/login",
-           
+            href: "https://app.cloudairy.info/signup",
           });
           signUpButton.textContent = "Sign up free";
 

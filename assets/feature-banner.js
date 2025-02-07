@@ -679,7 +679,7 @@ class CommonComponent1 extends HTMLElement {
           <p class="text_base ${isShowSubTextLine === "3" ? "truncated" : ""}">
             ${text_base} 
           </p>
-          <a class="btn-gradient-signUp" rel="canonical" href="https://chart.cloudairy.com/signup">
+          <a class="btn-gradient-signUp" rel="canonical" href="https://app.cloudairy.info/signup">
             <span>Sign up free</span>
           </a>
         </div>

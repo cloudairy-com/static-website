@@ -303,7 +303,7 @@
     width: 332px;
     height: 44px;
     padding: 2px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
   }
   .design-email-box {
     border-radius: 50px;

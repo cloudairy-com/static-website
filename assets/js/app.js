@@ -15,7 +15,7 @@ function handleHeaderVisibility() {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 }
 
-console.log(window.config.base_url, "window.config.base_url");
+// console.log(window.config.base_url, "window.config.base_url");
 
 window.addEventListener("scroll", handleHeaderVisibility);
 
