@@ -4,8 +4,8 @@ const base_url = window.config.base_url;
 // console.log(templateId, "templateId");
 const templateId = window.location.pathname.split("/template/")[1];
 const templateLink = document.getElementById("template-link");
-const templateLink1 = document.getElementById("template_link1");
-// const templateLink2 = document.getElementById("template-link2");
+const templateLink1 = document.getElementById("template-link1");
+const templateLink2 = document.getElementById("template-link2");
 const imageLink = document.getElementById("template-img-link");
 const getTemplateDetail = async (url) => {
   showLoader();
@@ -47,8 +47,8 @@ const getTemplateDetail = async (url) => {
     }
     displayTemplatedetails(templateDetail);
     // templateLink.href = `https://app.cloudairy.info?${templateDetail.template_id}`;
-    templateLink1.href = `https://app.cloudairy.info?${templateDetail.template_id}`;
-    // templateLink2.href = `https://app.cloudairy.info?${templateDetail.template_id}`;
+    templateLink1.href = `https://app.cloudairy.info?t_id=${templateDetail.template_id}`;
+    templateLink2.href = `https://app.cloudairy.info?t_id=${templateDetail.template_id}`;
     // imageLink.href = `https://app.cloudairy.info?${templateDetail.template_id}`;
   } catch (error) {
     console.error("Error::", error);

@@ -53,6 +53,7 @@ app.use((req, res, next) => {
       req.path == "/blog/uml-diagram" ||
       req.path == "/blog/architecture-diagram" ||
       req.path == "/blog/diagram-maker" ||
+      req.path == "/blog/thank-you" ||
       req.path == "/blog/sitemap.xml"
     ) {
       const newPath = req.path.replace("/blog/", "/");
@@ -78,6 +79,7 @@ app.use((req, res, next) => {
       req.path == "/template/uml-diagram" ||
       req.path == "/template/architecture-diagram" ||
       req.path == "/template/diagram-maker" ||
+      req.path == "/template/thank-you" ||
       req.path == "/template/sitemap.xml"
     ) {
       const newPath = req.path.replace("/template/", "/");
