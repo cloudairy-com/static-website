@@ -245,7 +245,7 @@ async function fetchLatestBlogData() {
     console.error("Error fetching latest blog data:", error);
   }
 }
-fetchLatestBlogData();
+// fetchLatestBlogData();
 
 document.querySelectorAll(".submenu-text").forEach((link) => {
   link.addEventListener("click", (event) => {
