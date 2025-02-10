@@ -1161,6 +1161,10 @@ class CommonComponent5 extends HTMLElement {
            font-size: 28px;
            line-height: 34px;
          }
+            h3 {
+           font-size: 19px;
+           line-height: 24px;
+         }
          .text_base {
            font-size: 13px;
            line-height: 22px;
@@ -1216,7 +1220,7 @@ class CommonComponent5 extends HTMLElement {
            line-height: 34px;
          }
           h3 {
-           font-size: 20px;
+           font-size: 18px;
            line-height: 24px;
          }
          .text_xl {
@@ -1305,7 +1309,7 @@ class CommonComponent5 extends HTMLElement {
               gap: 12px;
           }
           h4{
-            font-size: 18px;
+            font-size: 16px;
             line-height: 24px;
           }
            .mobile-key-feature-section h2{

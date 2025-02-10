@@ -1994,7 +1994,7 @@ class CommonComponent8 extends HTMLElement {
           display: flex;
         }
         h2 {
-          font-size: 20px;
+          font-size: 19px;
           line-height: 26px;
         }
         #lottie-container-product {
@@ -2059,7 +2059,7 @@ class CommonComponent8 extends HTMLElement {
           order: 2;
         }
         .capability-content h2 {
-          font-size: 17px;
+          font-size: 16px;
           line-height: 18px;
         }
       }
@@ -2072,6 +2072,10 @@ class CommonComponent8 extends HTMLElement {
           height: 231px;
           min-height: 253px;
           border-radius: 10px;
+        }
+            h2 {
+          font-size: 18px;
+          line-height: 24px;
         }
         .text_2xl {
           font-size: 14px;

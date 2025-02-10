@@ -16,7 +16,8 @@
   <!-- external css file-->
   <link rel="stylesheet" href="../assets/main.css" />
   <link rel="stylesheet" href="../assets/media.css" />
-  <link rel="icon" href="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/favicon-icon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://s3.amazonaws.com/cloudairy-public-website-asset-storage/favicon-icon/favicon.ico"
+    type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="../assets/feature-banner.js" defer></script>
   <script src="../assets/more-mindmap-content.js" defer></script>
@@ -1337,7 +1338,7 @@
 
       .question {
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 600;
         padding: 20px;
         position: relative;
         display: flex;
@@ -1349,12 +1350,18 @@
         justify-content: space-between;
       }
 
-      .question .active {
-        color: #18181B !important;
+      .image-faqs-box .container .active {
+        color: #6762FE !important;
+        font-size: 15px;
       }
 
-      .question.active img {
+      .question.active svg {
         rotate: 180deg;
+      }
+
+      .question.active svg path {
+        stroke: #6762fe !important;
+        fill: none !important
       }
 
       .answercont {
@@ -1977,6 +1984,11 @@
         line-height: 22px;
       }
 
+      h3 {
+        font-size: 19px;
+        line-height: 24px;
+      }
+
       .text-2xl {
         font-size: 20px;
       }
@@ -2060,6 +2072,15 @@
       .main-bg-sction {
         height: 676px;
       }
+
+      .accordion button {
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+      .accordion {
+        padding-top: 22px;
+      }
     }
 
     @media (max-width: 440px) {
@@ -2092,7 +2113,7 @@
       }
 
       h3 {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
       }
 
@@ -2210,7 +2231,7 @@
       .mobile-key-feature-section h2 {
         font-size: 18px;
         line-height: 24px;
-        padding-bottom: 4px;
+        padding-bottom: 8px;
       }
 
       .mobile-key-feature-section {
@@ -3202,7 +3223,12 @@
       <div class="image-faqs-box">
         <div class="container">
           <div class="question">
-            Extensive symbol library<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            Extensive symbol library<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"
+              fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -3216,7 +3242,12 @@
         </div>
         <div class="container">
           <div class="question">
-            User-friendly interface<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            User-friendly interface<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"
+              fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -3232,7 +3263,12 @@
         </div>
         <div class="container">
           <div class="question">
-            Drag-and-drop functionality<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            Drag-and-drop functionality<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"
+              fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -3247,7 +3283,12 @@
         </div>
         <div class="container">
           <div class="question">
-            Real-time collaboration<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            Real-time collaboration<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"
+              fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -3263,7 +3304,12 @@
         </div>
         <div class="container">
           <div class="question">
-            Customizable templates<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            Customizable templates<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"
+              fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">

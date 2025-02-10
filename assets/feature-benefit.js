@@ -843,7 +843,7 @@ class CommonComponent2 extends HTMLElement {
            line-height: 34px;
          }
             h3 {
-           font-size: 20px;
+           font-size: 19px;
            line-height: 26px;
          }
          .text_base {
@@ -926,11 +926,11 @@ class CommonComponent2 extends HTMLElement {
        }
        @media (max-width: 425px) {
          h1 {
-           font-size: 26px;
-           line-height: 34px;
+           font-size: 24px;
+           line-height: 33px;
          }
           h3 {
-           font-size: 20px;
+           font-size: 18px;
            line-height: 24px;
          }
          .text_xl {

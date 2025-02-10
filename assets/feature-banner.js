@@ -549,8 +549,8 @@ class CommonComponent1 extends HTMLElement {
             max-height: 198px;
          }
              h1 {
-           font-size: 26px;
-           line-height: 34px;
+           font-size: 24px;
+           line-height: 33px;
          }
      
         
