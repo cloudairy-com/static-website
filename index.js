@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 5555;
 const axios = require("axios");
 const fs = require("fs");
-const url = "https://website-admin.cloudairy.com";
+const url = "http://website-admin.cloudairy.info";
 
 // Set EJS as the templating engine
 app.set("view engine", "ejs");
@@ -132,7 +132,7 @@ app.get("/blog/:slug", async (req, res) => {
   try {
     // Fetch blog data from API
     const response = await axios.get(
-      `${url}/adminapi/v1/frontend/blog/detail/${slug}`
+      `http://website-admin.cloudairy.info/adminapi/v1/frontend/blog/detail/${slug}`
     );
     const blogDetail = response.data.blog;
     // console.log(blogDetail, "blogDetail");
@@ -176,7 +176,7 @@ app.get("/template/:slug", async (req, res) => {
   try {
     // Fetch blog data from API
     const response = await axios.get(
-      `${url}/adminapi/v1/frontend/template/${slug}`
+      `http://website-admin.cloudairy.info/adminapi/v1/frontend/template/${slug}`
     );
     const templateDetail = response?.data?.data?.templateDetails;
 
@@ -251,7 +251,7 @@ app.get("/sitemap.xml", (req, res) => {
 app.get("/blogs/sitemap.xml", async (req, res) => {
   try {
     const response = await axios.get(
-      `${url}/adminapi/v1/frontend/blog/full-list?isNewsletter=false&isShow=true`
+      `http://website-admin.cloudairy.info/adminapi/v1/frontend/blog/full-list?isNewsletter=false&isShow=true`
     );
     const blogs = response.data.blogs;
 
@@ -280,7 +280,7 @@ app.get("/blogs/sitemap.xml", async (req, res) => {
 
 app.get("/templates/sitemap.xml", async (req, res) => {
   try {
-    const response = await axios.get(`${url}/adminapi/v1/frontend/template`);
+    const response = await axios.get(`http://website-admin.cloudairy.info/adminapi/v1/frontend/template`);
     // console.log(response)
     const templates = response.data.data.resData;
 
@@ -318,7 +318,7 @@ app.get("/sitemap.xml", (req, res) => {
 app.get("/blog/sitemap.xml", async (req, res) => {
   try {
     const response = await axios.get(
-      `${url}/adminapi/v1/frontend/blog/full-list?isNewsletter=false&isShow=true`
+      `http://website-admin.cloudairy.info/adminapi/v1/frontend/blog/full-list?isNewsletter=false&isShow=true`
     );
     const blogs = response.data.blogs;
 

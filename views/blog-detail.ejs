@@ -3272,20 +3272,20 @@
 </script>
 <script src="../assets/js/blog-detail.js"></script>
 <script type="text/javascript">
-  $(document).ready(function () {
-    var metaTitle = document.getElementsByTagName("h1");
-    // Just replacing the value of the 'content' attribute will not work.
-    $("meta[name=description]").remove();
-    $("head").append('<meta name="og:title" content"$metaTitle">');
-  });
+  // $(document).ready(function () {
+  //   var metaTitle = document.getElementsByTagName("h1");
+  //   // Just replacing the value of the 'content' attribute will not work.
+  //   $("meta[name=description]").remove();
+  //   $("head").append('<meta name="og:title" content"$metaTitle">');
+  // });
 </script>
 <script>
   const base_url = window.config.base_url;
-  console.log('base===>', base_url);
+  // console.log('base===>', base_url);
   async function fetchLatestBlogData() {
     try {
       let response = await fetch(
-        `${base_url}/adminapi/v1/frontend/blog/list?isShow=true`
+        `https://website-admin.cloudairy.info/adminapi/v1/frontend/blog/list?isShow=true`
       );
       let data = await response.json();
       let result = "";

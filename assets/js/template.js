@@ -10,7 +10,7 @@ async function fetchTemplateData(
   try {
     showLoader();
     const response = await fetch(
-      `http://82.197.94.136:4005/v1/frontend/template/category`
+      `${window.config.base_url}/adminapi/v1/frontend/template/category`
     );
     const data = await response.json();
 
@@ -41,7 +41,7 @@ async function fetchTemplateDataSearch(
       category && category !== "null" ? "All Category" : clickedValue;
 
     const response = await fetch(
-      `http://82.197.94.136:4005/v1/frontend/template?nolimit=true${
+      `${window.config.base_url}/adminapi/v1/frontend/template?nolimit=true${
         categoryId && categoryId !== "All Category"
           ? `&categoryId=${categoryId}`
           : ""
@@ -70,6 +70,8 @@ if (category) {
 }
 
 function displayTemplates1(templates, index) {
+  console.log(templates, "232423");
+
   const templateGridTitle = document.getElementById("templateGrid-title1");
   const templateGrid = document.getElementById("templateGrid1");
   const templateGridTitle1 = document.getElementById("templateGrid-title");
@@ -89,6 +91,8 @@ function displayTemplates1(templates, index) {
   templateGrid.innerHTML = "";
   templateGrid1.innerHTML = "";
   templateGridTitle1.innerHTML = "";
+  console.log(templates.length, "templates.length");
+
   if (templates.length === 0) {
     templateGrid.innerHTML = `
       <div class="no-data-found loader" style="display:flex;justify-content: center;">
@@ -101,9 +105,7 @@ function displayTemplates1(templates, index) {
 
   templateGridTitle.innerHTML = `
     <div class="template-title">
-      <div class="template-name">${
-        templates[0]?.category_name || "Templates"
-      }</div>
+      <div class="template-name">${templates[0]?.category_name}</div>
      
     </div>`;
 
@@ -116,9 +118,18 @@ function displayTemplates1(templates, index) {
 
   // Build templates
   templates.forEach((template, index) => {
-    const defaultImage = `${IMAGE_PATH}template/template-default-image.png`;
+    if (template.length === 0) {
+      templateGrid.innerHTML = `
+      <div class="no-data-found loader" style="display:flex;justify-content: center;">
+        <div class="no-data-template">
+        <img src="${IMAGE_PATH}blog/no-data-found.svg" alt="no-data-found">
+        </div>
+      </div>`;
+      return;
+    } else {
+      const defaultImage = `${IMAGE_PATH}template/template-default-image.png`;
 
-    const templateHTML = `
+      const templateHTML = `
  <div class="template-cards1">
       <div class="template-item template-padding"> 
         <div class="templatee-spacing">
@@ -160,18 +171,22 @@ function displayTemplates1(templates, index) {
         </div>
       </div></div>`;
 
-    // Append template to result
-    templateGrid.innerHTML += templateHTML;
+      // Append template to result
+      templateGrid.innerHTML += templateHTML;
 
-    // Set image source dynamically
-    checkImageAvailability(template.website_thumbnail_image, (isAvailable) => {
-      const displayImage = document.getElementById(`displayImage${index}`);
-      if (displayImage) {
-        displayImage.src = isAvailable
-          ? template.website_thumbnail_image
-          : template.thumbnail_image;
-      }
-    });
+      // Set image source dynamically
+      checkImageAvailability(
+        template.website_thumbnail_image,
+        (isAvailable) => {
+          const displayImage = document.getElementById(`displayImage${index}`);
+          if (displayImage) {
+            displayImage.src = isAvailable
+              ? template.website_thumbnail_image
+              : template.thumbnail_image;
+          }
+        }
+      );
+    }
   });
 }
 function displayTemplatesCategory(templates, currentPage = 1, value) {
@@ -179,6 +194,8 @@ function displayTemplatesCategory(templates, currentPage = 1, value) {
 }
 
 function displayTemplates(templates) {
+  console.log(templates, "templates");
+
   const templateGridTitle = document.getElementById("templateGrid-title");
   const templateGrid = document.getElementById("templateGrid");
 
@@ -186,11 +203,13 @@ function displayTemplates(templates) {
   templateGridTitle.innerHTML = "";
   templateGrid.innerHTML = "";
 
+  console.log(templates.length, "templates.length");
+
   if (templates.length === 0) {
     templateGrid.innerHTML = `
       <div class="no-data-found loader" style="display:flex;justify-content: center;">
         <div class="no-data-template">
-        
+
           <h1 class="heading-no-data" style="text-align:center; padding-top:10px;">No Data Found</h1>
         </div>
       </div>`;
@@ -298,7 +317,7 @@ function setClickedValue(value) {
 async function fetchCategories() {
   try {
     let response = await fetch(
-      `http://82.197.94.136:4005/v1/frontend/categories`
+      `${window.config.base_url}/adminapi/v1/frontend/categories`
     );
     let data = await response.json();
     let categories = data.categories || [];
@@ -342,7 +361,7 @@ async function fetchCategories() {
 async function fetchCategories1() {
   try {
     let response = await fetch(
-      `http://82.197.94.136:4005/v1/frontend/categories`
+      `${window.config.base_url}/adminapi/v1/frontend/categories`
     );
     let data = await response.json();
     let categories = data.categories || [];
@@ -405,6 +424,10 @@ let searchValue = "";
 let categoryId = "";
 
 const handlechange = (value) => {
+  const templateGrid = document.getElementById("templateGrid1");
+  templateGrid.innerHTML = "";
+  const templateGridTitle = document.getElementById("templateGrid-title1");
+   templateGridTitle.innerHTML = "";
   const data = {
     page: 1,
     pageSize: 6,
