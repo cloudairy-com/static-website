@@ -11,9 +11,7 @@ async function fetchBlogData(page, clickedValue, searchValue) {
   try {
     showLoader();
     const response = await fetch(
-      `${
-        window.config.base_url
-      }/adminapi/v1/frontend/blog/list?page=${page}&limit=${limit}${
+      `http://82.197.94.136:4005/v1/frontend/blog/list?page=${page}&limit=${limit}${
         clickedValue &&
         clickedValue !== "All Category" &&
         clickedValue !== "null"
@@ -24,7 +22,7 @@ async function fetchBlogData(page, clickedValue, searchValue) {
       }`
     );
     const response2 = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/blog/list?recommended=true&page=1&limit=4`
+      `http://82.197.94.136:4005/v1/frontend/blog/list?recommended=true&page=1&limit=4`
     );
     const popularData = await response2.json();
 
@@ -257,7 +255,7 @@ function formatDate(dateString) {
 async function fetchLatestBlogData() {
   try {
     let response = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/blog/`
+      `http://82.197.94.136:4005/v1/frontend/blog/`
     );
     let data = await response.json();
 
@@ -294,7 +292,7 @@ function setClickedValue(value) {
 async function fetchCategories() {
   try {
     let response = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/blog/blogpage-info`
+      `http://82.197.94.136:4005/v1/frontend/blog/blogpage-info`
     );
     let data = await response.json();
 

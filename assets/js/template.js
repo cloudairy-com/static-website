@@ -10,7 +10,7 @@ async function fetchTemplateData(
   try {
     showLoader();
     const response = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/template/category`
+      `http://82.197.94.136:4005/v1/frontend/template/category`
     );
     const data = await response.json();
 
@@ -41,7 +41,7 @@ async function fetchTemplateDataSearch(
       category && category !== "null" ? "All Category" : clickedValue;
 
     const response = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/template?nolimit=true${
+      `http://82.197.94.136:4005/v1/frontend/template?nolimit=true${
         categoryId && categoryId !== "All Category"
           ? `&categoryId=${categoryId}`
           : ""
@@ -298,7 +298,7 @@ function setClickedValue(value) {
 async function fetchCategories() {
   try {
     let response = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/categories`
+      `http://82.197.94.136:4005/v1/frontend/categories`
     );
     let data = await response.json();
     let categories = data.categories || [];
@@ -342,7 +342,7 @@ async function fetchCategories() {
 async function fetchCategories1() {
   try {
     let response = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/categories`
+      `http://82.197.94.136:4005/v1/frontend/categories`
     );
     let data = await response.json();
     let categories = data.categories || [];
