@@ -149,7 +149,7 @@ function displayMostPopularBlogs(popularBlogs) {
 
   // Combine all HTML and update the DOM
   mostPopularSection.innerHTML = `
-    <h3>Most Popular</h3>
+    <h3>Most popular</h3>
     ${firstBlogHtml}
     <div class="blogs-section">
       ${otherBlogsHtml}
@@ -169,7 +169,7 @@ function displayBlogs(blogs, clickedValue, searchValue) {
       clickedValue === undefined) &&
     (searchValue === undefined || searchValue === "")
   ) {
-    header = `<h3 class="blog-heading">All Blogs</h3>`;
+    header = `<h3 class="blog-heading">All blogs</h3>`;
     mostPopularBlogSection.style.display = "block";
   } else {
     mostPopularBlogSection.style.display = "none";
@@ -224,7 +224,7 @@ function displayPaginationControls(totalPages, currentPage, totalBlogs) {
       paginationHTML += `<div class="load-more-section"><button onclick="changePage(${
         currentPage + 1
       })" class="load-more-button">
-        Load More
+        Load more
       </button></div>`;
     } else {
       paginationHTML += ``;
@@ -299,7 +299,7 @@ async function fetchCategories() {
     let data = await response.json();
 
     let categories = data.getCategoryList || [];
-    categories = [{ name: "All Blogs", id: null }, ...categories];
+    categories = [{ name: "All blogs", id: null }, ...categories];
     let setCategory = "";
     categories.forEach((category, index) => {
       const isActive = index === 0 ? "active" : "";

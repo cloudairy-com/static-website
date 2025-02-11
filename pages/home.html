@@ -2676,7 +2676,7 @@
         /* margin: 20px 0; */
       }
 
-      .image-faqs-box2 .question {
+      .image-faqs-box2 .question2 {
         font-size: 1.2rem;
         font-weight: 500;
         padding: 20px;
@@ -2690,7 +2690,7 @@
         justify-content: space-between;
       }
 
-      .image-faqs-box2 .question.active img {
+      .image-faqs-box2 .question2.active img {
         rotate: 180deg;
       }
 
@@ -3747,7 +3747,7 @@
         padding: 7px;
       }
 
-      .image-faqs-box2 .question {
+      .image-faqs-box2 .question2 {
         font-size: 14px;
         padding: 16px 16px 10px;
       }
@@ -5751,7 +5751,7 @@
       </p>
       <div class="image-faqs-box2">
         <div class="container">
-          <div class="question">
+          <div class="question2">
             AI mind map<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
           </div>
           <div class="answercont">
@@ -5765,7 +5765,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="question">
+          <div class="question2">
             AI image generator<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
           </div>
           <div class="answercont">
@@ -5779,7 +5779,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="question">
+          <div class="question2">
             AI flowchart<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
           </div>
           <div class="answercont">
@@ -5792,7 +5792,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="question">
+          <div class="question2">
             AI docs<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
           </div>
           <div class="answercont">
@@ -5806,7 +5806,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="question">
+          <div class="question2">
             AI ER diagram<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
           </div>
           <div class="answercont">
@@ -7115,60 +7115,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
-<!-- <script>
-  async function fetchLatestBlogData() {
-    try {
-      let response = await fetch(
-        `${window.config.base_url}/adminapi/v1/frontend/blog/`
-      );
-      let data = await response.json();
-      let result = "";
-      let result2 = "";
-      // date format
-      function formatDate(dateString) {
-        const date = new Date(dateString);
-        const day = date.getDate();
-        const month = date.toLocaleString("default", { month: "short" });
-        const year = date.getFullYear();
-        return `${day} ${month}, ${year}`;
-      }
-      data.blog.results.slice(0, 3).forEach((blog) => {
-        result += `<a href="./blog-detail?blog=${blog.uri}" target="_blank">
-            <div class="blog-box-bg">
-              <div class="blog-main-box-side">
-                <div class="blog-box-image-section">
-                  <img src="${blog.thumbnailImage}" alt="blog-img" style="width: 100%;
-    height: 100%;" />
-                </div>
-                <div class="blog-box-content-section">
-                  <p class="blog-title-height blog-box-content" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;">${blog.title}</p>
-                    <p class="blog-box-subcontent" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;    height: 66px;">
-                      ${blog.shortDescription}
-                    </p>
-                   <div class="blog-box-heading-section d-flex align-item-center justify-content-space-between">
-           <div class="blog-learn-more-link">
-  <p >Read more</p>
-  <div class="learnmore-arrow">
-    <svg width="24" height="27" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M19.0711 11.9989H3.5148" stroke="#6762FE" stroke-width="1.6" stroke-linecap="round"/>
-      <path d="M15.5352 7.04883L19.7778 11.2915C20.1111 11.6248 20.2778 11.7915 20.2778 11.9986C20.2778 12.2057 20.1111 12.3723 19.7778 12.7057L15.5352 16.9483" stroke="#6762FE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-</div>
-                  </div>
-                </div>
-              </div>
-              </div>
-            </a>`;
-      });
-      document.getElementById("blog-data-detail").innerHTML = result;
-    } catch (error) {
-      console.error("Error fetching latest blog data:", error);
-    }
-  }
-  fetchLatestBlogData();
-</script> -->
 <script>
   $(".customer-swipper").owlCarousel({
     loop: true,
@@ -7382,19 +7328,6 @@
     $(".nav-tabs a:first").tab("show");
   });
 </script>
-<!-- <script>
-  const marqueeContent = document.querySelector(".marquee-content");
-  let hoverTimeout;
-  marqueeContent.addEventListener("mouseenter", () => {
-    hoverTimeout = setTimeout(() => {
-      marqueeContent.style.animationPlayState = "paused";
-    }, 700);
-  });
-  marqueeContent.addEventListener("mouseleave", () => {
-    clearTimeout(hoverTimeout);
-    marqueeContent.style.animationPlayState = "running";
-  });
-</script> -->
 <script>
   document.querySelectorAll('.submenu-text').forEach((link) => {
     link.addEventListener('click', (event) => {
@@ -7492,6 +7425,59 @@
     });
   });
 
+</script>
+<!-- <script>
+  let question = document.querySelectorAll(".question2");
+
+  question.forEach((question) => {
+    question.addEventListener("click", (event) => {
+      const active = document.querySelector(".question.active");
+      if (active && active !== question) {
+        active.classList.toggle("active");
+        active.nextElementSibling.style.maxHeight = 0;
+      }
+      question.classList.toggle("active");
+      const answer = question.nextElementSibling;
+      if (question.classList.contains("active")) {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+      } else {
+        answer.style.maxHeight = 0;
+      }
+    });
+  });
+</script> -->
+<script>
+  let questions2 = document.querySelectorAll(".question2");
+
+  questions2.forEach((question, index) => {
+    const answer = question.nextElementSibling;
+    question.classList.remove("active");
+    answer.style.maxHeight = 0;
+
+    if (index === 0) { // Open the first question by default
+      question.classList.add("active");
+      answer.style.maxHeight = answer.scrollHeight + "px";
+      question.setAttribute('aria-expanded', 'true'); // Set initial state
+    } else {
+      question.setAttribute('aria-expanded', 'false'); // Set initial state
+    }
+  });
+
+  questions2.forEach((question) => {
+    question.addEventListener("click", () => {
+      const active = document.querySelector(".question2.active");
+      if (active && active !== question) {
+        active.classList.remove("active");
+        active.nextElementSibling.style.maxHeight = 0;
+        active.setAttribute('aria-expanded', 'false'); 
+      }
+      question.classList.toggle("active");
+      const answer = question.nextElementSibling;
+      const isActive = question.classList.contains("active");
+      answer.style.maxHeight = isActive ? answer.scrollHeight + "px" : 0;
+      question.setAttribute('aria-expanded', isActive); // Update state
+    });
+  });
 </script>
 <script>
   $(document).ready(function () {

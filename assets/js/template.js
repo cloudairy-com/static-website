@@ -235,7 +235,7 @@ function displayTemplates(templates) {
      style="display: ${category?.templates?.length > 3 ? "block" : "none"};">
   <div class="view-all-text">View all ${
     category?.templates?.length
-  } Templates <div class="learnmore-arrow">
+  } templates <div class="learnmore-arrow">
   <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M7.25 13.5L11.0429 9.70711C11.3762 9.37377 11.5429 9.20711 11.5429 9C11.5429 8.79289 11.3762 8.62623 11.0429 8.29289L7.25 4.5" stroke="url(#paint0_linear_291_52695)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <defs>
