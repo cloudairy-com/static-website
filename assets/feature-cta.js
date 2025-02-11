@@ -294,7 +294,7 @@ class CommonComponent100 extends HTMLElement {
 
       .testimonial-section {
         background-color: #8C33F8;
-        background: url("https://cdn.cloudairy.net/image/feature-mobile-cta.png");
+        background: url("https://cdn.cloudairy.com/image/feature-mobile-cta.png");
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -335,7 +335,7 @@ class CommonComponent100 extends HTMLElement {
           </p>
           <a class="btn-cta-signUp" href="https://app.cloudairy.com/signup">
             <div>Get started, it’s free!</div>
-            <div class="cta-arrow-box"><img src="https://cdn.cloudairy.net/image/ctc/white-arrow-cta.svg" alt="white-arrow-cta">
+            <div class="cta-arrow-box"><img src="https://cdn.cloudairy.com/image/ctc/white-arrow-cta.svg" alt="white-arrow-cta">
             </div>
           </a>
         </div>

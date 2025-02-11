@@ -4,14 +4,16 @@ const limit = 6;
 let totalBlogs = 0;
 let allBlogs = [];
 let clickedValue = "All Category";
-const IMAGE_PATH = "https://cdn.cloudairy.net/image/";
+const IMAGE_PATH = "https://cdn.cloudairy.com/image/";
 
 // Function to fetch and display blog data
 async function fetchBlogData(page, clickedValue, searchValue) {
   try {
     showLoader();
     const response = await fetch(
-      `${window.config.base_url}/adminapi/v1/frontend/blog/list?page=${page}&limit=${limit}${
+      `${
+        window.config.base_url
+      }/adminapi/v1/frontend/blog/list?page=${page}&limit=${limit}${
         clickedValue &&
         clickedValue !== "All Category" &&
         clickedValue !== "null"

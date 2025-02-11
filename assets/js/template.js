@@ -1,5 +1,5 @@
 var category = localStorage.getItem("category");
-const IMAGE_PATH = "https://cdn.cloudairy.net/image/";
+const IMAGE_PATH = "https://cdn.cloudairy.com/image/";
 
 async function fetchTemplateData(
   page = 1,
@@ -427,7 +427,7 @@ const handlechange = (value) => {
   const templateGrid = document.getElementById("templateGrid1");
   templateGrid.innerHTML = "";
   const templateGridTitle = document.getElementById("templateGrid-title1");
-   templateGridTitle.innerHTML = "";
+  templateGridTitle.innerHTML = "";
   const data = {
     page: 1,
     pageSize: 6,

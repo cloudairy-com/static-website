@@ -137,7 +137,7 @@ app.get("/blog/:slug", async (req, res) => {
     const blogDetail = response.data.blog;
     // console.log(blogDetail, "blogDetail");
 
-    const imagePath = "https://cdn.cloudairy.net/image/";
+    const imagePath = "https://cdn.cloudairy.com/image/";
 
     // Render the EJS template with dynamic data
     res.render("blog-detail", {
@@ -180,7 +180,7 @@ app.get("/template/:slug", async (req, res) => {
     );
     const templateDetail = response?.data?.data?.templateDetails;
 
-    const imagePath = "https://cdn.cloudairy.net/image/";
+    const imagePath = "https://cdn.cloudairy.com/image/";
 
     // Render the EJS template with dynamic data
     res.render("template-detail", {
@@ -221,10 +221,9 @@ app.get("/", (req, res) => {
         serverData
       )};</script>`;
 
-      // Replace all instances of IMAGE_PATH with the actual path
       const modifiedHtml = html
-        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.net/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
-        .replace("</head>", `${injectedScript}</head>`); // Inject server-side data into the <head> section
+        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.com/image/")
+        .replace("</head>", `${injectedScript}</head>`);
 
       // Send the modified HTML
       res.send(modifiedHtml);
@@ -280,7 +279,9 @@ app.get("/blogs/sitemap.xml", async (req, res) => {
 
 app.get("/templates/sitemap.xml", async (req, res) => {
   try {
-    const response = await axios.get(`http://website-admin.cloudairy.info/adminapi/v1/frontend/template`);
+    const response = await axios.get(
+      `http://website-admin.cloudairy.info/adminapi/v1/frontend/template`
+    );
     // console.log(response)
     const templates = response.data.data.resData;
 
@@ -371,7 +372,7 @@ app.get("/:page", (req, res) => {
         serverData
       )};</script>`;
       const modifiedHtml = html
-        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.net/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
+        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.com/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
         .replace("</head>", `${injectedScript}</head>`); // Inject server-side data into the <head> section
       res.send(modifiedHtml);
     }
@@ -395,7 +396,7 @@ app.get("/", (req, res) => {
         serverData
       )};</script>`;
       const modifiedHtml = html
-        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.net/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
+        .replace(/IMAGE_PATH/g, "https://cdn.cloudairy.com/image/") // Replace all IMAGE_PATH instances with '/assets/image/'
         .replace("</head>", `${injectedScript}</head>`); // Inject server-side data into the <head> section
       res.send(modifiedHtml);
     }
