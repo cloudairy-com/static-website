@@ -1593,6 +1593,17 @@
         line-height: 34px;
       }
 
+      .set-blog-category-date {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .indicator {
+        display: none;
+      }
+
       .home-banner-section {
         gap: 20px;
       }
@@ -1634,13 +1645,6 @@
         height: 725px;
       }
 
-      .set-blog-category-date {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 10px;
-        /* width: 100%; */
-      }
 
       .banner-video {
         /* box-shadow: 3px 3px 0px 0px #000000; */
@@ -2548,29 +2552,30 @@
               <div class="user-profile">
                 <img id="blog-creater" alt="blog-creater" class="user-profile" />
                 <!-- <img
-                      src="../assets/image/Home/user.svg"
-                      alt="user"
-                      style="width: 100%; height: 100%"
-                    /> -->
+                        src="../assets/image/Home/user.svg"
+                        alt="user"
+                        style="width: 100%; height: 100%"
+                      /> -->
               </div>
               <div class="user-data-info">
                 <p class="user-name" id="blog-author"></p>
                 <p class="user-date" id="blog-date"></p>
               </div>
-            </div>|
+            </div>
+            <div class="indicator">|</div>
             <div class="d-flex align-item-center" style="gap: 10px">
               <div class="blogdetail-badge-box" id="blog-category"></div>
             </div>
           </div>
           <!-- <p class="text_base">
-              Simplify your network design process with Cloudairy's powerful
-              Network Diagram Maker. Create clear, accurate, and professional
-              network diagrams to streamline communication, troubleshoot issues,
-              and plan future network expansions. 
-            </p> -->
+                Simplify your network design process with Cloudairy's powerful
+                Network Diagram Maker. Create clear, accurate, and professional
+                network diagrams to streamline communication, troubleshoot issues,
+                and plan future network expansions. 
+              </p> -->
           <!-- <button class="btn-gradient-signUp">
-              <span style="text-transform: capitalize">Sign up free</span>
-            </button> -->
+                <span style="text-transform: capitalize">Sign up free</span>
+              </button> -->
         </div>
         <div style="z-index: 10; border: 2.09px solid #fff" class="banner-video-bg loading-Box">
           <img id="blog-main-image" alt="blog-detail-banner" class="banner-video" />

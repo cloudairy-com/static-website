@@ -1057,11 +1057,11 @@
       /* .content-section p {
           padding: 10px 0 26px;
         } */
-     .banner-video {
-	        height: 450px;
-	        min-height: 450px;
-	        max-height: 450px;
-	      }
+      .banner-video {
+        height: 450px;
+        min-height: 450px;
+        max-height: 450px;
+      }
 
       .main-bg-sction {
         height: 575px;
@@ -1596,6 +1596,17 @@
         line-height: 34px;
       }
 
+      .set-blog-category-date {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .indicator {
+        display: none;
+      }
+
       .home-banner-section {
         gap: 20px;
       }
@@ -1637,13 +1648,7 @@
         height: 725px;
       }
 
-      .set-blog-category-date {
-        display: flex;
-       flex-direction: column;
-       width: 100%;
-       gap: 10px;
-        /* width: 100%; */
-      }
+     
 
       .banner-video {
         /* box-shadow: 3px 3px 0px 0px #000000; */
@@ -2556,7 +2561,7 @@
                 <p class="user-name" id="blog-author"></p>
                 <p class="user-date" id="blog-date"></p>
               </div>
-            </div>|
+            </div><div class="indicator">|</div>
             <div class="d-flex align-item-center" style="gap: 10px">
               <div class="blogdetail-badge-box" id="blog-category"></div>
             </div>
