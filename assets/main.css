@@ -1018,7 +1018,7 @@ svg.toggle-close {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  padding: 34px 0;
+  /* padding: 34px 0; */
 }
 
 .blog-category-badge {
