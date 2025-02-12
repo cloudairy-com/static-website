@@ -37,7 +37,7 @@ const getTemplateDetail = async (url) => {
     if (metaDesc) {
       metaDesc.setAttribute("content", templateDesc);
     }
-    console.log(templateDetail.template_id, "1111111111111111111");
+    // console.log(templateDetail.template_id, "1111111111111111111");
     const lastestTemplate = templatelistdata?.data?.relatedTemplates;
     // console.log(lastestTemplate, "lastestTemplate");
     if (lastestTemplate) {
