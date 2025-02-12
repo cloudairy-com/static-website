@@ -3546,38 +3546,6 @@
     });
 </script>
 <script>
-    $(function () {
-        //   console.log("dfgdgerre");
-        $(".icon").draggable({
-            start: function () {
-                $(this).css(
-                    "cursor",
-                    "url('IMAGE_PATHdesignsection/hold-one.svg') 2 2, pointer"
-                );
-                $(this).css("z-index", "1");
-                $(this).css("transform", "rotate(-10deg) scale(0.95)");
-            },
-            stop: function () {
-                $(this).css(
-                    "cursor",
-                    "url('IMAGE_PATHdesignsection/hold-one.svg') 2 2, pointer"
-                );
-                $(this).css("z-index", "1");
-                $(this).css("transform", "rotate(0deg) scale(1)");
-            },
-        });
-    });
-    $(function () {
-        $(".icon").click(function () {
-            var $this = $(this);
-            $this.css("transform", "rotate(-10deg) scale(0.95)");
-            setTimeout(function () {
-                $this.css("transform", "rotate(0deg) scale(1)");
-            }, 200);
-        });
-    });
-</script>
-<script>
     document.addEventListener("DOMContentLoaded", function () {
         const items = document.querySelectorAll(".accordion button");
 

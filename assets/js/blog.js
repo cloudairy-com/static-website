@@ -48,7 +48,7 @@ async function fetchBlogData(page, clickedValue, searchValue) {
 }
 
 function displayMostPopularBlogs(popularBlogs) {
-  console.log(popularBlogs, "popularBlogs");
+  // console.log(popularBlogs, "popularBlogs");
 
   const mostPopularSection = document.getElementById("most-popular-blog");
 

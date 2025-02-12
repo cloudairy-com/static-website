@@ -70,7 +70,7 @@ if (category) {
 }
 
 function displayTemplates1(templates, index) {
-  console.log(templates, "232423");
+  // console.log(templates, "232423");
 
   const templateGridTitle = document.getElementById("templateGrid-title1");
   const templateGrid = document.getElementById("templateGrid1");
@@ -91,7 +91,7 @@ function displayTemplates1(templates, index) {
   templateGrid.innerHTML = "";
   templateGrid1.innerHTML = "";
   templateGridTitle1.innerHTML = "";
-  console.log(templates.length, "templates.length");
+  // console.log(templates.length, "templates.length");
 
   if (templates.length === 0) {
     templateGrid.innerHTML = `
@@ -194,7 +194,7 @@ function displayTemplatesCategory(templates, currentPage = 1, value) {
 }
 
 function displayTemplates(templates) {
-  console.log(templates, "templates");
+  // console.log(templates, "templates");
 
   const templateGridTitle = document.getElementById("templateGrid-title");
   const templateGrid = document.getElementById("templateGrid");
@@ -203,7 +203,7 @@ function displayTemplates(templates) {
   templateGridTitle.innerHTML = "";
   templateGrid.innerHTML = "";
 
-  console.log(templates.length, "templates.length");
+  // console.log(templates.length, "templates.length");
 
   if (templates.length === 0) {
     templateGrid.innerHTML = `
@@ -433,7 +433,7 @@ const handlechange = (value) => {
     pageSize: 6,
     categoryId: value?.category_id,
   };
-  console.log("searchValue", value?.category_name);
+  // console.log("searchValue", value?.category_name);
 
   categoryId = value?.category_id;
   if (value?.category_name === "All Category") {

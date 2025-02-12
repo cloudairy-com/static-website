@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const response = await hubpost("/contact", { ...data });
-        console.log(response, "response");
+        // console.log(response, "response");
         
         // const result = await response.json();
       
