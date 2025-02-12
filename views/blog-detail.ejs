@@ -191,15 +191,15 @@
     }
 
     .cta-title {
-      color: #6762FE !important;
-      font-size: 26px !important;
-      line-height: 39px !important;
+      color: #18181B !important;
+      font-size: 34px !important;
+      line-height: 41px !important;
     }
 
     .cta-description {
       color: #18181B;
       font-size: 14px;
-      margin-top: 20px;
+      margin-top: 30px;
       line-height: 21px;
     }
 
@@ -207,11 +207,11 @@
       width: 140px;
       display: inline-block;
       margin-top: 14px;
-      padding: 14px;
+      padding: 10px 14px;
       background-color: #6762FE;
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 50px;
       cursor: pointer;
       font-size: 16px;
       display: flex;
@@ -336,15 +336,19 @@
     }
 
     .blog-detailed-tab-footer {
-      background-image: url("https://s3.amazonaws.com/cloudairy-website-storage/blog-detail/blog-detail-testimonal.png");
+      background-image: url("../assets/image/blog/blog-detail-cta.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      border-radius: 10px;
+      background-position: right;
+      border-radius: 20px;
       padding: 50px;
       position: relative;
       width: 100%;
       height: 100%;
-      min-height: 310px;
+      flex-direction: column !important;
+      align-content: center;
+      justify-content: center;
+      /* min-height: 310px; */
     }
 
     .responsiveBlog2 {
@@ -1047,7 +1051,7 @@
       .cta-signup-button {
         width: 120px;
         margin-top: 10px;
-        padding: 10px 12px;
+        padding: 8px 12px;
         font-size: 14px;
         display: flex;
         justify-content: center;
@@ -1489,17 +1493,30 @@
       .text-template-name {
         padding: 15px 60px 15px 15px;
       }
+
+      .blog-detailed-tab-footer {
+        padding: 30px 16px;
+      }
+
+      .blog-detailed-tab-footer h4 {
+        max-width: 300px;
+      }
+
+      .blog-detailed-tab-footer p {
+        max-width: 300px;
+      }
     }
 
     @media (max-width: 666px) {
       .blog-detailed-tab-footer {
-        background-size: auto;
+        /* background-size: auto; */
         max-height: 230px;
         min-height: 180px;
       }
 
       .blog-detailed-tab-footer p {
         padding: 5px 0;
+        max-width: 295px;
       }
 
       .responsiveBlog2 {
@@ -1603,6 +1620,29 @@
         width: 100%;
       }
 
+      .blog-detailed-tab-footer {
+        background: url(https://cdn.cloudairy.com/image/home/home-cta-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 600px;
+        border-radius: 16px !important;
+        background-position: bottom;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+      }
+
+      .blog-detailed-tab-footer h4 {
+        text-align: center;
+      }
+
+      #open-template-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
       .indicator {
         display: none;
       }
@@ -1635,6 +1675,10 @@
       .company-name {
         padding-left: 120px;
       }
+
+      .blog-detailed-tab-footer {
+        min-height: 570px;
+      }
     }
 
     @media (max-width: 425px) {
@@ -1648,7 +1692,11 @@
         height: 725px;
       }
 
-     
+      .blog-detailed-tab-footer {
+        min-height: 570px;
+      }
+
+
 
       .banner-video {
         /* box-shadow: 3px 3px 0px 0px #000000; */
@@ -1720,10 +1768,20 @@
       }
     }
 
+    @media (max-width: 400px) {
+      .blog-detailed-tab-footer {
+        min-height: 500px;
+      }
+    }
+
     @media (max-width: 375px) {
       h1 {
         font-size: 24px;
         line-height: 32px;
+      }
+
+      .blog-detailed-tab-footer {
+        min-height: 500px;
       }
 
       .main-bg-sction {
@@ -1771,8 +1829,8 @@
 
     @media (max-width: 328px) {
       .blog-detailed-tab-footer {
-        max-height: 240px;
-        min-height: 200px;
+        max-height: 460px;
+        min-height: 460px;
       }
 
       .recommended-heading-section h2 {
@@ -2561,7 +2619,8 @@
                 <p class="user-name" id="blog-author"></p>
                 <p class="user-date" id="blog-date"></p>
               </div>
-            </div><div class="indicator">|</div>
+            </div>
+            <div class="indicator">|</div>
             <div class="d-flex align-item-center" style="gap: 10px">
               <div class="blogdetail-badge-box" id="blog-category"></div>
             </div>

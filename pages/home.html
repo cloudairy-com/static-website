@@ -2668,6 +2668,19 @@
         gap: 20px;
       }
 
+      .question2.active svg {
+        rotate: 180deg;
+      }
+
+      .question2.active svg path {
+        stroke: #6762fe !important;
+        fill: none !important
+      }
+
+      .image-faqs-box2 .container .active {
+        color: #6762FE !important;
+      }
+
       .image-faqs-box2 .container {
         /* background-color: white; */
         border: 1px solid #D9D9D9;
@@ -5752,7 +5765,11 @@
       <div class="image-faqs-box2">
         <div class="container">
           <div class="question2">
-            AI mind map<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            AI mind map<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -5766,7 +5783,12 @@
         </div>
         <div class="container">
           <div class="question2">
-            AI image generator<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            AI image generator<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"
+              fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -5780,7 +5802,11 @@
         </div>
         <div class="container">
           <div class="question2">
-            AI flowchart<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            AI flowchart<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -5793,7 +5819,11 @@
         </div>
         <div class="container">
           <div class="question2">
-            AI docs<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            AI docs<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -5807,7 +5837,11 @@
         </div>
         <div class="container">
           <div class="question2">
-            AI ER diagram<img src="IMAGE_PATHhome/arrow-down-zeroone-sharp.svg" alt="arrow-down-01" />
+            AI ER diagram<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+              <path
+                d="M1 1L4.51828 4.51828C4.74537 4.74537 4.85891 4.85891 5 4.85891C5.14109 4.85891 5.25463 4.74537 5.48172 4.51828L9 1"
+                stroke="#18181B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </div>
           <div class="answercont">
             <div class="answer text_base">
@@ -7469,7 +7503,7 @@
       if (active && active !== question) {
         active.classList.remove("active");
         active.nextElementSibling.style.maxHeight = 0;
-        active.setAttribute('aria-expanded', 'false'); 
+        active.setAttribute('aria-expanded', 'false');
       }
       question.classList.toggle("active");
       const answer = question.nextElementSibling;

@@ -288,7 +288,7 @@ function displayblogdetails(blogs) {
         const templateFooterDiv = createElement("div", {
           class: "blog-detailed-tab-footer",
           style:
-            "margin-top: 20px; display: none; flex-direction: column !important; align-content: center;justify-content: center;",
+            "margin-top: 20px; display: none; ",
         });
 
         const templateDescriptionElement = createElement("p", {
